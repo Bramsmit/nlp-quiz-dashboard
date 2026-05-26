@@ -11,6 +11,7 @@ Interactive React dashboard for NLP exam practice. The app uses a local 250-ques
 - Deferred grading: answer all multiple-choice questions first, then review.
 - Final open exam-style question with text input and browser voice input.
 - Results page with score, topic accuracy, mistake review, and retry-mistakes mode.
+- Persistent saved-mistakes list across sessions using browser localStorage.
 - Optional AI-generated contextual explanations for incorrect answers.
 - No backend or database required for normal quiz use.
 
@@ -74,6 +75,12 @@ This starts both:
 
 The open question screen supports voice input through the browser Web Speech API. This requires a compatible browser and microphone permission. No OpenAI key is needed for voice input.
 
+## Saved Mistakes
+
+Questions answered incorrectly are saved in the browser after each completed session. The setup screen includes a `Saved mistakes` section where you can review all missed questions across sessions, remove individual questions, clear the list, or practise only those saved mistakes.
+
+This data is stored in localStorage on the current device/browser. It is not committed to Git, sent to GitHub, or stored in a database.
+
 ## Scripts
 
 ```bash
@@ -95,4 +102,3 @@ npm run translate:questions # Regenerate the English question bank via OpenAI
 - Do not commit `.env`; it is ignored by Git.
 - API calls are proxied through the local Node helper so the key is not exposed in browser code.
 - The normal quiz flow works entirely offline after dependencies are installed.
-

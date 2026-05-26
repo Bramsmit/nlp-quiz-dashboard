@@ -1,5 +1,6 @@
 import { useMemo } from "react";
 import quizBankJson from "../data/nlp_250_quiz_questions.en.json";
+import { useSavedMistakes } from "../hooks/useSavedMistakes";
 import { useQuizSession } from "../hooks/useQuizSession";
 import { ALL_TOPICS, type QuizBank, type SessionSettings } from "../lib/quiz";
 import AppHeader from "./AppHeader";
@@ -7,6 +8,7 @@ import OpenQuestionView from "./OpenQuestionView";
 import QuizScreen from "./QuizScreen";
 import QuizSetup from "./QuizSetup";
 import ResultsView from "./ResultsView";
+import SavedMistakesPanel from "./SavedMistakesPanel";
 
 const quizBank = quizBankJson as QuizBank;
 
@@ -26,6 +28,7 @@ export default function QuizApp() {
     questions: quizBank.questions,
     initialSettings: defaultSettings,
   });
+  const savedMistakes = useSavedMistakes();
 
   return (
     <main className="min-h-screen bg-slate-100">
@@ -37,13 +40,25 @@ export default function QuizApp() {
         />
 
         {state.phase === "setup" ? (
-          <QuizSetup
-            questions={quizBank.questions}
-            settings={state.settings}
-            topics={topics}
-            onSettingsChange={actions.setSettings}
-            onStart={() => actions.startSession()}
-          />
+          <>
+            <QuizSetup
+              questions={quizBank.questions}
+              settings={state.settings}
+              topics={topics}
+              onSettingsChange={actions.setSettings}
+              onStart={() => actions.startSession()}
+            />
+            <SavedMistakesPanel
+              savedMistakes={savedMistakes.savedMistakes}
+              onPractice={() =>
+                actions.startSession(
+                  savedMistakes.savedMistakes.map((mistake) => mistake.question),
+                )
+              }
+              onRemove={savedMistakes.removeMistake}
+              onClear={savedMistakes.clearMistakes}
+            />
+          </>
         ) : null}
 
         {state.phase === "quiz" ? (
@@ -61,7 +76,13 @@ export default function QuizApp() {
             openQuestion={state.openQuestion}
             answer={state.openAnswer}
             onAnswerChange={actions.setOpenAnswer}
-            onFinish={actions.finishSession}
+            onFinish={() => {
+              const gradedHistory = actions.finishSession();
+
+              if (gradedHistory) {
+                savedMistakes.addSessionMistakes(gradedHistory);
+              }
+            }}
           />
         ) : null}
 

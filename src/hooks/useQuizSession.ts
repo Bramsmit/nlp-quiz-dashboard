@@ -149,8 +149,11 @@ export function useQuizSession({
   }, [allAnswered]);
 
   const finishSession = useCallback(() => {
-    setHistory(gradeSession(sessionQuestions, answersByQuestionId));
+    const gradedHistory = gradeSession(sessionQuestions, answersByQuestionId);
+
+    setHistory(gradedHistory);
     setPhase("results");
+    return gradedHistory;
   }, [answersByQuestionId, sessionQuestions]);
 
   const retryMistakes = useCallback(() => {

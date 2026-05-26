@@ -1,6 +1,10 @@
 import { useMemo } from "react";
 import { useMistakeExplanations } from "../hooks/useMistakeExplanations";
-import { calculateTopicStats, type AnswerHistory, type OpenQuestion } from "../lib/quiz";
+import {
+  calculateTopicStats,
+  type AnswerHistory,
+  type OpenQuestion,
+} from "../lib/quiz";
 import MistakeReview from "./results/MistakeReview";
 import OpenQuestionReview from "./results/OpenQuestionReview";
 import ResultSummary from "./results/ResultSummary";
