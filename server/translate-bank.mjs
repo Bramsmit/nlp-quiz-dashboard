@@ -1,15 +1,14 @@
 import { readFile, writeFile } from "node:fs/promises";
-import { getOpenAiApiKey, loadEnvFile } from "./env.mjs";
+import { loadEnvFile } from "./env.mjs";
 
 loadEnvFile();
 
+const { createJsonResponse, isAiEnabled } = await import("./openai.mjs");
 const inputPath = "src/data/nlp_250_quiz_questions.json";
 const outputPath = "src/data/nlp_250_quiz_questions.en.json";
-const model = process.env.OPENAI_MODEL ?? "gpt-4.1-mini";
-const apiKey = getOpenAiApiKey();
 const chunkSize = Number(process.env.TRANSLATE_CHUNK_SIZE ?? 10);
 
-if (!apiKey) {
+if (!isAiEnabled()) {
   throw new Error("Missing OpenAI API key in .env");
 }
 
@@ -23,55 +22,20 @@ function chunk(items, size) {
   return chunks;
 }
 
-function extractOutputText(payload) {
-  if (typeof payload.output_text === "string") {
-    return payload.output_text;
-  }
-
-  return (payload.output ?? [])
-    .flatMap((item) => item.content ?? [])
-    .map((content) => content.text ?? "")
-    .join("");
-}
-
 async function translateChunk(questions, chunkNumber, totalChunks) {
   console.log(`Translating chunk ${chunkNumber}/${totalChunks}`);
 
-  const response = await fetch("https://api.openai.com/v1/responses", {
-    method: "POST",
-    headers: {
-      Authorization: `Bearer ${apiKey}`,
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({
-      model,
-      input: [
-        {
-          role: "system",
-          content: [
-            "Translate this Dutch NLP quiz content into clear exam-level English.",
-            "Return only valid JSON: {\"questions\": [...]}",
-            "Preserve id, type, difficulty, option keys, correctAnswers, and sourceHint exactly.",
-            "Translate topic, question, options text, and explanation.",
-            "Do not add Markdown or commentary.",
-          ].join(" "),
-        },
-        {
-          role: "user",
-          content: JSON.stringify({ questions }),
-        },
-      ],
-      max_output_tokens: 20000,
-    }),
+  const parsed = await createJsonResponse({
+    systemPrompt: [
+      "Translate this Dutch NLP quiz content into clear exam-level English.",
+      "Return only valid JSON: {\"questions\": [...]}",
+      "Preserve id, type, difficulty, option keys, correctAnswers, and sourceHint exactly.",
+      "Translate topic, question, options text, and explanation.",
+      "Do not add Markdown or commentary.",
+    ].join(" "),
+    payload: { questions },
+    maxOutputTokens: 20000,
   });
-
-  if (!response.ok) {
-    const errorText = await response.text();
-    throw new Error(`OpenAI request failed: ${response.status} ${errorText}`);
-  }
-
-  const text = extractOutputText(await response.json()).trim();
-  const parsed = JSON.parse(text);
 
   if (!Array.isArray(parsed.questions) || parsed.questions.length !== questions.length) {
     throw new Error(`Invalid translation response for chunk ${chunkNumber}`);

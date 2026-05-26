@@ -1,11 +1,13 @@
 import { createServer } from "node:http";
-import { getOpenAiApiKey, loadEnvFile } from "./env.mjs";
+import { loadEnvFile } from "./env.mjs";
 
 loadEnvFile();
 
+const { createJsonResponse, getConfiguredModel, isAiEnabled } = await import(
+  "./openai.mjs"
+);
 const port = Number(process.env.AI_PORT ?? 8787);
-const model = process.env.OPENAI_MODEL ?? "gpt-4.1-mini";
-const apiKey = getOpenAiApiKey();
+const model = getConfiguredModel();
 
 function readJsonBody(request) {
   return new Promise((resolve, reject) => {
@@ -39,52 +41,17 @@ function sendJson(response, status, payload) {
   response.end(JSON.stringify(payload));
 }
 
-function extractOutputText(payload) {
-  if (typeof payload.output_text === "string") {
-    return payload.output_text;
-  }
-
-  return (payload.output ?? [])
-    .flatMap((item) => item.content ?? [])
-    .map((content) => content.text ?? "")
-    .join("");
-}
-
 async function translateQuestions(questions) {
-  if (!apiKey) {
+  if (!isAiEnabled()) {
     return questions;
   }
 
-  const response = await fetch("https://api.openai.com/v1/responses", {
-    method: "POST",
-    headers: {
-      Authorization: `Bearer ${apiKey}`,
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({
-      model,
-      input: [
-        {
-          role: "system",
-          content:
-            "Translate Dutch NLP quiz content into clear exam-level English. Preserve ids, type, difficulty, option keys, and correctAnswers exactly. Return only valid JSON with a questions array.",
-        },
-        {
-          role: "user",
-          content: JSON.stringify({ questions }),
-        },
-      ],
-      max_output_tokens: 16000,
-    }),
+  const parsed = await createJsonResponse({
+    systemPrompt:
+      "Translate Dutch NLP quiz content into clear exam-level English. Preserve ids, type, difficulty, option keys, and correctAnswers exactly. Return only valid JSON with a questions array.",
+    payload: { questions },
+    maxOutputTokens: 16000,
   });
-
-  if (!response.ok) {
-    throw new Error(`OpenAI request failed: ${response.status}`);
-  }
-
-  const payload = await response.json();
-  const text = extractOutputText(payload).trim();
-  const parsed = JSON.parse(text);
 
   if (!Array.isArray(parsed.questions) || parsed.questions.length !== questions.length) {
     return questions;
@@ -101,44 +68,21 @@ async function translateQuestions(questions) {
 }
 
 async function explainMistakes(mistakes) {
-  if (!apiKey || mistakes.length === 0) {
+  if (!isAiEnabled() || mistakes.length === 0) {
     return [];
   }
 
-  const response = await fetch("https://api.openai.com/v1/responses", {
-    method: "POST",
-    headers: {
-      Authorization: `Bearer ${apiKey}`,
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({
-      model,
-      input: [
-        {
-          role: "system",
-          content: [
-            "You are an NLP exam tutor.",
-            "Explain each incorrectly answered quiz question with extra context.",
-            "Be concise, concrete, and exam-focused.",
-            "Return only valid JSON: {\"explanations\":[{\"questionId\":\"...\",\"misconception\":\"...\",\"correctReasoning\":\"...\",\"studyTip\":\"...\"}]}",
-            "Do not add Markdown or commentary outside JSON.",
-          ].join(" "),
-        },
-        {
-          role: "user",
-          content: JSON.stringify({ mistakes }),
-        },
-      ],
-      max_output_tokens: 12000,
-    }),
+  const parsed = await createJsonResponse({
+    systemPrompt: [
+      "You are an NLP exam tutor.",
+      "Explain each incorrectly answered quiz question with extra context.",
+      "Be concise, concrete, and exam-focused.",
+      "Return only valid JSON: {\"explanations\":[{\"questionId\":\"...\",\"misconception\":\"...\",\"correctReasoning\":\"...\",\"studyTip\":\"...\"}]}",
+      "Do not add Markdown or commentary outside JSON.",
+    ].join(" "),
+    payload: { mistakes },
+    maxOutputTokens: 12000,
   });
-
-  if (!response.ok) {
-    throw new Error(`OpenAI request failed: ${response.status}`);
-  }
-
-  const payload = await response.json();
-  const parsed = JSON.parse(extractOutputText(payload).trim());
   return Array.isArray(parsed.explanations) ? parsed.explanations : [];
 }
 
@@ -149,7 +93,7 @@ const server = createServer(async (request, response) => {
   }
 
   if (request.method === "GET" && request.url === "/api/health") {
-    sendJson(response, 200, { ok: true, aiEnabled: Boolean(apiKey), model });
+    sendJson(response, 200, { ok: true, aiEnabled: isAiEnabled(), model });
     return;
   }
 
