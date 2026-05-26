@@ -1,0 +1,4904 @@
+{
+  "metadata": {
+    "title": "NLP 2026 Interactive Quiz Bank",
+    "version": "1.0",
+    "language": "en",
+    "questionCount": 250,
+    "format": "multiple_choice_and_multiple_response",
+    "generatedFor": "interactive dashboard / Codex implementation",
+    "schema": {
+      "id": "string",
+      "topic": "string",
+      "type": "single | multi",
+      "difficulty": "1 easy, 2 medium, 3 hard",
+      "question": "string",
+      "options": {
+        "A": "string",
+        "B": "string"
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "string",
+      "sourceHint": "string"
+    }
+  },
+  "questions": [
+    {
+      "id": "nlp_001",
+      "topic": "NLP basics & pipeline",
+      "type": "single",
+      "difficulty": 1,
+      "question": "What is Natural Language Processing (NLP) in general terms?",
+      "options": {
+        "A": "A branch of AI/computer science that enables computers to work with human language.",
+        "B": "A method to compile only programming languages.",
+        "C": "A database technique for numerical data.",
+        "D": "An algorithm that exclusively performs image classification."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "NLP involves the automatic processing, analysis, generation, and interpretation of natural language.",
+      "sourceHint": "NLP basics & pipeline"
+    },
+    {
+      "id": "nlp_002",
+      "topic": "NLP basics & pipeline",
+      "type": "multi",
+      "difficulty": 1,
+      "question": "Which tasks are often considered classic NLP tasks?",
+      "options": {
+        "A": "POS tagging",
+        "B": "Syntactic parsing",
+        "C": "Named Entity Recognition",
+        "D": "Coreference resolution",
+        "E": "JPEG compression without text"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "explanation": "POS tagging, parsing, NER, and coreference resolution are all core technologies in NLP.",
+      "sourceHint": "NLP basics & pipeline"
+    },
+    {
+      "id": "nlp_003",
+      "topic": "NLP basics & pipeline",
+      "type": "single",
+      "difficulty": 1,
+      "question": "Which step usually comes early in a traditional NLP pipeline?",
+      "options": {
+        "A": "Tokenization",
+        "B": "Semantic parsing",
+        "C": "Pragmatic inference",
+        "D": "Final structured output"
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Typically, raw text must first be split into tokens before further analysis is possible.",
+      "sourceHint": "NLP basics & pipeline"
+    },
+    {
+      "id": "nlp_004",
+      "topic": "NLP basics & pipeline",
+      "type": "multi",
+      "difficulty": 1,
+      "question": "Which levels of language structure can be relevant for NLP?",
+      "options": {
+        "A": "Morphology",
+        "B": "Syntax",
+        "C": "Semantics",
+        "D": "Discourse/pragmatics",
+        "E": "Only pixel values"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "explanation": "Language has multiple layers: form, words, grammatical structure, meaning, and use/context.",
+      "sourceHint": "NLP basics & pipeline"
+    },
+    {
+      "id": "nlp_005",
+      "topic": "NLP basics & pipeline",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Why is a pipeline including POS tagging, parsing, and semantic analysis useful?",
+      "options": {
+        "A": "Because each level adds additional information for interpretation.",
+        "B": "Because tokenization solves all semantics.",
+        "C": "Because syntax and semantics are always irrelevant.",
+        "D": "Because the model then needs no more data."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Pipeline steps represent different layers of language structure and can support each other.",
+      "sourceHint": "NLP basics & pipeline"
+    },
+    {
+      "id": "nlp_006",
+      "topic": "NLP basics & pipeline",
+      "type": "multi",
+      "difficulty": 1,
+      "question": "Which applications belong to NLP?",
+      "options": {
+        "A": "Machine translation",
+        "B": "Question answering",
+        "C": "Summarization",
+        "D": "Sentiment analysis",
+        "E": "Thermodynamic simulation without text"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "explanation": "Translation, QA, summarization, and sentiment analysis are typical NLP applications.",
+      "sourceHint": "NLP basics & pipeline"
+    },
+    {
+      "id": "nlp_007",
+      "topic": "NLP basics & pipeline",
+      "type": "single",
+      "difficulty": 1,
+      "question": "What does it mean that an NLP system treats 'language as data'?",
+      "options": {
+        "A": "Language is processed as observable data, like tokens, strings, or corpora.",
+        "B": "Language is never analyzed with statistics.",
+        "C": "All language is replaced by handwritten rules.",
+        "D": "Only spoken language counts as data."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Modern NLP uses language data such as corpora to learn or evaluate patterns.",
+      "sourceHint": "NLP basics & pipeline"
+    },
+    {
+      "id": "nlp_008",
+      "topic": "NLP basics & pipeline",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Which problems make NLP difficult at the pipeline level?",
+      "options": {
+        "A": "Errors in early steps can affect later steps.",
+        "B": "One word can have multiple analyses.",
+        "C": "Context may be needed for correct interpretation.",
+        "D": "All sentences are always unambiguous.",
+        "E": "Data can be biased or not representative."
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "explanation": "Ambiguity, context, data issues, and error propagation are typical challenges.",
+      "sourceHint": "NLP basics & pipeline"
+    },
+    {
+      "id": "nlp_009",
+      "topic": "NLP basics & pipeline",
+      "type": "single",
+      "difficulty": 1,
+      "question": "What is a corpus?",
+      "options": {
+        "A": "A collection of texts or language utterances used for analysis/training.",
+        "B": "A single word without context.",
+        "C": "A loss function for Transformers.",
+        "D": "A type of dependency relation."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "A corpus is a dataset of text or speech transcripts.",
+      "sourceHint": "NLP basics & pipeline"
+    },
+    {
+      "id": "nlp_010",
+      "topic": "NLP basics & pipeline",
+      "type": "single",
+      "difficulty": 1,
+      "question": "Why is annotation important in supervised NLP?",
+      "options": {
+        "A": "It provides labels from which models can learn.",
+        "B": "It removes all ambiguity from language forever.",
+        "C": "It replaces training with random guessing.",
+        "D": "It makes tokenization impossible."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Supervised learning uses labeled examples, such as sentiment, POS tags, or named entities.",
+      "sourceHint": "NLP basics & pipeline"
+    },
+    {
+      "id": "nlp_011",
+      "topic": "Natural language properties",
+      "type": "single",
+      "difficulty": 2,
+      "question": "What property do we mean by compositionality?",
+      "options": {
+        "A": "The meaning of a larger expression depends on parts and their combination.",
+        "B": "Words always have arbitrary length.",
+        "C": "All words occur with the same frequency.",
+        "D": "Language can only refer to the here and now."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Compositionality means that meaning is built from subparts and structure.",
+      "sourceHint": "Natural language properties"
+    },
+    {
+      "id": "nlp_012",
+      "topic": "Natural language properties",
+      "type": "single",
+      "difficulty": 1,
+      "question": "What property do we mean by arbitrariness?",
+      "options": {
+        "A": "The relation between form and meaning is usually conventional/arbitrary.",
+        "B": "Every language has exactly the same words.",
+        "C": "All sentences are random and uninterpretable.",
+        "D": "A word can never have a fixed meaning."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Arbitrariness means there is usually no natural reason why a form has exactly that meaning.",
+      "sourceHint": "Natural language properties"
+    },
+    {
+      "id": "nlp_013",
+      "topic": "Natural language properties",
+      "type": "single",
+      "difficulty": 1,
+      "question": "What property do we mean by displacement?",
+      "options": {
+        "A": "Language can refer to things not immediately present.",
+        "B": "Language always has three words per sentence.",
+        "C": "Language only uses gestures.",
+        "D": "Language cannot describe past or future."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Displacement allows talking about past, future, hypothetical or absent things.",
+      "sourceHint": "Natural language properties"
+    },
+    {
+      "id": "nlp_014",
+      "topic": "Natural language properties",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Which examples demonstrate creativity/productivity of language?",
+      "options": {
+        "A": "A speaker can produce a sentence never spoken before exactly.",
+        "B": "New words can be created.",
+        "C": "Recursion can enable longer structures.",
+        "D": "All language consists of a fixed list of sentences.",
+        "E": "Children can produce novel forms like 'goeded'."
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "explanation": "Human language is productive: new words and sentences are possible.",
+      "sourceHint": "Natural language properties"
+    },
+    {
+      "id": "nlp_015",
+      "topic": "Natural language properties",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Why are bee communication and human language not the same, even though both are communication?",
+      "options": {
+        "A": "Human language has much more open-ended productivity and structural variation.",
+        "B": "Bees do not communicate at all.",
+        "C": "Human language has no symbols.",
+        "D": "Bees always use written text."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "The course emphasizes that communication alone is not enough; human language has enormous creative variation.",
+      "sourceHint": "Natural language properties"
+    },
+    {
+      "id": "nlp_016",
+      "topic": "Natural language properties",
+      "type": "multi",
+      "difficulty": 1,
+      "question": "Which properties were linked in class to natural language?",
+      "options": {
+        "A": "Compositional",
+        "B": "Arbitrary",
+        "C": "Creative",
+        "D": "Displaced",
+        "E": "Always numeric"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "explanation": "These four properties help explain what makes natural language special.",
+      "sourceHint": "Natural language properties"
+    },
+    {
+      "id": "nlp_017",
+      "topic": "Natural language properties",
+      "type": "single",
+      "difficulty": 1,
+      "question": "Why is 'yellow flower' an example of compositionality?",
+      "options": {
+        "A": "The meaning combines the property yellow with the object flower.",
+        "B": "It is an arbitrary string without internal structure.",
+        "C": "It automatically means the opposite of flower.",
+        "D": "It is only a POS-tag."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "The expression combines word meanings via grammatical structure.",
+      "sourceHint": "Natural language properties"
+    },
+    {
+      "id": "nlp_018",
+      "topic": "Natural language properties",
+      "type": "single",
+      "difficulty": 3,
+      "question": "What does a privative adjective like 'fake gun' show?",
+      "options": {
+        "A": "Composition can be complex: a fake gun is not really a gun in the usual sense.",
+        "B": "All adjectives are purely intersective.",
+        "C": "NLP does not need to model semantics.",
+        "D": "Words have no relation to context."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Not all modifiers combine simply: 'fake' changes the ontological status of the noun.",
+      "sourceHint": "Natural language properties"
+    },
+    {
+      "id": "nlp_019",
+      "topic": "Natural language properties",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Which factors make human language different from a simple code?",
+      "options": {
+        "A": "Ambiguity",
+        "B": "Context dependence",
+        "C": "Creative generation",
+        "D": "Social/conventional meaning",
+        "E": "Exactly one meaning per string"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "explanation": "Language is social, contextual, creative, and often ambiguous.",
+      "sourceHint": "Natural language properties"
+    },
+    {
+      "id": "nlp_020",
+      "topic": "Natural language properties",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Why is 'a language is a dialect with an army and a navy' relevant for NLP?",
+      "options": {
+        "A": "It points to social/political factors in what is considered a language versus a dialect.",
+        "B": "It proves dialects have no grammar.",
+        "C": "It means NLP only analyzes military texts.",
+        "D": "It is a formula for language modeling."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Language varieties are socially and politically valued; this can influence bias in NLP.",
+      "sourceHint": "Natural language properties"
+    },
+    {
+      "id": "nlp_021",
+      "topic": "Ambiguity & NLP challenges",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Which types of ambiguity were mentioned as challenges in NLP?",
+      "options": {
+        "A": "Word sense ambiguity",
+        "B": "POS ambiguity",
+        "C": "Syntactic attachment ambiguity",
+        "D": "Quantifier scope ambiguity",
+        "E": "Exact numerical determinism without variation"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "explanation": "Ambiguity occurs on multiple levels: words, POS, syntax, and scope.",
+      "sourceHint": "Ambiguity & NLP challenges"
+    },
+    {
+      "id": "nlp_022",
+      "topic": "Ambiguity & NLP challenges",
+      "type": "single",
+      "difficulty": 2,
+      "question": "In 'I saw her duck', what causes the sentence to be ambiguous?",
+      "options": {
+        "A": "'duck' can be a noun or verb, and 'her' can have different roles.",
+        "B": "There is no verb in the sentence.",
+        "C": "The sentence is impossible to parse.",
+        "D": "All words are unknown."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "The sentence combines POS and structural ambiguity.",
+      "sourceHint": "Ambiguity & NLP challenges"
+    },
+    {
+      "id": "nlp_023",
+      "topic": "Ambiguity & NLP challenges",
+      "type": "single",
+      "difficulty": 2,
+      "question": "In 'Every child loves some movie', which type of ambiguity mainly occurs?",
+      "options": {
+        "A": "Quantifier scope ambiguity",
+        "B": "Only spelling ambiguity",
+        "C": "No ambiguity",
+        "D": "Only phonetic ambiguity"
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "The scope of 'every' and 'some' can yield different interpretations.",
+      "sourceHint": "Ambiguity & NLP challenges"
+    },
+    {
+      "id": "nlp_024",
+      "topic": "Ambiguity & NLP challenges",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Which statements about ambiguity are correct?",
+      "options": {
+        "A": "Non-probabilistic methods can return multiple possible analyses.",
+        "B": "Probabilistic models often try to choose the most likely analysis.",
+        "C": "The best analysis depends on accurate probabilities.",
+        "D": "Ambiguity occurs only in spoken language.",
+        "E": "Context can help resolve ambiguity."
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "explanation": "Ambiguity is often resolved using context and probabilistic preferences.",
+      "sourceHint": "Ambiguity & NLP challenges"
+    },
+    {
+      "id": "nlp_025",
+      "topic": "Ambiguity & NLP challenges",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Why is 'Students Cook & Serve Grandparents' ambiguous?",
+      "options": {
+        "A": "'serve' can mean to attend to or to serve food; context is needed.",
+        "B": "Because 'students' is not a noun.",
+        "C": "Because the sentence contains no verbs.",
+        "D": "Because English has no headlines."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Headlines often omit function words, causing syntactic/semantic ambiguity.",
+      "sourceHint": "Ambiguity & NLP challenges"
+    },
+    {
+      "id": "nlp_026",
+      "topic": "Ambiguity & NLP challenges",
+      "type": "single",
+      "difficulty": 1,
+      "question": "What is context dependence?",
+      "options": {
+        "A": "The interpretation of an utterance depends on surrounding text, situation, or world knowledge.",
+        "B": "Every word always has the same meaning.",
+        "C": "A model should not use context.",
+        "D": "Context only means font information."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Many meanings are only clear in context.",
+      "sourceHint": "Ambiguity & NLP challenges"
+    },
+    {
+      "id": "nlp_027",
+      "topic": "Ambiguity & NLP challenges",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Which examples demonstrate context dependence?",
+      "options": {
+        "A": "'bank' in a financial text versus by a river.",
+        "B": "'it' that can refer to different previous entities.",
+        "C": "'cold' as temperature or social attitude.",
+        "D": "A unigram without surrounding words can always be fully interpreted.",
+        "E": "Irony or sarcasm."
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "explanation": "Context often determines which meaning or referent is intended.",
+      "sourceHint": "Ambiguity & NLP challenges"
+    },
+    {
+      "id": "nlp_028",
+      "topic": "Ambiguity & NLP challenges",
+      "type": "single",
+      "difficulty": 1,
+      "question": "Why does variation cause problems in NLP?",
+      "options": {
+        "A": "People use different dialects, styles, spellings, and registers.",
+        "B": "All users write identically.",
+        "C": "Variation makes training data unnecessary.",
+        "D": "Variation only occurs in programming languages."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "NLP systems must be robust to linguistic variation.",
+      "sourceHint": "Ambiguity & NLP challenges"
+    },
+    {
+      "id": "nlp_029",
+      "topic": "Ambiguity & NLP challenges",
+      "type": "multi",
+      "difficulty": 1,
+      "question": "Which examples belong to variation?",
+      "options": {
+        "A": "Dialect",
+        "B": "Accent",
+        "C": "Code-switching",
+        "D": "Typos and informal spelling",
+        "E": "Exactly the same standard sentence in every context"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "explanation": "Variation includes regional, social, and stylistic differences.",
+      "sourceHint": "Ambiguity & NLP challenges"
+    },
+    {
+      "id": "nlp_030",
+      "topic": "Ambiguity & NLP challenges",
+      "type": "single",
+      "difficulty": 2,
+      "question": "What does unknown representation mean as an NLP challenge?",
+      "options": {
+        "A": "We do not always know which representation is best for meaning/structure.",
+        "B": "All representations are forbidden.",
+        "C": "All words have no letters.",
+        "D": "NLP never uses vectors."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "A core question is how language is best represented for a task.",
+      "sourceHint": "Ambiguity & NLP challenges"
+    },
+    {
+      "id": "nlp_031",
+      "topic": "Zipf's Law & sparse data",
+      "type": "single",
+      "difficulty": 2,
+      "question": "What does Zipf's Law roughly state?",
+      "options": {
+        "A": "Frequency decreases as rank increases; a few words are very frequent.",
+        "B": "All words are equally frequent.",
+        "C": "Rare words do not exist.",
+        "D": "All corpora have exactly the same words."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Zipf describes an inverse relationship between rank and frequency.",
+      "sourceHint": "Zipf's Law & sparse data"
+    },
+    {
+      "id": "nlp_032",
+      "topic": "Zipf's Law & sparse data",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "What are the implications of Zipf's Law for NLP?",
+      "options": {
+        "A": "Many types occur rarely or only once.",
+        "B": "Statistical estimates for rare events are uncertain.",
+        "C": "Unseen n-grams are likely in test data.",
+        "D": "More data completely eliminates all sparsity.",
+        "E": "Smoothing/backoff may be necessary."
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "explanation": "Even large corpora contain many rare or unseen combinations.",
+      "sourceHint": "Zipf's Law & sparse data"
+    },
+    {
+      "id": "nlp_033",
+      "topic": "Zipf's Law & sparse data",
+      "type": "single",
+      "difficulty": 2,
+      "question": "What is a hapax legomenon?",
+      "options": {
+        "A": "A word type that occurs only once in a corpus.",
+        "B": "A word that occurs in every sentence.",
+        "C": "A Transformer head.",
+        "D": "A dependency label."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Hapaxes are types with frequency 1.",
+      "sourceHint": "Zipf's Law & sparse data"
+    },
+    {
+      "id": "nlp_034",
+      "topic": "Zipf's Law & sparse data",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Why is a log scale helpful for word frequency plots?",
+      "options": {
+        "A": "Because frequencies are highly skewed and a log scale reveals patterns.",
+        "B": "Because words are then sorted alphabetically.",
+        "C": "Because all rare words are removed.",
+        "D": "Because syntax then disappears."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Zipf distributions are heavy-tailed; log-log plots clarify the relationship.",
+      "sourceHint": "Zipf's Law & sparse data"
+    },
+    {
+      "id": "nlp_035",
+      "topic": "Zipf's Law & sparse data",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Which solutions can reduce sparse data problems in n-grams?",
+      "options": {
+        "A": "Smoothing",
+        "B": "Backoff",
+        "C": "Interpolation",
+        "D": "Make all unseen sentences impossible to explain",
+        "E": "Use of subword/token generalization"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "explanation": "These techniques help models better handle unseen combinations.",
+      "sourceHint": "Zipf's Law & sparse data"
+    },
+    {
+      "id": "nlp_036",
+      "topic": "Zipf's Law & sparse data",
+      "type": "single",
+      "difficulty": 1,
+      "question": "Why can a grammatical sentence get zero probability in an n-gram model without smoothing?",
+      "options": {
+        "A": "Because the specific n-gram did not appear in training.",
+        "B": "Because the sentence is grammatical.",
+        "C": "Because the words are too frequent.",
+        "D": "Because smoothing adds too much probability."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Maximum-likelihood n-gram models assign zero probability to unseen events.",
+      "sourceHint": "Zipf's Law & sparse data"
+    },
+    {
+      "id": "nlp_037",
+      "topic": "Zipf's Law & sparse data",
+      "type": "multi",
+      "difficulty": 1,
+      "question": "Which statements about tokens and types are correct?",
+      "options": {
+        "A": "Tokens are concrete occurrences in the text.",
+        "B": "Types are unique word forms.",
+        "C": "A corpus can have many tokens but fewer types.",
+        "D": "Type and token always mean exactly the same.",
+        "E": "Zipf often relates to type frequency/rank."
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "explanation": "Tokens count occurrences; types count unique forms.",
+      "sourceHint": "Zipf's Law & sparse data"
+    },
+    {
+      "id": "nlp_038",
+      "topic": "Zipf's Law & sparse data",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Why are high-frequency function words important for NLP?",
+      "options": {
+        "A": "They occur often and often provide syntactic signals.",
+        "B": "They never have grammatical functions.",
+        "C": "They are always easy to translate without context.",
+        "D": "They are not included in corpora."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Function words such as determiners and prepositions carry syntactic information.",
+      "sourceHint": "Zipf's Law & sparse data"
+    },
+    {
+      "id": "nlp_039",
+      "topic": "Zipf's Law & sparse data",
+      "type": "multi",
+      "difficulty": 1,
+      "question": "Which words are likely high-frequency in English corpora?",
+      "options": {
+        "A": "the",
+        "B": "of",
+        "C": "and",
+        "D": "to",
+        "E": "zyzqpr"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "explanation": "Function words often dominate frequency lists.",
+      "sourceHint": "Zipf's Law & sparse data"
+    },
+    {
+      "id": "nlp_040",
+      "topic": "Zipf's Law & sparse data",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Why does sparse data remain a problem despite millions of words of training data?",
+      "options": {
+        "A": "Language is productive and the long tail contains many rare combinations.",
+        "B": "Millions of words always contain all possible sentences.",
+        "C": "Because Zipf only affects small datasets.",
+        "D": "Because all rare words are syntactically invalid."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "New combinations keep appearing; the long tail never fully disappears.",
+      "sourceHint": "Zipf's Law & sparse data"
+    },
+    {
+      "id": "nlp_041",
+      "topic": "Data, corpora & bias",
+      "type": "single",
+      "difficulty": 2,
+      "question": "What is sampling/selection bias?",
+      "options": {
+        "A": "Training data is not representative of the population or use case.",
+        "B": "Labels are always perfect.",
+        "C": "The model has too few layers.",
+        "D": "Evaluation metrics are always the same."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Sampling bias arises when data underrepresents certain groups or language variants.",
+      "sourceHint": "Data, corpora & bias"
+    },
+    {
+      "id": "nlp_042",
+      "topic": "Data, corpora & bias",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Which sources of bias can affect NLP?",
+      "options": {
+        "A": "Sampling bias",
+        "B": "Label bias",
+        "C": "Algorithmic bias/overamplification",
+        "D": "Evaluation bias",
+        "E": "Research design bias"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "explanation": "Bias can arise in data, labels, models, metrics, and research choices.",
+      "sourceHint": "Data, corpora & bias"
+    },
+    {
+      "id": "nlp_043",
+      "topic": "Data, corpora & bias",
+      "type": "single",
+      "difficulty": 2,
+      "question": "What is label bias?",
+      "options": {
+        "A": "Labels reflect subjective or systematic human judgments.",
+        "B": "All labels are numerical.",
+        "C": "The test set contains no tokens.",
+        "D": "A model does not use loss."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Human annotations can contain social or subjective biases.",
+      "sourceHint": "Data, corpora & bias"
+    },
+    {
+      "id": "nlp_044",
+      "topic": "Data, corpora & bias",
+      "type": "single",
+      "difficulty": 2,
+      "question": "What is evaluation bias?",
+      "options": {
+        "A": "The chosen metric or test set masks poor performance on subgroups.",
+        "B": "The training data contains too many words.",
+        "C": "The model is always too small.",
+        "D": "All outputs are correct."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "An average score can hide low performance on minority groups.",
+      "sourceHint": "Data, corpora & bias"
+    },
+    {
+      "id": "nlp_045",
+      "topic": "Data, corpora & bias",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Why is dataset composition important in NLP?",
+      "options": {
+        "A": "It determines which language variants the model sees.",
+        "B": "It influences generalization to new domains.",
+        "C": "It can amplify bias.",
+        "D": "It is irrelevant once the model is large enough.",
+        "E": "It partly determines which world knowledge/statistical patterns are learned."
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "explanation": "Data determines coverage, bias, and generalization.",
+      "sourceHint": "Data, corpora & bias"
+    },
+    {
+      "id": "nlp_046",
+      "topic": "Data, corpora & bias",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Why might training only on Wikipedia/news/books be problematic for child language?",
+      "options": {
+        "A": "It lacks nonstandard, child-directed, or creative language forms.",
+        "B": "It always contains all possible child language forms.",
+        "C": "It makes syntax impossible.",
+        "D": "It prevents tokenization."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Domain mismatch can reduce robustness for childlike/creative expressions.",
+      "sourceHint": "Data, corpora & bias"
+    },
+    {
+      "id": "nlp_047",
+      "topic": "Data, corpora & bias",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Which evaluations are useful to test robustness?",
+      "options": {
+        "A": "Testing in other domains",
+        "B": "Testing across different language varieties",
+        "C": "Reporting only accuracy on the same development set",
+        "D": "Subgroup analysis",
+        "E": "Counterfactual or challenge sets"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "D",
+        "E"
+      ],
+      "explanation": "Robust evaluation looks beyond a single average score on one dataset.",
+      "sourceHint": "Data, corpora & bias"
+    },
+    {
+      "id": "nlp_048",
+      "topic": "Data, corpora & bias",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Why can high test accuracy be misleading?",
+      "options": {
+        "A": "The model may rely on surface cues or dataset artifacts.",
+        "B": "Accuracy always indicates causal understanding.",
+        "C": "Accuracy automatically measures fairness.",
+        "D": "Accuracy is not a number."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "High scores can come from shortcuts rather than true generalization.",
+      "sourceHint": "Data, corpora & bias"
+    },
+    {
+      "id": "nlp_049",
+      "topic": "Data, corpora & bias",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Which data choices can disadvantage low-resource languages?",
+      "options": {
+        "A": "Focusing only on English",
+        "B": "Using only datasets that are easily available online",
+        "C": "No evaluation on minority languages",
+        "D": "Investigating cross-lingual transfer",
+        "E": "Focusing research funding mainly on high-resource languages"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "explanation": "Resource availability directs research and can cause linguistic/cultural bias.",
+      "sourceHint": "Data, corpora & bias"
+    },
+    {
+      "id": "nlp_050",
+      "topic": "Data, corpora & bias",
+      "type": "single",
+      "difficulty": 2,
+      "question": "What does semantic bias in embeddings mean?",
+      "options": {
+        "A": "Representations can inherit social stereotypes from training data.",
+        "B": "Embeddings have no relationships.",
+        "C": "Every vector is manually corrected.",
+        "D": "All biases disappear through cosine similarity."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Embeddings can encode patterns like gender or racial stereotypes.",
+      "sourceHint": "Data, corpora & bias"
+    },
+    {
+      "id": "nlp_051",
+      "topic": "Preprocessing, morphology & normalization",
+      "type": "single",
+      "difficulty": 1,
+      "question": "What does tokenization do?",
+      "options": {
+        "A": "Splits an input string into tokens such as words, subwords, or punctuation marks.",
+        "B": "Evaluates a parse tree.",
+        "C": "Measures label bias.",
+        "D": "Translates a sentence into AMR."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Tokenization is the step where text is split into analyzable units.",
+      "sourceHint": "Preprocessing, morphology & normalization"
+    },
+    {
+      "id": "nlp_052",
+      "topic": "Preprocessing, morphology & normalization",
+      "type": "multi",
+      "difficulty": 1,
+      "question": "Which choices can influence tokenization?",
+      "options": {
+        "A": "How punctuation is handled",
+        "B": "Whether subwords are used",
+        "C": "How contractions are split",
+        "D": "Whether emojis count as tokens",
+        "E": "The color of the screen"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "explanation": "Tokenization depends on conventions and model objectives.",
+      "sourceHint": "Preprocessing, morphology & normalization"
+    },
+    {
+      "id": "nlp_053",
+      "topic": "Preprocessing, morphology & normalization",
+      "type": "single",
+      "difficulty": 1,
+      "question": "What is lemmatization?",
+      "options": {
+        "A": "Reducing a word form to its lemma/dictionary form.",
+        "B": "Randomly removing all vowels.",
+        "C": "Assigning dependency labels.",
+        "D": "Calculating perplexity."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Lemmatization finds the base form, often using POS/morphological information.",
+      "sourceHint": "Preprocessing, morphology & normalization"
+    },
+    {
+      "id": "nlp_054",
+      "topic": "Preprocessing, morphology & normalization",
+      "type": "single",
+      "difficulty": 1,
+      "question": "What is stemming?",
+      "options": {
+        "A": "A often crude procedure that cuts affixes to obtain a stem.",
+        "B": "A fully semantic model of the world.",
+        "C": "A form of RLHF.",
+        "D": "A graph-based parser."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Stemming can reduce forms like 'running' but sometimes produces non-words.",
+      "sourceHint": "Preprocessing, morphology & normalization"
+    },
+    {
+      "id": "nlp_055",
+      "topic": "Preprocessing, morphology & normalization",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Why is lemmatization often better at preserving meaning than stemming?",
+      "options": {
+        "A": "It more often uses lexical/morphological knowledge.",
+        "B": "It can incorporate POS information.",
+        "C": "It tries to produce actual lemmas.",
+        "D": "It always removes all context.",
+        "E": "It is always error-free for every language."
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "explanation": "Lemmatization is more context-aware but not perfect.",
+      "sourceHint": "Preprocessing, morphology & normalization"
+    },
+    {
+      "id": "nlp_056",
+      "topic": "Preprocessing, morphology & normalization",
+      "type": "single",
+      "difficulty": 2,
+      "question": "What would a stemmer likely do with 'crumbles'?",
+      "options": {
+        "A": "Produce something like 'crumbl'.",
+        "B": "Automatically find the visual meaning.",
+        "C": "Build a dependency tree.",
+        "D": "Translate the sentence."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Stemmers can remove suffixes without guaranteeing true lemmas.",
+      "sourceHint": "Preprocessing, morphology & normalization"
+    },
+    {
+      "id": "nlp_057",
+      "topic": "Preprocessing, morphology & normalization",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Why is 'goeded' difficult for lemmatization?",
+      "options": {
+        "A": "It is a nonstandard/novel form not easily found in lexicons.",
+        "B": "It contains no letters.",
+        "C": "It is always a noun.",
+        "D": "It is a dependency label."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Novel child forms require generalization via context/morphology.",
+      "sourceHint": "Preprocessing, morphology & normalization"
+    },
+    {
+      "id": "nlp_058",
+      "topic": "Preprocessing, morphology & normalization",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Which preprocessing can be useful for text classification?",
+      "options": {
+        "A": "Tokenization",
+        "B": "Lowercasing, depending on task",
+        "C": "Stopword removal, depending on task",
+        "D": "Lemmatization/stemming, depending on task",
+        "E": "Always removing all nouns"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "explanation": "Preprocessing depends on the task; some steps may help or harm.",
+      "sourceHint": "Preprocessing, morphology & normalization"
+    },
+    {
+      "id": "nlp_059",
+      "topic": "Preprocessing, morphology & normalization",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Why can stopword removal be harmful?",
+      "options": {
+        "A": "Function words can carry syntactic or semantic information.",
+        "B": "Stopwords never occur in text.",
+        "C": "It automatically makes vectors dense.",
+        "D": "It resolves grounding."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Words like negation or prepositions are crucial for some tasks.",
+      "sourceHint": "Preprocessing, morphology & normalization"
+    },
+    {
+      "id": "nlp_060",
+      "topic": "Preprocessing, morphology & normalization",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Which words/functions are closed class?",
+      "options": {
+        "A": "Determiners",
+        "B": "Prepositions",
+        "C": "Auxiliaries",
+        "D": "New nouns like product names",
+        "E": "Coordinating conjunctions"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "explanation": "Closed class words have relatively fixed members and grammatical functions.",
+      "sourceHint": "Preprocessing, morphology & normalization"
+    },
+    {
+      "id": "nlp_061",
+      "topic": "Vector representations",
+      "type": "single",
+      "difficulty": 1,
+      "question": "What is a one-hot vector?",
+      "options": {
+        "A": "A vector with a single 1 and zeros elsewhere for a vocabulary item.",
+        "B": "A dense contextual Transformer representation.",
+        "C": "A dependency tree.",
+        "D": "A probability distribution over parse trees."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "One-hot encodes a word as a discrete index.",
+      "sourceHint": "Vector representations"
+    },
+    {
+      "id": "nlp_062",
+      "topic": "Vector representations",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Why are one-hot vectors considered localist representations?",
+      "options": {
+        "A": "Each dimension corresponds to one word/type.",
+        "B": "The meaning resides in one local position.",
+        "C": "Relationships between words are not directly encoded in shared dimensions.",
+        "D": "Each dimension is learned from context.",
+        "E": "They are usually sparse."
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "explanation": "Localist means that one unit represents one symbol.",
+      "sourceHint": "Vector representations"
+    },
+    {
+      "id": "nlp_063",
+      "topic": "Vector representations",
+      "type": "single",
+      "difficulty": 1,
+      "question": "What is a distributed representation?",
+      "options": {
+        "A": "A representation where information is spread over multiple dimensions.",
+        "B": "A vector with exactly one active dimension.",
+        "C": "A handwritten grammar.",
+        "D": "A list of stop words."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Dense embeddings are distributed: meaning is encoded in patterns across dimensions.",
+      "sourceHint": "Vector representations"
+    },
+    {
+      "id": "nlp_064",
+      "topic": "Vector representations",
+      "type": "single",
+      "difficulty": 1,
+      "question": "Why are dense embeddings useful for similarity?",
+      "options": {
+        "A": "Words with similar contexts can be close to each other in vector space.",
+        "B": "All words get the same vector.",
+        "C": "No distance metric is needed.",
+        "D": "They remove all syntax."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Vector space allows for graded similarity.",
+      "sourceHint": "Vector representations"
+    },
+    {
+      "id": "nlp_065",
+      "topic": "Vector representations",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Which relationships can embeddings sometimes encode?",
+      "options": {
+        "A": "Semantic proximity",
+        "B": "Syntactic patterns",
+        "C": "Analogies",
+        "D": "Social bias",
+        "E": "Absolute truth of all sentences"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "explanation": "Embeddings are powerful but not the same as a truth or world model.",
+      "sourceHint": "Vector representations"
+    },
+    {
+      "id": "nlp_066",
+      "topic": "Vector representations",
+      "type": "single",
+      "difficulty": 2,
+      "question": "What does orthogonality mean for one-hot vectors like hotel and motel?",
+      "options": {
+        "A": "Their dot product is 0, so there is no inherent similarity.",
+        "B": "They are synonyms.",
+        "C": "They have identical vectors.",
+        "D": "They are unknown words."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "One-hot vectors make different words independent, even if they seem semantically similar.",
+      "sourceHint": "Vector representations"
+    },
+    {
+      "id": "nlp_067",
+      "topic": "Vector representations",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Why is dimensionality in dense embeddings chosen experimentally?",
+      "options": {
+        "A": "You choose the dimension size as a hyperparameter based on task/performance.",
+        "B": "It must always be equal to 1.",
+        "C": "It is exactly the number of sentences in the corpus.",
+        "D": "It is determined by grammatical tense."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Embedding dimension is a modeling choice.",
+      "sourceHint": "Vector representations"
+    },
+    {
+      "id": "nlp_068",
+      "topic": "Vector representations",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Which statements about explicit count vectors are correct?",
+      "options": {
+        "A": "Dimensions can correspond to explicit context words.",
+        "B": "They can be sparse.",
+        "C": "They can count co-occurrences.",
+        "D": "They are always learned neural embeddings.",
+        "E": "They can be stored in matrices."
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "explanation": "Count-based vectors are often explicit and sparse.",
+      "sourceHint": "Vector representations"
+    },
+    {
+      "id": "nlp_069",
+      "topic": "Vector representations",
+      "type": "single",
+      "difficulty": 1,
+      "question": "What does cosine similarity measure?",
+      "options": {
+        "A": "The cosine of the angle between two vectors.",
+        "B": "The number of subwords in a token.",
+        "C": "The syntactic root of a sentence.",
+        "D": "The entropy of a softmax."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Cosine compares vector directions and partly normalizes for length.",
+      "sourceHint": "Vector representations"
+    },
+    {
+      "id": "nlp_070",
+      "topic": "Vector representations",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "What problems can embeddings have?",
+      "options": {
+        "A": "Polysemy is sometimes merged into a single vector.",
+        "B": "Bias from data can be encoded.",
+        "C": "Dimensions are often hard to interpret.",
+        "D": "They guarantee grounded understanding.",
+        "E": "They can be domain-specific."
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "explanation": "Embeddings are useful but not perfect or automatically grounded.",
+      "sourceHint": "Vector representations"
+    },
+    {
+      "id": "nlp_071",
+      "topic": "Distributional semantics",
+      "type": "single",
+      "difficulty": 1,
+      "question": "What does 'You shall know a word by the company it keeps' mean?",
+      "options": {
+        "A": "Word meaning can be derived from the contexts in which words appear.",
+        "B": "Words have meaning without usage.",
+        "C": "All words next to each other are synonyms.",
+        "D": "Context should never be used."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "This is the intuition behind distributional semantics.",
+      "sourceHint": "Distributional semantics"
+    },
+    {
+      "id": "nlp_072",
+      "topic": "Distributional semantics",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Which contexts can help represent the meaning of 'banking'?",
+      "options": {
+        "A": "crisis",
+        "B": "regulation",
+        "C": "system",
+        "D": "river, as in river bank",
+        "E": "Random pixels without text"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "explanation": "Context words provide clues; different senses may have different contexts.",
+      "sourceHint": "Distributional semantics"
+    },
+    {
+      "id": "nlp_073",
+      "topic": "Distributional semantics",
+      "type": "single",
+      "difficulty": 2,
+      "question": "What is the difference between lexicographic and distributional approaches?",
+      "options": {
+        "A": "Lexicographic uses dictionary-like knowledge; distributional learns from usage/context.",
+        "B": "Distributional uses only handwritten definitions.",
+        "C": "Lexicographic never uses human knowledge.",
+        "D": "There is no difference."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Lexicographic is more dictionary/annotated; distributional is data/context based.",
+      "sourceHint": "Distributional semantics"
+    },
+    {
+      "id": "nlp_074",
+      "topic": "Distributional semantics",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "What are advantages of distributional semantics?",
+      "options": {
+        "A": "Can learn automatically from large corpora.",
+        "B": "Can model gradual similarity.",
+        "C": "Can pick up new domain patterns.",
+        "D": "Never has bias.",
+        "E": "Can be useful for retrieval."
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "explanation": "Distributional methods are scalable and similarity-based, but data bias remains.",
+      "sourceHint": "Distributional semantics"
+    },
+    {
+      "id": "nlp_075",
+      "topic": "Distributional semantics",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "What are disadvantages of purely distributional meaning?",
+      "options": {
+        "A": "It can miss grounded world meaning.",
+        "B": "It can confuse correlations with understanding.",
+        "C": "It can learn biases.",
+        "D": "It solves all pragmatics.",
+        "E": "It can struggle with rare words."
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "explanation": "Distributional patterns are not automatically true grounded semantics.",
+      "sourceHint": "Distributional semantics"
+    },
+    {
+      "id": "nlp_076",
+      "topic": "Distributional semantics",
+      "type": "single",
+      "difficulty": 1,
+      "question": "Why might 'spinach' and 'kale' be distributionally similar?",
+      "options": {
+        "A": "They occur in similar contexts and share world knowledge/categories.",
+        "B": "They have the same spelling.",
+        "C": "They are always antonyms.",
+        "D": "They are both stopwords."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Similar contexts can yield semantic/category similarity.",
+      "sourceHint": "Distributional semantics"
+    },
+    {
+      "id": "nlp_077",
+      "topic": "Distributional semantics",
+      "type": "single",
+      "difficulty": 1,
+      "question": "What is co-occurrence?",
+      "options": {
+        "A": "The joint occurrence of words within a context/window.",
+        "B": "Removing all context.",
+        "C": "Labeling root arcs.",
+        "D": "An RLHF reward."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Co-occurrence counts are the basis for count-based vector semantics.",
+      "sourceHint": "Distributional semantics"
+    },
+    {
+      "id": "nlp_078",
+      "topic": "Distributional semantics",
+      "type": "multi",
+      "difficulty": 3,
+      "question": "Which statements apply to context windows?",
+      "options": {
+        "A": "They determine which nearby words count as context.",
+        "B": "Small windows can emphasize syntactic relationships.",
+        "C": "Large windows can emphasize topical similarity.",
+        "D": "Window size never has an effect.",
+        "E": "They are used in distributional methods."
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "explanation": "Window size influences the type of relation learned.",
+      "sourceHint": "Distributional semantics"
+    },
+    {
+      "id": "nlp_079",
+      "topic": "Distributional semantics",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Why can 'money' and 'bank' seem similar without being synonyms?",
+      "options": {
+        "A": "They fit the same schema/context and often appear together.",
+        "B": "They mean exactly the same.",
+        "C": "They are both verbs.",
+        "D": "They are always antonyms."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Distributional similarity is broader than synonymy.",
+      "sourceHint": "Distributional semantics"
+    },
+    {
+      "id": "nlp_080",
+      "topic": "Distributional semantics",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Which forms of semantic similarity were mentioned?",
+      "options": {
+        "A": "Meaning similarity",
+        "B": "World knowledge similarity",
+        "C": "Psychological/schema-based association",
+        "D": "Only spelling overlap",
+        "E": "Contextual relatedness"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "explanation": "Similarity can come from meaning, world knowledge, schemas, and context.",
+      "sourceHint": "Distributional semantics"
+    },
+    {
+      "id": "nlp_081",
+      "topic": "Word2Vec & neural embeddings",
+      "type": "single",
+      "difficulty": 2,
+      "question": "What is the core intuition behind skip-gram Word2Vec?",
+      "options": {
+        "A": "Use a center word to predict context words.",
+        "B": "Use a parse tree to remove all tokens.",
+        "C": "Translate words into logical predicates.",
+        "D": "Only calculate word length."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Skip-gram learns by predicting context words around a center word.",
+      "sourceHint": "Word2Vec & neural embeddings"
+    },
+    {
+      "id": "nlp_082",
+      "topic": "Word2Vec & neural embeddings",
+      "type": "single",
+      "difficulty": 2,
+      "question": "What is the core intuition behind CBOW?",
+      "options": {
+        "A": "Use context words to predict the center word.",
+        "B": "Use only the last letter of each word.",
+        "C": "Predict dependency labels without words.",
+        "D": "Use a handcrafted lexicon without data."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "CBOW is roughly the inverse direction of skip-gram.",
+      "sourceHint": "Word2Vec & neural embeddings"
+    },
+    {
+      "id": "nlp_083",
+      "topic": "Word2Vec & neural embeddings",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Which elements are involved in Word2Vec training?",
+      "options": {
+        "A": "A large corpus",
+        "B": "A fixed vocabulary",
+        "C": "Vector representations for words",
+        "D": "An objective that rewards context prediction",
+        "E": "Human labels for every sentence as a requirement"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "explanation": "Word2Vec is self-supervised/distributional and uses context prediction.",
+      "sourceHint": "Word2Vec & neural embeddings"
+    },
+    {
+      "id": "nlp_084",
+      "topic": "Word2Vec & neural embeddings",
+      "type": "single",
+      "difficulty": 1,
+      "question": "Why are Word2Vec embeddings called dense?",
+      "options": {
+        "A": "Many dimensions can carry non-zero values.",
+        "B": "They have exactly one 1 and the rest zeros.",
+        "C": "They are always interpretable per dimension.",
+        "D": "They consist of dependency arcs."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Dense vectors spread information across many dimensions.",
+      "sourceHint": "Word2Vec & neural embeddings"
+    },
+    {
+      "id": "nlp_085",
+      "topic": "Word2Vec & neural embeddings",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Which analogies are typically meant by embedding arithmetic?",
+      "options": {
+        "A": "king - man + woman ≈ queen",
+        "B": "walked - walk + fly ≈ flew",
+        "C": "Paris - France + Japan ≈ Tokyo",
+        "D": "dog + punctuation = dependency root always",
+        "E": "uncle - man + woman ≈ aunt"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "explanation": "Embedding arithmetic can approximate some relational patterns.",
+      "sourceHint": "Word2Vec & neural embeddings"
+    },
+    {
+      "id": "nlp_086",
+      "topic": "Word2Vec & neural embeddings",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Why are individual embedding dimensions usually not easy to interpret?",
+      "options": {
+        "A": "The space is learned and abstract; meaning lies in relationships/patterns.",
+        "B": "Because all dimensions are empty.",
+        "C": "Because they are manually labeled with definitions.",
+        "D": "Because embeddings contain no numbers."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "They are latent dimensions, not explicit context labels.",
+      "sourceHint": "Word2Vec & neural embeddings"
+    },
+    {
+      "id": "nlp_087",
+      "topic": "Word2Vec & neural embeddings",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "What are limitations of Word2Vec?",
+      "options": {
+        "A": "One vector per word type poorly separates polysemy.",
+        "B": "OOV/rare words are challenging.",
+        "C": "Bias from the corpus can be learned.",
+        "D": "It automatically understands grounded meaning.",
+        "E": "Contextual nuance is limited compared to contextual embeddings."
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "explanation": "Static embeddings often lack contextual sense disambiguation.",
+      "sourceHint": "Word2Vec & neural embeddings"
+    },
+    {
+      "id": "nlp_088",
+      "topic": "Word2Vec & neural embeddings",
+      "type": "single",
+      "difficulty": 1,
+      "question": "What does OOV mean?",
+      "options": {
+        "A": "Out-of-vocabulary: a word/token not in the vocabulary.",
+        "B": "One output vector.",
+        "C": "Observed order variance.",
+        "D": "Object-oriented verb."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "OOV items are challenging for models with fixed vocabularies.",
+      "sourceHint": "Word2Vec & neural embeddings"
+    },
+    {
+      "id": "nlp_089",
+      "topic": "Word2Vec & neural embeddings",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Why does subword tokenization help with OOV problems?",
+      "options": {
+        "A": "Unknown words can be composed of known subword units.",
+        "B": "It removes all words longer than 3 letters.",
+        "C": "It makes every sentence one-hot.",
+        "D": "It prevents models from using embeddings."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Subwords provide better coverage for rare or new word forms.",
+      "sourceHint": "Word2Vec & neural embeddings"
+    },
+    {
+      "id": "nlp_090",
+      "topic": "Word2Vec & neural embeddings",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Which evaluations can you use for embeddings?",
+      "options": {
+        "A": "Similarity benchmarks",
+        "B": "Analogy tasks",
+        "C": "Downstream task performance",
+        "D": "Bias probes",
+        "E": "Only check if vectors have nice colors"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "explanation": "Embeddings can be evaluated both intrinsically and extrinsically.",
+      "sourceHint": "Word2Vec & neural embeddings"
+    },
+    {
+      "id": "nlp_091",
+      "topic": "Language modeling & n-grams",
+      "type": "single",
+      "difficulty": 1,
+      "question": "What is a language model in the narrow sense?",
+      "options": {
+        "A": "A probabilistic model that assigns probabilities to word sequences.",
+        "B": "A model that produces only POS tags.",
+        "C": "A database for images.",
+        "D": "A parser that never uses probabilities."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "A language model models P(w1,...,wn).",
+      "sourceHint": "Language modeling & n-grams"
+    },
+    {
+      "id": "nlp_092",
+      "topic": "Language modeling & n-grams",
+      "type": "single",
+      "difficulty": 2,
+      "question": "What assumption does a bigram model make?",
+      "options": {
+        "A": "The current word depends only on the previous word.",
+        "B": "The current word depends on all future words.",
+        "C": "There is no context.",
+        "D": "All words are independent of training data."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Bigram approximates P(w_i | w_1...w_{i-1}) as P(w_i | w_{i-1}).",
+      "sourceHint": "Language modeling & n-grams"
+    },
+    {
+      "id": "nlp_093",
+      "topic": "Language modeling & n-grams",
+      "type": "single",
+      "difficulty": 2,
+      "question": "What assumption does a trigram model make?",
+      "options": {
+        "A": "The current word depends on the previous two words.",
+        "B": "The current word depends on exactly five previous words.",
+        "C": "All words are one-hot without probability.",
+        "D": "It uses only semantic roles."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Trigram uses context from two previous tokens.",
+      "sourceHint": "Language modeling & n-grams"
+    },
+    {
+      "id": "nlp_094",
+      "topic": "Language modeling & n-grams",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Which statements about n-gram language models are correct?",
+      "options": {
+        "A": "They use local context.",
+        "B": "They can suffer from sparsity.",
+        "C": "They can assign probabilities to sentences.",
+        "D": "They automatically understand all long-distance dependencies.",
+        "E": "Smoothing can be necessary."
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "explanation": "N-grams are simple probabilistic LMs with limited context.",
+      "sourceHint": "Language modeling & n-grams"
+    },
+    {
+      "id": "nlp_095",
+      "topic": "Language modeling & n-grams",
+      "type": "single",
+      "difficulty": 2,
+      "question": "What is the chain rule for language modeling conceptually?",
+      "options": {
+        "A": "Decomposing sentence probability into conditional probabilities per word.",
+        "B": "Sorting all words alphabetically.",
+        "C": "Making all probabilities equal.",
+        "D": "Reversing a dependency tree."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "P(w1...wn) = Π P(w_i | preceding words).",
+      "sourceHint": "Language modeling & n-grams"
+    },
+    {
+      "id": "nlp_096",
+      "topic": "Language modeling & n-grams",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Why do we use approximations in language modeling?",
+      "options": {
+        "A": "Because the true probability of every possible word sequence is not directly accessible.",
+        "B": "Because probabilities are forbidden.",
+        "C": "Because corpora contain no text.",
+        "D": "Because all models are perfect."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "LMs are models/approximations without access to the true language distribution.",
+      "sourceHint": "Language modeling & n-grams"
+    },
+    {
+      "id": "nlp_097",
+      "topic": "Language modeling & n-grams",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Which tasks use language models?",
+      "options": {
+        "A": "Text generation",
+        "B": "Speech recognition/MT rescoring",
+        "C": "Spelling correction",
+        "D": "Perplexity evaluation",
+        "E": "Only image segmentation without text"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "explanation": "LMs can generate and score alternatives.",
+      "sourceHint": "Language modeling & n-grams"
+    },
+    {
+      "id": "nlp_098",
+      "topic": "Language modeling & n-grams",
+      "type": "single",
+      "difficulty": 3,
+      "question": "What is the difference between a language model and a source model in the noisy-channel MT context?",
+      "options": {
+        "A": "The language/source model evaluates fluency of the target sentence.",
+        "B": "The source model always labels dependency arcs.",
+        "C": "The language model only measures BLEU.",
+        "D": "The source model is a stopword list."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "In noisy channel, P(e) helps choose fluent target sentences.",
+      "sourceHint": "Language modeling & n-grams"
+    },
+    {
+      "id": "nlp_099",
+      "topic": "Language modeling & n-grams",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Why can an n-gram model assign low probability to grammatical sentences?",
+      "options": {
+        "A": "If the local n-grams were rare or unseen in training.",
+        "B": "Because grammar always gets probability 0.",
+        "C": "Because smoothing removes all correct sentences.",
+        "D": "Because n-grams do not use tokens."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "N-gram probabilities depend on observed local frequencies.",
+      "sourceHint": "Language modeling & n-grams"
+    },
+    {
+      "id": "nlp_100",
+      "topic": "Language modeling & n-grams",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "What problems arise with longer n in n-gram models?",
+      "options": {
+        "A": "More context but more sparsity",
+        "B": "More parameters/combinations",
+        "C": "More unseen n-grams",
+        "D": "Always less data needed",
+        "E": "Possibly better local specificity"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "explanation": "Larger n offers more context but worsens sparsity.",
+      "sourceHint": "Language modeling & n-grams"
+    },
+    {
+      "id": "nlp_101",
+      "topic": "Smoothing, evaluation & perplexity",
+      "type": "single",
+      "difficulty": 2,
+      "question": "What does smoothing do?",
+      "options": {
+        "A": "Redistributes probability mass so that unseen events do not necessarily get probability 0.",
+        "B": "Removes all rare words completely.",
+        "C": "Grammatically corrects the training data.",
+        "D": "Sets all probabilities to 1."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Smoothing reserves probability mass for unseen events.",
+      "sourceHint": "Smoothing, evaluation & perplexity"
+    },
+    {
+      "id": "nlp_102",
+      "topic": "Smoothing, evaluation & perplexity",
+      "type": "single",
+      "difficulty": 2,
+      "question": "What is add-one smoothing?",
+      "options": {
+        "A": "Add 1 to every count before calculating probabilities.",
+        "B": "Remove one word from every sentence.",
+        "C": "Use only the first n-gram.",
+        "D": "Disable one Transformer head."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Add-one is a simple smoothing method.",
+      "sourceHint": "Smoothing, evaluation & perplexity"
+    },
+    {
+      "id": "nlp_103",
+      "topic": "Smoothing, evaluation & perplexity",
+      "type": "multi",
+      "difficulty": 3,
+      "question": "Which statements about perplexity are correct?",
+      "options": {
+        "A": "Lower perplexity means better prediction of test data within the same setting.",
+        "B": "Perplexity is related to cross-entropy.",
+        "C": "Perplexity does not directly measure grounded semantic understanding.",
+        "D": "Higher perplexity is always better.",
+        "E": "Comparisons should be done carefully with the same tokenization/data."
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "explanation": "Perplexity measures prediction quality, not complete understanding.",
+      "sourceHint": "Smoothing, evaluation & perplexity"
+    },
+    {
+      "id": "nlp_104",
+      "topic": "Smoothing, evaluation & perplexity",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Why is perplexity not enough to evaluate LLM reasoning?",
+      "options": {
+        "A": "It measures next-token prediction, not directly robust reasoning or grounding.",
+        "B": "It measures exact causal understanding.",
+        "C": "It replaces all downstream evaluations.",
+        "D": "It is only a POS tag."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "A model can have low perplexity but still hallucinate or fail at reasoning.",
+      "sourceHint": "Smoothing, evaluation & perplexity"
+    },
+    {
+      "id": "nlp_105",
+      "topic": "Smoothing, evaluation & perplexity",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Which evaluation problems can occur with LLMs?",
+      "options": {
+        "A": "Data contamination",
+        "B": "Shortcut learning",
+        "C": "Overfitting to benchmark style",
+        "D": "Hallucinations despite fluent output",
+        "E": "Scores that perfectly represent all subgroups"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "explanation": "LLM evaluation requires robust, diverse, and fair tests.",
+      "sourceHint": "Smoothing, evaluation & perplexity"
+    },
+    {
+      "id": "nlp_106",
+      "topic": "Smoothing, evaluation & perplexity",
+      "type": "single",
+      "difficulty": 1,
+      "question": "What is held-out test data?",
+      "options": {
+        "A": "Data not used for training and used for evaluation.",
+        "B": "Data exactly duplicated during training.",
+        "C": "Only stopwords.",
+        "D": "A list of hyperparameters."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Held-out data tests generalization.",
+      "sourceHint": "Smoothing, evaluation & perplexity"
+    },
+    {
+      "id": "nlp_107",
+      "topic": "Smoothing, evaluation & perplexity",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Why should you avoid train/test leakage?",
+      "options": {
+        "A": "Otherwise performance can be overestimated due to memorization or overlap.",
+        "B": "Because models then do not see tokens.",
+        "C": "Because leakage always increases fairness.",
+        "D": "Because it makes corpus size zero."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Leakage makes evaluation unreliable.",
+      "sourceHint": "Smoothing, evaluation & perplexity"
+    },
+    {
+      "id": "nlp_108",
+      "topic": "Smoothing, evaluation & perplexity",
+      "type": "multi",
+      "difficulty": 1,
+      "question": "Which metrics can be relevant for classification?",
+      "options": {
+        "A": "Accuracy",
+        "B": "Precision",
+        "C": "Recall",
+        "D": "F1",
+        "E": "UAS for sentiment labels as a standard"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "explanation": "Classification is often evaluated with accuracy, precision, recall, and F1.",
+      "sourceHint": "Smoothing, evaluation & perplexity"
+    },
+    {
+      "id": "nlp_109",
+      "topic": "Smoothing, evaluation & perplexity",
+      "type": "single",
+      "difficulty": 2,
+      "question": "What is precision?",
+      "options": {
+        "A": "The proportion of predicted positive cases that are actually positive.",
+        "B": "The proportion of actual positive cases that are found.",
+        "C": "The average length of words.",
+        "D": "The probability of a trigram."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Precision = TP/(TP+FP).",
+      "sourceHint": "Smoothing, evaluation & perplexity"
+    },
+    {
+      "id": "nlp_110",
+      "topic": "Smoothing, evaluation & perplexity",
+      "type": "single",
+      "difficulty": 2,
+      "question": "What is recall?",
+      "options": {
+        "A": "The proportion of actual positive cases that are correctly found.",
+        "B": "The proportion of predicted positives that are correct.",
+        "C": "The number of tokens in the vocabulary.",
+        "D": "The cosine similarity between labels."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Recall = TP/(TP+FN).",
+      "sourceHint": "Smoothing, evaluation & perplexity"
+    },
+    {
+      "id": "nlp_111",
+      "topic": "Text classification & Naive Bayes",
+      "type": "single",
+      "difficulty": 1,
+      "question": "What is sentiment analysis?",
+      "options": {
+        "A": "Classifying text by sentiment such as positive/negative/neutral.",
+        "B": "Building constituency trees.",
+        "C": "Calculating dependency UAS.",
+        "D": "Removing all adjectives."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Sentiment analysis is a text classification task.",
+      "sourceHint": "Text classification & Naive Bayes"
+    },
+    {
+      "id": "nlp_112",
+      "topic": "Text classification & Naive Bayes",
+      "type": "single",
+      "difficulty": 2,
+      "question": "What is bag-of-words?",
+      "options": {
+        "A": "A representation using word frequencies/presence that largely ignores order.",
+        "B": "A representation that requires full syntactic trees.",
+        "C": "A model that processes only images.",
+        "D": "An attention heatmap."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "BoW is simple and strong, but loses order information.",
+      "sourceHint": "Text classification & Naive Bayes"
+    },
+    {
+      "id": "nlp_113",
+      "topic": "Text classification & Naive Bayes",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "What are the limitations of bag-of-words?",
+      "options": {
+        "A": "Loses word order",
+        "B": "Can find negation difficult",
+        "C": "Can be sparse",
+        "D": "Cannot represent text",
+        "E": "Often ignores syntactic structure"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "explanation": "BoW is useful but lacks order and structure.",
+      "sourceHint": "Text classification & Naive Bayes"
+    },
+    {
+      "id": "nlp_114",
+      "topic": "Text classification & Naive Bayes",
+      "type": "single",
+      "difficulty": 2,
+      "question": "What is the naive assumption in Naive Bayes?",
+      "options": {
+        "A": "Features are conditionally independent given the class.",
+        "B": "All words are synonyms.",
+        "C": "Training data contains no labels.",
+        "D": "There is no probability."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Naive Bayes assumes feature independence given the label.",
+      "sourceHint": "Text classification & Naive Bayes"
+    },
+    {
+      "id": "nlp_115",
+      "topic": "Text classification & Naive Bayes",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Why does Naive Bayes sometimes work reasonably well for text despite the naive assumption?",
+      "options": {
+        "A": "Many words provide strong class signals.",
+        "B": "It is robust and simple.",
+        "C": "Independence is exactly true for all language.",
+        "D": "It can work with frequencies/probabilities.",
+        "E": "It uses automatic grounded vision."
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "D"
+      ],
+      "explanation": "The assumption is unrealistic, but the model can be practically strong.",
+      "sourceHint": "Text classification & Naive Bayes"
+    },
+    {
+      "id": "nlp_116",
+      "topic": "Text classification & Naive Bayes",
+      "type": "single",
+      "difficulty": 1,
+      "question": "Which feature could be useful for spam detection?",
+      "options": {
+        "A": "Presence/frequency of words like 'free' or 'win'.",
+        "B": "The color of the laptop.",
+        "C": "The physical distance to the server.",
+        "D": "The number of pixels in a photo without text."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Words can be indicative of labels.",
+      "sourceHint": "Text classification & Naive Bayes"
+    },
+    {
+      "id": "nlp_117",
+      "topic": "Text classification & Naive Bayes",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Why is negation difficult for simple BoW sentiment analysis?",
+      "options": {
+        "A": "'not good' contains the positive word 'good' but expresses negative sentiment.",
+        "B": "Negation never occurs.",
+        "C": "BoW cannot count words.",
+        "D": "Negation is always a named entity."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Word order and composition are needed to handle negation.",
+      "sourceHint": "Text classification & Naive Bayes"
+    },
+    {
+      "id": "nlp_118",
+      "topic": "Text classification & Naive Bayes",
+      "type": "multi",
+      "difficulty": 1,
+      "question": "Which steps belong to supervised text classification?",
+      "options": {
+        "A": "Collect labeled data",
+        "B": "Create features/representations",
+        "C": "Train model",
+        "D": "Evaluate on held-out data",
+        "E": "Change labels randomly after training"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "explanation": "Supervised classification uses labeled examples and evaluation.",
+      "sourceHint": "Text classification & Naive Bayes"
+    },
+    {
+      "id": "nlp_119",
+      "topic": "Text classification & Naive Bayes",
+      "type": "single",
+      "difficulty": 2,
+      "question": "What is domain shift?",
+      "options": {
+        "A": "Training and test/use data come from different domains with different patterns.",
+        "B": "All data is identical.",
+        "C": "A word has exactly one POS.",
+        "D": "A Transformer receives no input."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Domain shift can reduce performance.",
+      "sourceHint": "Text classification & Naive Bayes"
+    },
+    {
+      "id": "nlp_120",
+      "topic": "Text classification & Naive Bayes",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Which signals can indicate overfitting?",
+      "options": {
+        "A": "High training performance but low test performance",
+        "B": "Strong reliance on dataset artifacts",
+        "C": "Poor generalization to new domains",
+        "D": "Perfect robustness on all variants",
+        "E": "Memorization of training examples"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "explanation": "Overfitting means learning specific training patterns instead of generalizable ones.",
+      "sourceHint": "Text classification & Naive Bayes"
+    },
+    {
+      "id": "nlp_121",
+      "topic": "POS tagging",
+      "type": "single",
+      "difficulty": 1,
+      "question": "Why is POS tagging considered sequence labeling?",
+      "options": {
+        "A": "A label is predicted for each token in a sequence.",
+        "B": "Because it always provides one label for the entire sentence.",
+        "C": "Because it requires no input.",
+        "D": "Because it only classifies images."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "The input is a sequence of tokens; the output is a sequence of labels.",
+      "sourceHint": "POS tagging"
+    },
+    {
+      "id": "nlp_122",
+      "topic": "POS tagging",
+      "type": "multi",
+      "difficulty": 1,
+      "question": "Which POS tags belong to Universal Dependencies?",
+      "options": {
+        "A": "NOUN",
+        "B": "VERB",
+        "C": "ADJ",
+        "D": "DET",
+        "E": "PIXEL"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "explanation": "UD includes categories such as NOUN, VERB, ADJ, DET, AUX, etc.",
+      "sourceHint": "POS tagging"
+    },
+    {
+      "id": "nlp_123",
+      "topic": "POS tagging",
+      "type": "single",
+      "difficulty": 1,
+      "question": "Why is 'can' POS-ambiguous?",
+      "options": {
+        "A": "'Can' can be a NOUN in 'a can' and an AUX in 'can swim'.",
+        "B": "It can only be punctuation.",
+        "C": "It is never a token.",
+        "D": "It is always ADJ."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "'can' illustrates that POS depends on context.",
+      "sourceHint": "POS tagging"
+    },
+    {
+      "id": "nlp_124",
+      "topic": "POS tagging",
+      "type": "single",
+      "difficulty": 1,
+      "question": "Why is 'fish' POS-ambiguous?",
+      "options": {
+        "A": "It can be a NOUN or a VERB.",
+        "B": "It is always a DET.",
+        "C": "It has no letters.",
+        "D": "It never occurs in corpora."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "'Fish migrate' vs 'we fish' shows noun/verb ambiguity.",
+      "sourceHint": "POS tagging"
+    },
+    {
+      "id": "nlp_125",
+      "topic": "POS tagging",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "What is POS tagging primarily based on?",
+      "options": {
+        "A": "Grammatical relationship with neighboring words",
+        "B": "Morphological features/affixes",
+        "C": "Only world knowledge about objects",
+        "D": "Syntactic distribution",
+        "E": "The color of the word"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "D"
+      ],
+      "explanation": "POS is mainly grammatical/distributional, not purely semantic.",
+      "sourceHint": "POS tagging"
+    },
+    {
+      "id": "nlp_126",
+      "topic": "POS tagging",
+      "type": "single",
+      "difficulty": 2,
+      "question": "What is unigram POS tagging?",
+      "options": {
+        "A": "Each word receives its most frequent POS label from training.",
+        "B": "A model uses only dependency arcs.",
+        "C": "A Transformer generates text.",
+        "D": "A parser produces AMR."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Unigram tagging is a lexical baseline.",
+      "sourceHint": "POS tagging"
+    },
+    {
+      "id": "nlp_127",
+      "topic": "POS tagging",
+      "type": "multi",
+      "difficulty": 1,
+      "question": "Which methods can perform POS tagging?",
+      "options": {
+        "A": "Lexical baseline",
+        "B": "Rule-based tagging",
+        "C": "HMMs",
+        "D": "BiLSTM/CRF or BERT",
+        "E": "Only manual drawing of pictures"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "explanation": "POS tagging can be rule-based, probabilistic, or neural.",
+      "sourceHint": "POS tagging"
+    },
+    {
+      "id": "nlp_128",
+      "topic": "POS tagging",
+      "type": "single",
+      "difficulty": 3,
+      "question": "Why can only 10% type ambiguity still be challenging?",
+      "options": {
+        "A": "Many high-frequency tokens are ambiguous, so token ambiguity can be much higher.",
+        "B": "Because types never occur.",
+        "C": "Because ambiguity only occurs in rare words.",
+        "D": "Because POS tags are not labels."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Ambiguous words like function words are often very frequent.",
+      "sourceHint": "POS tagging"
+    },
+    {
+      "id": "nlp_129",
+      "topic": "POS tagging",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Which words belong to open class?",
+      "options": {
+        "A": "Nouns",
+        "B": "Verbs",
+        "C": "Adjectives",
+        "D": "Prepositions",
+        "E": "New product names as nouns"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "explanation": "Open classes can gain new members; prepositions are typically closed class.",
+      "sourceHint": "POS tagging"
+    },
+    {
+      "id": "nlp_130",
+      "topic": "POS tagging",
+      "type": "single",
+      "difficulty": 1,
+      "question": "Why does context help in POS tagging?",
+      "options": {
+        "A": "Neighboring words provide grammatical clues about the token's role.",
+        "B": "Context is always irrelevant for POS.",
+        "C": "POS is only determined by word length.",
+        "D": "A word can never have multiple POS tags."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "For example, determiners often signal nearby nouns.",
+      "sourceHint": "POS tagging"
+    },
+    {
+      "id": "nlp_131",
+      "topic": "HMMs, Viterbi & sequence models",
+      "type": "single",
+      "difficulty": 3,
+      "question": "What does an HMM roughly model in POS tagging?",
+      "options": {
+        "A": "A hidden sequence of POS tags that emits words.",
+        "B": "Only a single sentiment class.",
+        "C": "An image caption without tokens.",
+        "D": "An AMR graph without words."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "HMMs model hidden states (tags) and observations (words).",
+      "sourceHint": "HMMs, Viterbi & sequence models"
+    },
+    {
+      "id": "nlp_132",
+      "topic": "HMMs, Viterbi & sequence models",
+      "type": "single",
+      "difficulty": 3,
+      "question": "What is a transition probability in HMM POS tagging?",
+      "options": {
+        "A": "The probability of a POS tag given the previous POS tag.",
+        "B": "The probability of a word given its letters.",
+        "C": "The color of a node.",
+        "D": "The probability of an entire corpus."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Transitions model tag sequences.",
+      "sourceHint": "HMMs, Viterbi & sequence models"
+    },
+    {
+      "id": "nlp_133",
+      "topic": "HMMs, Viterbi & sequence models",
+      "type": "single",
+      "difficulty": 3,
+      "question": "What is an emission probability?",
+      "options": {
+        "A": "The probability of a word given a POS tag.",
+        "B": "The probability of a tag given only the next sentence.",
+        "C": "A dependency label without a word.",
+        "D": "A BLEU score."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Emissions link hidden tags to observed words.",
+      "sourceHint": "HMMs, Viterbi & sequence models"
+    },
+    {
+      "id": "nlp_134",
+      "topic": "HMMs, Viterbi & sequence models",
+      "type": "multi",
+      "difficulty": 3,
+      "question": "Which components are needed to predict POS tags with an HMM?",
+      "options": {
+        "A": "Transition probabilities",
+        "B": "Emission probabilities",
+        "C": "Start probabilities",
+        "D": "A decoding algorithm like Viterbi",
+        "E": "Only a list of images"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "explanation": "HMM tagging combines transitions, emissions, and decoding.",
+      "sourceHint": "HMMs, Viterbi & sequence models"
+    },
+    {
+      "id": "nlp_135",
+      "topic": "HMMs, Viterbi & sequence models",
+      "type": "single",
+      "difficulty": 3,
+      "question": "What does Viterbi do?",
+      "options": {
+        "A": "Finds the most likely hidden-state sequence efficiently.",
+        "B": "Removes all stopwords.",
+        "C": "Builds a semantic parser from AMR.",
+        "D": "Measures cosine similarity between images."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Viterbi is dynamic programming for the best state sequence.",
+      "sourceHint": "HMMs, Viterbi & sequence models"
+    },
+    {
+      "id": "nlp_136",
+      "topic": "HMMs, Viterbi & sequence models",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Why are sequence models useful for POS tagging?",
+      "options": {
+        "A": "Labels depend on previous/next labels or words.",
+        "B": "They can incorporate context.",
+        "C": "They always treat each token completely independently.",
+        "D": "They model structure in the output sequence.",
+        "E": "They are never probabilistic."
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "D"
+      ],
+      "explanation": "Sequence models use dependencies in the sequence.",
+      "sourceHint": "HMMs, Viterbi & sequence models"
+    },
+    {
+      "id": "nlp_137",
+      "topic": "HMMs, Viterbi & sequence models",
+      "type": "single",
+      "difficulty": 2,
+      "question": "What does dependent classification mean in sequence labeling?",
+      "options": {
+        "A": "The label of an element can depend on other elements/labels.",
+        "B": "Each element is treated in isolation.",
+        "C": "There is no output sequence.",
+        "D": "Labels are chosen randomly."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Dependent sequence labeling uses context/relations between labels.",
+      "sourceHint": "HMMs, Viterbi & sequence models"
+    },
+    {
+      "id": "nlp_138",
+      "topic": "HMMs, Viterbi & sequence models",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Why is independent token classification a weaker baseline?",
+      "options": {
+        "A": "It ignores dependencies between neighboring labels/tokens.",
+        "B": "It uses too much syntax.",
+        "C": "It cannot produce labels.",
+        "D": "It always uses gold labels."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "POS tags follow grammatical patterns; independence misses that information.",
+      "sourceHint": "HMMs, Viterbi & sequence models"
+    },
+    {
+      "id": "nlp_139",
+      "topic": "HMMs, Viterbi & sequence models",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Which models can perform sequence labeling?",
+      "options": {
+        "A": "HMM",
+        "B": "CRF",
+        "C": "BiLSTM-CRF",
+        "D": "BERT fine-tuned for token classification",
+        "E": "A pure image classifier without text input"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "explanation": "These are typical sequence labeling models.",
+      "sourceHint": "HMMs, Viterbi & sequence models"
+    },
+    {
+      "id": "nlp_140",
+      "topic": "HMMs, Viterbi & sequence models",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Why can BERT be effective for POS tagging?",
+      "options": {
+        "A": "It creates contextual representations of tokens.",
+        "B": "It does not use input context.",
+        "C": "It only sees one letter per sentence.",
+        "D": "It cannot predict token labels."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Contextual embeddings help POS disambiguation.",
+      "sourceHint": "HMMs, Viterbi & sequence models"
+    },
+    {
+      "id": "nlp_141",
+      "topic": "Transformers & LLM architecture",
+      "type": "single",
+      "difficulty": 2,
+      "question": "What is the basic output of an autoregressive GPT-like model?",
+      "options": {
+        "A": "A probability distribution over the next token.",
+        "B": "Always a dependency tree.",
+        "C": "A handwritten dictionary definition.",
+        "D": "A fixed POS tag for the entire sentence."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "GPT-style language models predict distributions over the next token.",
+      "sourceHint": "Transformers & LLM architecture"
+    },
+    {
+      "id": "nlp_142",
+      "topic": "Transformers & LLM architecture",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Which steps belong to the Transformer pipeline?",
+      "options": {
+        "A": "Tokens/token IDs",
+        "B": "Embeddings",
+        "C": "Transformer blocks",
+        "D": "Unembedding + softmax/logits to probabilities",
+        "E": "Always manual syntactic rules"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "explanation": "Tokens become embeddings, processed by blocks, and then mapped back to logits/probabilities.",
+      "sourceHint": "Transformers & LLM architecture"
+    },
+    {
+      "id": "nlp_143",
+      "topic": "Transformers & LLM architecture",
+      "type": "single",
+      "difficulty": 3,
+      "question": "What is d_model?",
+      "options": {
+        "A": "The dimensionality of the internal token representations/residual stream.",
+        "B": "The number of words in the test set.",
+        "C": "The BLEU score.",
+        "D": "The number of dependency labels."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "d_model is the vector width of the representations inside the model.",
+      "sourceHint": "Transformers & LLM architecture"
+    },
+    {
+      "id": "nlp_144",
+      "topic": "Transformers & LLM architecture",
+      "type": "single",
+      "difficulty": 3,
+      "question": "What is d_vocab?",
+      "options": {
+        "A": "The size of the vocabulary/output space for tokens.",
+        "B": "The length of a single sentence.",
+        "C": "The number of parse trees.",
+        "D": "The number of annotators."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "d_vocab determines how many token classes the softmax can predict.",
+      "sourceHint": "Transformers & LLM architecture"
+    },
+    {
+      "id": "nlp_145",
+      "topic": "Transformers & LLM architecture",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Which components are typically in a Transformer block?",
+      "options": {
+        "A": "Self-attention",
+        "B": "MLP/feed-forward network",
+        "C": "Residual connections",
+        "D": "LayerNorm",
+        "E": "Handwritten CFG as a mandatory part"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "explanation": "A block combines attention, MLP, residual stream, and normalization.",
+      "sourceHint": "Transformers & LLM architecture"
+    },
+    {
+      "id": "nlp_146",
+      "topic": "Transformers & LLM architecture",
+      "type": "single",
+      "difficulty": 3,
+      "question": "What is the residual stream?",
+      "options": {
+        "A": "A continuous representation space where blocks read/write information.",
+        "B": "A list of stop words.",
+        "C": "A gold-standard parse tree.",
+        "D": "A corpus containing only errors."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "The residual stream carries token representations through layers.",
+      "sourceHint": "Transformers & LLM architecture"
+    },
+    {
+      "id": "nlp_147",
+      "topic": "Transformers & LLM architecture",
+      "type": "single",
+      "difficulty": 2,
+      "question": "What does softmax do in the output?",
+      "options": {
+        "A": "Converts logits into a probability distribution.",
+        "B": "Makes a parse tree binary.",
+        "C": "Removes all punctuation.",
+        "D": "Calculates UAS (Unlabeled Attachment Score)."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Softmax normalizes scores into probabilities.",
+      "sourceHint": "Transformers & LLM architecture"
+    },
+    {
+      "id": "nlp_148",
+      "topic": "Transformers & LLM architecture",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Why is next-token prediction powerful?",
+      "options": {
+        "A": "To predict well, the model must learn a lot of language structure.",
+        "B": "It can pick up grammatical patterns.",
+        "C": "It can pick up facts/world patterns from data.",
+        "D": "It guarantees consciousness.",
+        "E": "It can partially learn multi-step patterns."
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "explanation": "Next-token prediction enforces much structural and statistical knowledge but does not guarantee consciousness.",
+      "sourceHint": "Transformers & LLM architecture"
+    },
+    {
+      "id": "nlp_149",
+      "topic": "Transformers & LLM architecture",
+      "type": "single",
+      "difficulty": 3,
+      "question": "What does 'language modeling is compression' mean in this context?",
+      "options": {
+        "A": "A model must learn structure to represent a lot of text compactly in weights.",
+        "B": "The model only zip-compresses files.",
+        "C": "All tokens are removed.",
+        "D": "Compression means that semantics is impossible."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Good prediction requires compact generalizations over language data.",
+      "sourceHint": "Transformers & LLM architecture"
+    },
+    {
+      "id": "nlp_150",
+      "topic": "Transformers & LLM architecture",
+      "type": "multi",
+      "difficulty": 3,
+      "question": "Which statements about weights and activations are correct?",
+      "options": {
+        "A": "Weights are learned parameters.",
+        "B": "Activations are input-dependent values during a forward pass.",
+        "C": "Weights normally do not change during inference.",
+        "D": "Activations are always manually annotated labels.",
+        "E": "Both are relevant for interpretability."
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "explanation": "Weights are model parameters; activations arise during processing of specific inputs.",
+      "sourceHint": "Transformers & LLM architecture"
+    },
+    {
+      "id": "nlp_151",
+      "topic": "Attention & interpretability",
+      "type": "single",
+      "difficulty": 2,
+      "question": "What does self-attention do?",
+      "options": {
+        "A": "Allows tokens to weight/combine information from other tokens in the same sequence.",
+        "B": "Removes all context from the input.",
+        "C": "Converts labels to one-hot encoding without training.",
+        "D": "Calculates only word frequency rank."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Self-attention computes token-to-token relationships within the sequence.",
+      "sourceHint": "Attention & interpretability"
+    },
+    {
+      "id": "nlp_152",
+      "topic": "Attention & interpretability",
+      "type": "single",
+      "difficulty": 2,
+      "question": "What is the role of the Query in attention?",
+      "options": {
+        "A": "Represent what a token is searching for.",
+        "B": "Represent the answer label of the entire sentence.",
+        "C": "A list of stopwords.",
+        "D": "A dependency relation."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "The Query is the 'search query' of a token in attention.",
+      "sourceHint": "Attention & interpretability"
+    },
+    {
+      "id": "nlp_153",
+      "topic": "Attention & interpretability",
+      "type": "single",
+      "difficulty": 2,
+      "question": "What is the role of the Key in attention?",
+      "options": {
+        "A": "Represent the information a token offers to be matched with.",
+        "B": "Always the next token prediction.",
+        "C": "A synonym for loss.",
+        "D": "A label in Semantic Role Labeling (SRL)."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Keys are compared with queries to determine relevance.",
+      "sourceHint": "Attention & interpretability"
+    },
+    {
+      "id": "nlp_154",
+      "topic": "Attention & interpretability",
+      "type": "single",
+      "difficulty": 2,
+      "question": "What is the role of the Value in attention?",
+      "options": {
+        "A": "The information that is passed on/weighed in the attention output.",
+        "B": "Only the gold answer.",
+        "C": "The name of the corpus.",
+        "D": "The number of layers."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Values are combined according to attention weights.",
+      "sourceHint": "Attention & interpretability"
+    },
+    {
+      "id": "nlp_155",
+      "topic": "Attention & interpretability",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Which statements about attention heatmaps are correct?",
+      "options": {
+        "A": "They show attention weights between tokens.",
+        "B": "They can help interpret patterns.",
+        "C": "They automatically prove grounded semantic understanding.",
+        "D": "Different heads can learn different patterns.",
+        "E": "They can show local or long-range attention."
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "D",
+        "E"
+      ],
+      "explanation": "Heatmaps are interpretation tools, not proof of full meaning understanding.",
+      "sourceHint": "Attention & interpretability"
+    },
+    {
+      "id": "nlp_156",
+      "topic": "Attention & interpretability",
+      "type": "single",
+      "difficulty": 3,
+      "question": "Why is the phrase 'attention is not explanation' a warning?",
+      "options": {
+        "A": "High attention does not automatically imply causal responsibility for the output.",
+        "B": "Attention weights do not exist.",
+        "C": "Attention can never show useful patterns.",
+        "D": "Heatmaps are always gold labels."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Attention may correlate with influence, but causality must be tested separately.",
+      "sourceHint": "Attention & interpretability"
+    },
+    {
+      "id": "nlp_157",
+      "topic": "Attention & interpretability",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Which NLP challenges can attention heads partially help address?",
+      "options": {
+        "A": "Long-range dependencies",
+        "B": "Coreference/pronoun links",
+        "C": "Syntactic relations",
+        "D": "Permanently resolve all ambiguity",
+        "E": "Contextual word meaning"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "explanation": "Attention can learn contextual relationships but does not automatically solve everything.",
+      "sourceHint": "Attention & interpretability"
+    },
+    {
+      "id": "nlp_158",
+      "topic": "Attention & interpretability",
+      "type": "single",
+      "difficulty": 2,
+      "question": "What is multi-head attention?",
+      "options": {
+        "A": "Multiple attention mechanisms in parallel that can learn different relational patterns.",
+        "B": "A model with multiple output languages without parameters.",
+        "C": "A list of multiple choice answers.",
+        "D": "A smoothing method."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Heads can capture different aspects of input relationships.",
+      "sourceHint": "Attention & interpretability"
+    },
+    {
+      "id": "nlp_159",
+      "topic": "Attention & interpretability",
+      "type": "single",
+      "difficulty": 3,
+      "question": "Why is positional information needed in Transformers?",
+      "options": {
+        "A": "Self-attention itself is largely order-insensitive without positional information.",
+        "B": "Because tokens have no letters.",
+        "C": "Because softmax otherwise would not produce probabilities.",
+        "D": "Because embeddings would otherwise always remain one-hot."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Positional encodings/information provide order.",
+      "sourceHint": "Attention & interpretability"
+    },
+    {
+      "id": "nlp_160",
+      "topic": "Attention & interpretability",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "What conclusions about a pronoun like 'it' are reasonable during attention analysis?",
+      "options": {
+        "A": "Some heads can attend to possible antecedents.",
+        "B": "Attention can provide clues for coreference-like patterns.",
+        "C": "This proves that the model has a human-like situational model.",
+        "D": "Different layers can use different information.",
+        "E": "The heatmap must be interpreted cautiously."
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "D",
+        "E"
+      ],
+      "explanation": "Pronoun attention is interesting but insufficient for grounded understanding.",
+      "sourceHint": "Attention & interpretability"
+    },
+    {
+      "id": "nlp_161",
+      "topic": "LLMs, BERT/GPT & training",
+      "type": "single",
+      "difficulty": 2,
+      "question": "What is pretraining in LLMs?",
+      "options": {
+        "A": "Training on large amounts of data with a general self-supervised objective.",
+        "B": "Manually writing every output answer.",
+        "C": "Only evaluating on test data.",
+        "D": "Removing embeddings."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Pretraining learns general representations/capabilities from large corpora.",
+      "sourceHint": "LLMs, BERT/GPT & training"
+    },
+    {
+      "id": "nlp_162",
+      "topic": "LLMs, BERT/GPT & training",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Which statements about GPT-style models are correct?",
+      "options": {
+        "A": "Decoder-only/autoregressive",
+        "B": "Predict tokens based on preceding tokens",
+        "C": "Suitable for generation",
+        "D": "Always bidirectional masked LM as training objective",
+        "E": "Use Transformer blocks"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "explanation": "GPT is autoregressive decoder-only and generates token by token.",
+      "sourceHint": "LLMs, BERT/GPT & training"
+    },
+    {
+      "id": "nlp_163",
+      "topic": "LLMs, BERT/GPT & training",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Which statements about BERT-style models are correct?",
+      "options": {
+        "A": "Encoder-only",
+        "B": "Bidirectional/contextual representations",
+        "C": "Masked language modeling",
+        "D": "Typically strong for token/sentence classification",
+        "E": "Autoregressive generation is the primary training task"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "explanation": "BERT is encoder-only and trained with masked LM.",
+      "sourceHint": "LLMs, BERT/GPT & training"
+    },
+    {
+      "id": "nlp_164",
+      "topic": "LLMs, BERT/GPT & training",
+      "type": "single",
+      "difficulty": 2,
+      "question": "What is masked language modeling?",
+      "options": {
+        "A": "A model predicts masked tokens based on context.",
+        "B": "A model predicts only the first letter.",
+        "C": "A parser removes all nouns.",
+        "D": "A chatbot rejects all input."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "MLM is BERT's self-supervised objective.",
+      "sourceHint": "LLMs, BERT/GPT & training"
+    },
+    {
+      "id": "nlp_165",
+      "topic": "LLMs, BERT/GPT & training",
+      "type": "single",
+      "difficulty": 3,
+      "question": "What is in-context learning?",
+      "options": {
+        "A": "A model adapts behavior based on examples in the prompt without explicit parameter updates.",
+        "B": "A model is retrained with backpropagation for each question.",
+        "C": "A word2vec matrix is sorted.",
+        "D": "A dependency parser receives no input."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Few-shot examples in the prompt can steer task behavior.",
+      "sourceHint": "LLMs, BERT/GPT & training"
+    },
+    {
+      "id": "nlp_166",
+      "topic": "LLMs, BERT/GPT & training",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Which limitations can LLMs have?",
+      "options": {
+        "A": "Hallucinations",
+        "B": "Bias from training data",
+        "C": "Sensitivity to prompts",
+        "D": "Difficulty with counterfactual/robust generalization",
+        "E": "Perfect transparency of training data and reasoning"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "explanation": "LLMs are powerful but not error-free or fully transparent.",
+      "sourceHint": "LLMs, BERT/GPT & training"
+    },
+    {
+      "id": "nlp_167",
+      "topic": "LLMs, BERT/GPT & training",
+      "type": "single",
+      "difficulty": 2,
+      "question": "What is instruction tuning?",
+      "options": {
+        "A": "Fine-tuning on instruction-response data to better follow instructions.",
+        "B": "Randomizing all weights.",
+        "C": "Only shrinking vocabulary.",
+        "D": "An n-gram smoothing method."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Instruction tuning teaches models to follow user instructions.",
+      "sourceHint": "LLMs, BERT/GPT & training"
+    },
+    {
+      "id": "nlp_168",
+      "topic": "LLMs, BERT/GPT & training",
+      "type": "single",
+      "difficulty": 1,
+      "question": "What is the difference between pretraining and fine-tuning?",
+      "options": {
+        "A": "Pretraining learns general knowledge from broad data; fine-tuning adapts to specific tasks/instructions.",
+        "B": "Fine-tuning always happens before pretraining.",
+        "C": "Pretraining never uses text.",
+        "D": "There is no difference."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Fine-tuning specializes a pretrained model.",
+      "sourceHint": "LLMs, BERT/GPT & training"
+    },
+    {
+      "id": "nlp_169",
+      "topic": "LLMs, BERT/GPT & training",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Which statements about foundation models are reasonable?",
+      "options": {
+        "A": "They can be adapted/used for multiple downstream tasks.",
+        "B": "They are often large and broadly pretrained.",
+        "C": "They are always fully open and without bias.",
+        "D": "They can be used via prompting or fine-tuning.",
+        "E": "They are never based on Transformers."
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "D"
+      ],
+      "explanation": "Foundation models are broadly applicable pretrained models, but not bias-free or always open.",
+      "sourceHint": "LLMs, BERT/GPT & training"
+    },
+    {
+      "id": "nlp_170",
+      "topic": "LLMs, BERT/GPT & training",
+      "type": "single",
+      "difficulty": 3,
+      "question": "Why is counterfactual evaluation useful for LMs?",
+      "options": {
+        "A": "It tests whether models generalize abstract skills beyond standard patterns.",
+        "B": "It makes all test data easier.",
+        "C": "It removes all prompts.",
+        "D": "It only measures tokenization speed."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Counterfactual tasks can distinguish reciting/shortcut learning from generalization.",
+      "sourceHint": "LLMs, BERT/GPT & training"
+    },
+    {
+      "id": "nlp_171",
+      "topic": "Alignment, RLHF & AI safety",
+      "type": "single",
+      "difficulty": 2,
+      "question": "What is AI Safety in the context of this course?",
+      "options": {
+        "A": "Ensuring AI systems reliably do what we want, even as they become more capable.",
+        "B": "Only installing antivirus software.",
+        "C": "Ensuring models never generate text.",
+        "D": "A POS-tagging benchmark."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "AI safety is about reliable, safe, and desirable behavior of AI systems.",
+      "sourceHint": "Alignment, RLHF & AI safety"
+    },
+    {
+      "id": "nlp_172",
+      "topic": "Alignment, RLHF & AI safety",
+      "type": "single",
+      "difficulty": 2,
+      "question": "What is misalignment?",
+      "options": {
+        "A": "The AI system does not optimize for what people actually want.",
+        "B": "A typo in a corpus.",
+        "C": "A parse tree without a root.",
+        "D": "A low vocabulary size."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Misalignment concerns the mismatch between system goals/behavior and human intentions.",
+      "sourceHint": "Alignment, RLHF & AI safety"
+    },
+    {
+      "id": "nlp_173",
+      "topic": "Alignment, RLHF & AI safety",
+      "type": "single",
+      "difficulty": 2,
+      "question": "What is misuse?",
+      "options": {
+        "A": "People using AI to cause harm.",
+        "B": "A model using too much LayerNorm.",
+        "C": "A token being out-of-vocabulary.",
+        "D": "A parser choosing a wrong dependency label."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Misuse refers to harmful use by humans, independent of the model's internal goals.",
+      "sourceHint": "Alignment, RLHF & AI safety"
+    },
+    {
+      "id": "nlp_174",
+      "topic": "Alignment, RLHF & AI safety",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Which steps are often involved in ChatGPT-like training?",
+      "options": {
+        "A": "Pretraining on next-token prediction",
+        "B": "Supervised fine-tuning on instruction data",
+        "C": "RLHF/preference optimization",
+        "D": "Always only rule-based grammars",
+        "E": "Safety/alignment training"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "explanation": "Chat models combine pretraining, instruction fine-tuning, and alignment methods.",
+      "sourceHint": "Alignment, RLHF & AI safety"
+    },
+    {
+      "id": "nlp_175",
+      "topic": "Alignment, RLHF & AI safety",
+      "type": "single",
+      "difficulty": 2,
+      "question": "What is RLHF in general?",
+      "options": {
+        "A": "Reinforcement learning/fine-tuning with human preference signals.",
+        "B": "A spell checker.",
+        "C": "A dependency parser without labels.",
+        "D": "An n-gram backoff formula."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "RLHF uses human feedback/preferences to guide model behavior.",
+      "sourceHint": "Alignment, RLHF & AI safety"
+    },
+    {
+      "id": "nlp_176",
+      "topic": "Alignment, RLHF & AI safety",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Which risks are associated with LLM deployment?",
+      "options": {
+        "A": "Hallucinated information",
+        "B": "Bias/discrimination",
+        "C": "Privacy/training data issues",
+        "D": "Overreliance by users",
+        "E": "No risk once perplexity is low"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "explanation": "Deployment requires attention to errors, bias, privacy, and user behavior.",
+      "sourceHint": "Alignment, RLHF & AI safety"
+    },
+    {
+      "id": "nlp_177",
+      "topic": "Alignment, RLHF & AI safety",
+      "type": "single",
+      "difficulty": 3,
+      "question": "Why is ‘capability generality’ relevant to safety?",
+      "options": {
+        "A": "More broadly applicable systems can cause errors/risks across more domains.",
+        "B": "General models can never cause harm.",
+        "C": "Narrow AI and AGI are exactly the same.",
+        "D": "Generality means the training data is smaller."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "The more general the system, the greater the potential scope of impact.",
+      "sourceHint": "Alignment, RLHF & AI safety"
+    },
+    {
+      "id": "nlp_178",
+      "topic": "Alignment, RLHF & AI safety",
+      "type": "single",
+      "difficulty": 3,
+      "question": "What is reward hacking?",
+      "options": {
+        "A": "Optimizing the reward proxy in an undesired way.",
+        "B": "Lowering all probabilities to zero.",
+        "C": "Manually tagging nouns.",
+        "D": "Creating stopwords."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "A system may maximize the reward without following the true intended goal.",
+      "sourceHint": "Alignment, RLHF & AI safety"
+    },
+    {
+      "id": "nlp_179",
+      "topic": "Alignment, RLHF & AI safety",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Which evaluations can support alignment/safety?",
+      "options": {
+        "A": "Red-teaming",
+        "B": "Bias audits",
+        "C": "Robustness tests",
+        "D": "Monitoring after deployment",
+        "E": "Only one cherry-picked demo"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "explanation": "Safety requires broad evaluation and monitoring.",
+      "sourceHint": "Alignment, RLHF & AI safety"
+    },
+    {
+      "id": "nlp_180",
+      "topic": "Alignment, RLHF & AI safety",
+      "type": "single",
+      "difficulty": 3,
+      "question": "Why does RLHF not automatically solve all safety problems?",
+      "options": {
+        "A": "Human preferences are limited, biased, or incomplete, and models can generalize in unwanted ways.",
+        "B": "RLHF does not make models textual.",
+        "C": "RLHF removes all parameters.",
+        "D": "RLHF is the same as spell checking."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "RLHF is useful but not a complete guarantee.",
+      "sourceHint": "Alignment, RLHF & AI safety"
+    },
+    {
+      "id": "nlp_181",
+      "topic": "Constituency & dependency parsing",
+      "type": "single",
+      "difficulty": 2,
+      "question": "What is constituency parsing?",
+      "options": {
+        "A": "Grouping words into nested phrases/constituents.",
+        "B": "Only predicting semantic roles.",
+        "C": "Converting a token to its lemma.",
+        "D": "Training a word embedding."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Constituency parsing builds phrase structure trees.",
+      "sourceHint": "Constituency & dependency parsing"
+    },
+    {
+      "id": "nlp_182",
+      "topic": "Constituency & dependency parsing",
+      "type": "single",
+      "difficulty": 2,
+      "question": "What is dependency parsing?",
+      "options": {
+        "A": "Capturing relations between words, such as head-dependent arcs.",
+        "B": "Only classifying sentences as positive/negative.",
+        "C": "Removing all words except verbs.",
+        "D": "Sorting a corpus alphabetically."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Dependency parsing analyzes which words depend on which heads.",
+      "sourceHint": "Constituency & dependency parsing"
+    },
+    {
+      "id": "nlp_183",
+      "topic": "Constituency & dependency parsing",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Which statements about dependency trees are correct?",
+      "options": {
+        "A": "They usually have a root.",
+        "B": "Words are nodes.",
+        "C": "Arcs show syntactic relationships.",
+        "D": "They always group only phrases without word relations.",
+        "E": "Labels like nsubj/obj can occur."
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "explanation": "Dependency trees consist of word nodes and labeled dependencies.",
+      "sourceHint": "Constituency & dependency parsing"
+    },
+    {
+      "id": "nlp_184",
+      "topic": "Constituency & dependency parsing",
+      "type": "single",
+      "difficulty": 2,
+      "question": "What is PP attachment ambiguity?",
+      "options": {
+        "A": "A prepositional phrase can attach to different heads.",
+        "B": "A word has no letters.",
+        "C": "All verbs become nouns.",
+        "D": "A sentence has no probability."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "In 'with a telescope,' the PP can belong either to 'saw' or 'girl/man.'",
+      "sourceHint": "Constituency & dependency parsing"
+    },
+    {
+      "id": "nlp_185",
+      "topic": "Constituency & dependency parsing",
+      "type": "single",
+      "difficulty": 3,
+      "question": "Why is 'The horse raced past the barn fell' a garden-path sentence?",
+      "options": {
+        "A": "The reader first chooses an analysis that later must be revised.",
+        "B": "It contains no verbs.",
+        "C": "It is completely ungrammatical in every reading.",
+        "D": "It is a machine translation metric."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "'Raced' initially seems like the main verb, but works as a reduced relative: horse [raced past barn] fell.",
+      "sourceHint": "Constituency & dependency parsing"
+    },
+    {
+      "id": "nlp_186",
+      "topic": "Constituency & dependency parsing",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Why do we need sentence structure?",
+      "options": {
+        "A": "To know what modifies what",
+        "B": "For compositional meaning",
+        "C": "For generalization to novel sentences",
+        "D": "Because word order and relations affect meaning",
+        "E": "Because all sentences are just loose bags of words"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "explanation": "Structure determines interpretation and generalization.",
+      "sourceHint": "Constituency & dependency parsing"
+    },
+    {
+      "id": "nlp_187",
+      "topic": "Constituency & dependency parsing",
+      "type": "single",
+      "difficulty": 2,
+      "question": "What is the head in a dependency relation?",
+      "options": {
+        "A": "The word on which another word is syntactically dependent.",
+        "B": "Always the first word of the sentence.",
+        "C": "A label for sentiment.",
+        "D": "A token without function."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Dependents attach to heads.",
+      "sourceHint": "Constituency & dependency parsing"
+    },
+    {
+      "id": "nlp_188",
+      "topic": "Constituency & dependency parsing",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Which dependency relations are typical?",
+      "options": {
+        "A": "nsubj",
+        "B": "obj",
+        "C": "det",
+        "D": "amod",
+        "E": "BLEU"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "explanation": "nsubj, obj, det, and amod are dependency labels.",
+      "sourceHint": "Constituency & dependency parsing"
+    },
+    {
+      "id": "nlp_189",
+      "topic": "Constituency & dependency parsing",
+      "type": "single",
+      "difficulty": 3,
+      "question": "What is an advantage of dependency parsing for free word order languages?",
+      "options": {
+        "A": "It can represent syntactic relations more independently from linear position.",
+        "B": "It always requires English word order.",
+        "C": "It cannot contain labels.",
+        "D": "It only uses word counts."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Dependency relations can be cross-linguistically useful, although language differences remain important.",
+      "sourceHint": "Constituency & dependency parsing"
+    },
+    {
+      "id": "nlp_190",
+      "topic": "Constituency & dependency parsing",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Which examples demonstrate syntactic ambiguity?",
+      "options": {
+        "A": "I saw a girl with a telescope",
+        "B": "San Jose cops kill man with knife",
+        "C": "Flying planes can be dangerous",
+        "D": "bank as river/finance without syntactic ambiguity",
+        "E": "I saw an elephant in my pajamas"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "explanation": "These examples have attachment/POS/structural ambiguity.",
+      "sourceHint": "Constituency & dependency parsing"
+    },
+    {
+      "id": "nlp_191",
+      "topic": "Parsing algorithms & evaluation",
+      "type": "single",
+      "difficulty": 3,
+      "question": "What does UAS measure?",
+      "options": {
+        "A": "Percentage of words with the correct head, regardless of dependency label.",
+        "B": "Percentage of words with the correct head and label.",
+        "C": "Number of unique word types.",
+        "D": "Perplexity of a language model."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Unlabeled Attachment Score measures head accuracy without considering labels.",
+      "sourceHint": "Parsing algorithms & evaluation"
+    },
+    {
+      "id": "nlp_192",
+      "topic": "Parsing algorithms & evaluation",
+      "type": "single",
+      "difficulty": 3,
+      "question": "What does LAS measure?",
+      "options": {
+        "A": "Percentage of words with the correct head and correct dependency label.",
+        "B": "Only the cosine between embeddings.",
+        "C": "Only the length of the sentence.",
+        "D": "The fluency of a translation."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Labeled Attachment Score is stricter than UAS.",
+      "sourceHint": "Parsing algorithms & evaluation"
+    },
+    {
+      "id": "nlp_193",
+      "topic": "Parsing algorithms & evaluation",
+      "type": "multi",
+      "difficulty": 3,
+      "question": "Which statements about dependency parsing metrics are correct?",
+      "options": {
+        "A": "UAS ignores labels.",
+        "B": "LAS requires both correct head and label.",
+        "C": "Precision measures correctly predicted dependencies out of all predicted dependencies.",
+        "D": "Recall measures correctly predicted dependencies out of all gold dependencies.",
+        "E": "F1 is always the harmonic mean of UAS and LAS."
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "explanation": "F1 is the harmonic mean of precision and recall, not typically of UAS and LAS.",
+      "sourceHint": "Parsing algorithms & evaluation"
+    },
+    {
+      "id": "nlp_194",
+      "topic": "Parsing algorithms & evaluation",
+      "type": "single",
+      "difficulty": 3,
+      "question": "What is transition-based dependency parsing?",
+      "options": {
+        "A": "A parser builds a parse step-by-step through actions/configurations.",
+        "B": "A model always chooses all possible graphs simultaneously without actions.",
+        "C": "A model that only counts unigrams.",
+        "D": "A semantic role labeler without syntax."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Transition-based parsing uses actions like shift/reduce steps.",
+      "sourceHint": "Parsing algorithms & evaluation"
+    },
+    {
+      "id": "nlp_195",
+      "topic": "Parsing algorithms & evaluation",
+      "type": "single",
+      "difficulty": 3,
+      "question": "When does a transition-based parser stop?",
+      "options": {
+        "A": "When a terminal configuration is reached.",
+        "B": "When every word has exactly three letters.",
+        "C": "When perplexity is zero.",
+        "D": "After one random action."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "The parser stops at a terminal configuration.",
+      "sourceHint": "Parsing algorithms & evaluation"
+    },
+    {
+      "id": "nlp_196",
+      "topic": "Parsing algorithms & evaluation",
+      "type": "single",
+      "difficulty": 3,
+      "question": "What is graph-based dependency parsing?",
+      "options": {
+        "A": "Scoring multiple candidate graphs and choosing the highest scoring parse.",
+        "B": "A parser that builds no candidates.",
+        "C": "A method to remove stopwords.",
+        "D": "A visualization of images without text."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Graph-based parsing searches for the best scoring dependency graph.",
+      "sourceHint": "Parsing algorithms & evaluation"
+    },
+    {
+      "id": "nlp_197",
+      "topic": "Parsing algorithms & evaluation",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Which are data-driven parsing approaches?",
+      "options": {
+        "A": "Transition-based parsing",
+        "B": "Graph-based parsing",
+        "C": "A completely random parser without training",
+        "D": "Neural parsing",
+        "E": "Manually drawing parses per sentence without a model"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "D"
+      ],
+      "explanation": "Data-driven parsers learn from annotated data.",
+      "sourceHint": "Parsing algorithms & evaluation"
+    },
+    {
+      "id": "nlp_198",
+      "topic": "Parsing algorithms & evaluation",
+      "type": "single",
+      "difficulty": 3,
+      "question": "Why are graphs sometimes more expressive than trees?",
+      "options": {
+        "A": "Graphs can represent richer semantic relations and reentrancies.",
+        "B": "Trees can never contain words.",
+        "C": "Graphs have no nodes.",
+        "D": "Graphs are always less informative."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Graphs can represent relations that do not fit neatly into a single tree.",
+      "sourceHint": "Parsing algorithms & evaluation"
+    },
+    {
+      "id": "nlp_199",
+      "topic": "Parsing algorithms & evaluation",
+      "type": "multi",
+      "difficulty": 3,
+      "question": "Why is parsing evaluation challenging?",
+      "options": {
+        "A": "Syntactic analyses can differ in scheme",
+        "B": "Label sets differ",
+        "C": "Ambiguity can yield multiple plausible analyses",
+        "D": "All parses are always identical",
+        "E": "Downstream usefulness may differ from UAS/LAS"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "explanation": "Parsing metrics are useful but not the sole measure of quality.",
+      "sourceHint": "Parsing algorithms & evaluation"
+    },
+    {
+      "id": "nlp_200",
+      "topic": "Parsing algorithms & evaluation",
+      "type": "single",
+      "difficulty": 1,
+      "question": "What is the gold standard in parsing?",
+      "options": {
+        "A": "A reference annotation to which parser output is compared.",
+        "B": "A model without training.",
+        "C": "A token that is always root.",
+        "D": "A smoothing parameter."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Gold annotations serve as evaluation reference.",
+      "sourceHint": "Parsing algorithms & evaluation"
+    },
+    {
+      "id": "nlp_201",
+      "topic": "Semantic Role Labeling",
+      "type": "single",
+      "difficulty": 2,
+      "question": "What is Semantic Role Labeling?",
+      "options": {
+        "A": "Determining which participants play which roles in a predicate/event.",
+        "B": "Only counting word frequencies.",
+        "C": "Splitting a sentence into individual pixels.",
+        "D": "Removing all nouns."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "SRL assigns roles such as Agent, Theme, Instrument, Recipient to arguments.",
+      "sourceHint": "Semantic Role Labeling"
+    },
+    {
+      "id": "nlp_202",
+      "topic": "Semantic Role Labeling",
+      "type": "single",
+      "difficulty": 2,
+      "question": "What is ARG0 often in PropBank-style SRL?",
+      "options": {
+        "A": "Often the proto-Agent/performer of the action.",
+        "B": "Always the location.",
+        "C": "Always punctuation.",
+        "D": "Always the direct object."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "ARG0 is often agent-like, depending on the predicate.",
+      "sourceHint": "Semantic Role Labeling"
+    },
+    {
+      "id": "nlp_203",
+      "topic": "Semantic Role Labeling",
+      "type": "single",
+      "difficulty": 2,
+      "question": "What is ARG1 often?",
+      "options": {
+        "A": "Often the Theme/Patient or that which the action is about.",
+        "B": "Always the corpus author.",
+        "C": "Always tense.",
+        "D": "Always determiner."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "ARG1 is often the central object/theme.",
+      "sourceHint": "Semantic Role Labeling"
+    },
+    {
+      "id": "nlp_204",
+      "topic": "Semantic Role Labeling",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Which roles can belong to 'The chef cut the bread with a knife'?",
+      "options": {
+        "A": "chef = Agent",
+        "B": "bread = Theme/Patient",
+        "C": "knife = Instrument",
+        "D": "cut = predicate",
+        "E": "bread = always Agent"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "explanation": "SRL abstracts over who does what with what.",
+      "sourceHint": "Semantic Role Labeling"
+    },
+    {
+      "id": "nlp_205",
+      "topic": "Semantic Role Labeling",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Why is SRL useful for active/passive alternations?",
+      "options": {
+        "A": "It can recognize the same event roles despite different syntax.",
+        "B": "It only works in active sentences.",
+        "C": "It ignores meaning completely.",
+        "D": "It changes all passives into nouns."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "SRL makes syntactic variation semantically comparable.",
+      "sourceHint": "Semantic Role Labeling"
+    },
+    {
+      "id": "nlp_206",
+      "topic": "Semantic Role Labeling",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Which answer options contain sentence variants that can express the same semantic roles despite syntactic differences?",
+      "options": {
+        "A": "The customer gave the waiter a tip.",
+        "B": "The customer gave a tip to the waiter.",
+        "C": "A tip was given to the waiter by the customer.",
+        "D": "The waiter customer tip gave nonsensically without parse",
+        "E": "Pair: \"The chef sliced the bread with a knife\" / \"A knife was used by the chef to slice the bread.\""
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "explanation": "The customer/tip/waiter examples preserve the same giver, theme, and recipient roles across ditransitive, prepositional, and passive syntax. The chef/knife pair preserves predicate, agent, patient, and instrument roles despite a different surface form.",
+      "sourceHint": "Semantic Role Labeling"
+    },
+    {
+      "id": "nlp_207",
+      "topic": "Semantic Role Labeling",
+      "type": "single",
+      "difficulty": 2,
+      "question": "What is predicate identification?",
+      "options": {
+        "A": "Determining which word/event is the central predicate for SRL.",
+        "B": "Removing all stopwords.",
+        "C": "Choosing a POS tag at random.",
+        "D": "Changing all tokens to uppercase."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "For SRL you must know which predicate the arguments belong to.",
+      "sourceHint": "Semantic Role Labeling"
+    },
+    {
+      "id": "nlp_208",
+      "topic": "Semantic Role Labeling",
+      "type": "multi",
+      "difficulty": 3,
+      "question": "Why is SRL difficult?",
+      "options": {
+        "A": "Syntax and semantics do not always map one-to-one.",
+        "B": "Implicit arguments may be missing.",
+        "C": "Passives and alternations change surface form.",
+        "D": "All predicates have exactly the same roles.",
+        "E": "Context can be necessary."
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "explanation": "SRL requires abstraction over syntactic variation and context.",
+      "sourceHint": "Semantic Role Labeling"
+    },
+    {
+      "id": "nlp_209",
+      "topic": "Semantic Role Labeling",
+      "type": "single",
+      "difficulty": 2,
+      "question": "What is the difference between syntactic subject and semantic Agent?",
+      "options": {
+        "A": "Subject is a grammatical position; Agent is a semantic role and can appear in passive by-phrases.",
+        "B": "They are always exactly the same.",
+        "C": "Agent is a POS tag.",
+        "D": "Subject does not exist in dependency parsing."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "In passives, the subject is often Theme/Patient, not Agent.",
+      "sourceHint": "Semantic Role Labeling"
+    },
+    {
+      "id": "nlp_210",
+      "topic": "Semantic Role Labeling",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Which tasks can benefit from SRL?",
+      "options": {
+        "A": "Question answering",
+        "B": "Information extraction",
+        "C": "Summarization",
+        "D": "Semantic parsing/NLU",
+        "E": "Image compression without language"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "explanation": "SRL provides event structure useful for downstream tasks.",
+      "sourceHint": "Semantic Role Labeling"
+    },
+    {
+      "id": "nlp_211",
+      "topic": "Semantics & semantic parsing",
+      "type": "single",
+      "difficulty": 1,
+      "question": "What is lexical semantics?",
+      "options": {
+        "A": "The study/representation of word meanings and relationships between words.",
+        "B": "Counting only dependency arcs.",
+        "C": "A model that only reads images.",
+        "D": "A smoothing method."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Lexical semantics concerns word meaning, senses, and relationships.",
+      "sourceHint": "Semantics & semantic parsing"
+    },
+    {
+      "id": "nlp_212",
+      "topic": "Semantics & semantic parsing",
+      "type": "single",
+      "difficulty": 2,
+      "question": "What is logical semantics?",
+      "options": {
+        "A": "Representing the meaning of sentences with logical/formally interpretable structures.",
+        "B": "Sorting all words alphabetically.",
+        "C": "A model with only one-hot input.",
+        "D": "A POS baseline."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Logical semantics uses meaning representations for sentence meaning.",
+      "sourceHint": "Semantics & semantic parsing"
+    },
+    {
+      "id": "nlp_213",
+      "topic": "Semantics & semantic parsing",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "What things do we often want to represent in meaning representations?",
+      "options": {
+        "A": "Objects/entities",
+        "B": "Properties",
+        "C": "Relations/events",
+        "D": "Quantification/negation",
+        "E": "Only font type"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "explanation": "Meaning representations model entities, properties, relations, and operators.",
+      "sourceHint": "Semantics & semantic parsing"
+    },
+    {
+      "id": "nlp_214",
+      "topic": "Semantics & semantic parsing",
+      "type": "single",
+      "difficulty": 2,
+      "question": "What is semantic parsing?",
+      "options": {
+        "A": "Converting natural language into an abstract meaning representation.",
+        "B": "Bringing tokens to lowercase only.",
+        "C": "Splitting a corpus into train/test.",
+        "D": "Choosing an embedding dimension."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Semantic parsing maps text to logical forms, queries, AMR, etc.",
+      "sourceHint": "Semantics & semantic parsing"
+    },
+    {
+      "id": "nlp_215",
+      "topic": "Semantics & semantic parsing",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Which methods for semantic parsing were mentioned?",
+      "options": {
+        "A": "Hand-written grammars",
+        "B": "Statistical grammar learning",
+        "C": "Neural mapping",
+        "D": "Only spell correction",
+        "E": "Compositional parsing"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "explanation": "Semantic parsers can be rule-based, statistical, neural, or compositional.",
+      "sourceHint": "Semantics & semantic parsing"
+    },
+    {
+      "id": "nlp_216",
+      "topic": "Semantics & semantic parsing",
+      "type": "single",
+      "difficulty": 3,
+      "question": "Why can First-Order Logic be challenging as a meaning representation?",
+      "options": {
+        "A": "It doesn’t naturally align with the syntactic compositionality of natural language.",
+        "B": "It cannot represent relations.",
+        "C": "It cannot represent universal quantification.",
+        "D": "It contains no variables."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "FOL is expressive, but mapping from natural language is complex.",
+      "sourceHint": "Semantics & semantic parsing"
+    },
+    {
+      "id": "nlp_217",
+      "topic": "Semantics & semantic parsing",
+      "type": "single",
+      "difficulty": 2,
+      "question": "What is entailment in NLU?",
+      "options": {
+        "A": "Determining if one sentence/hypothesis logically follows from another utterance/context.",
+        "B": "Converting a word to uppercase.",
+        "C": "Labeling a dependency root.",
+        "D": "Embedding an image."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Entailment tests meaning relations between sentences.",
+      "sourceHint": "Semantics & semantic parsing"
+    },
+    {
+      "id": "nlp_218",
+      "topic": "Semantics & semantic parsing",
+      "type": "multi",
+      "difficulty": 3,
+      "question": "Which answer options show cases where entailment requires world knowledge, lexical knowledge, factive/negation reasoning, or coreference?",
+      "options": {
+        "A": "Premise: \"A man, a woman, and two girls are walking on the beach.\" Hypothesis: \"A group of people is on a beach.\"",
+        "B": "Premise: \"I reached into that pocket high up on my dress.\" Hypothesis: \"Something is high up on my dress.\"",
+        "C": "A sentence with \"The Commissioner does not regret that ...\" can require factive and negation reasoning.",
+        "D": "All sentences automatically entail all hypotheses.",
+        "E": "A sentence pair where a pronoun must be linked to its referent can require coreference reasoning."
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "explanation": "Entailment is not just word overlap: it can require knowing that men, women, and girls are people, understanding spatial relations, handling factive verbs under negation, and resolving pronouns or other referring expressions.",
+      "sourceHint": "Semantics & semantic parsing"
+    },
+    {
+      "id": "nlp_219",
+      "topic": "Semantics & semantic parsing",
+      "type": "single",
+      "difficulty": 3,
+      "question": "What is AMR roughly?",
+      "options": {
+        "A": "A graph-based meaning representation for sentence meaning.",
+        "B": "A stemming algorithm.",
+        "C": "A type of softmax.",
+        "D": "A POS tag."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "AMR represents meaning as a graph with concepts and relations.",
+      "sourceHint": "Semantics & semantic parsing"
+    },
+    {
+      "id": "nlp_220",
+      "topic": "Semantics & semantic parsing",
+      "type": "multi",
+      "difficulty": 3,
+      "question": "Why is compositionality important for semantic parsing?",
+      "options": {
+        "A": "Parser can combine meanings of parts.",
+        "B": "Helps generalize to new combinations.",
+        "C": "Can enforce argument structure.",
+        "D": "Makes syntax completely irrelevant.",
+        "E": "Can build complex meanings."
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "explanation": "Compositional parsing uses structure to build meaning.",
+      "sourceHint": "Semantics & semantic parsing"
+    },
+    {
+      "id": "nlp_221",
+      "topic": "Grounding & multimodal NLP",
+      "type": "single",
+      "difficulty": 2,
+      "question": "What is the symbol grounding problem?",
+      "options": {
+        "A": "How symbols/words acquire their meaning by connection to the world/perception.",
+        "B": "How to lowercase all tokens.",
+        "C": "How dependency labels are sorted.",
+        "D": "How perplexity is calculated."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Grounding asks how words refer not only to other words but also to the world and experience.",
+      "sourceHint": "Grounding & multimodal NLP"
+    },
+    {
+      "id": "nlp_222",
+      "topic": "Grounding & multimodal NLP",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Why is text not the same as language?",
+      "options": {
+        "A": "Text is one way to encode language; language can also be spoken, signed, or multimodal.",
+        "B": "Language consists only of text.",
+        "C": "Text never contains symbols.",
+        "D": "Sign language is not a language."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Natural language is not naturally only text.",
+      "sourceHint": "Grounding & multimodal NLP"
+    },
+    {
+      "id": "nlp_223",
+      "topic": "Grounding & multimodal NLP",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Which tasks belong to vision-language NLP?",
+      "options": {
+        "A": "Image captioning",
+        "B": "Text-to-image retrieval",
+        "C": "Visual question answering",
+        "D": "Image classification with semantic label embeddings",
+        "E": "Pure audio compression without language"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "explanation": "Vision-language combines visual input and language.",
+      "sourceHint": "Grounding & multimodal NLP"
+    },
+    {
+      "id": "nlp_224",
+      "topic": "Grounding & multimodal NLP",
+      "type": "single",
+      "difficulty": 3,
+      "question": "Why can image classification be seen as a vision-language task?",
+      "options": {
+        "A": "Labels can be used as language/semantic embeddings in a shared space.",
+        "B": "Because images are always sentences.",
+        "C": "Because classes have no meaning.",
+        "D": "Because classification never uses labels."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Labels are linguistic categories; shared embedding spaces enable zero-shot capabilities.",
+      "sourceHint": "Grounding & multimodal NLP"
+    },
+    {
+      "id": "nlp_225",
+      "topic": "Grounding & multimodal NLP",
+      "type": "single",
+      "difficulty": 3,
+      "question": "What is zero-shot classification in a vision-language context?",
+      "options": {
+        "A": "A model can recognize new labels/classes via semantic label representations without task-specific examples.",
+        "B": "A model uses zero input.",
+        "C": "A classifier without labels at output.",
+        "D": "A parser that always chooses root."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Shared latent spaces allow generalization to new text labels.",
+      "sourceHint": "Grounding & multimodal NLP"
+    },
+    {
+      "id": "nlp_226",
+      "topic": "Grounding & multimodal NLP",
+      "type": "multi",
+      "difficulty": 3,
+      "question": "What problems arise with multimodal embeddings?",
+      "options": {
+        "A": "Modality gap",
+        "B": "Alignment between image and text representations",
+        "C": "Bias in image/text data",
+        "D": "Grounding remains partially difficult",
+        "E": "All modalities are automatically identical"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "explanation": "Multimodal learning must align modalities with each other.",
+      "sourceHint": "Grounding & multimodal NLP"
+    },
+    {
+      "id": "nlp_227",
+      "topic": "Grounding & multimodal NLP",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Why can multimodal input help with ‘The ants goeded into the dirt with their crumbles’?",
+      "options": {
+        "A": "Visual context can show which objects/actions are meant.",
+        "B": "Because syntax then becomes unnecessary in all cases.",
+        "C": "Because 'goeded' then appears in every dictionary.",
+        "D": "Because grounding becomes irrelevant."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "A situational model/vision can help interpret novel language.",
+      "sourceHint": "Grounding & multimodal NLP"
+    },
+    {
+      "id": "nlp_228",
+      "topic": "Grounding & multimodal NLP",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "In the sentence \"The ants goeded into the dirt with their crumbles\", which words or expressions require grounding in the situation?",
+      "options": {
+        "A": "ants",
+        "B": "dirt",
+        "C": "crumbles",
+        "D": "goeded as an action in the situation",
+        "E": "the as the only meaning bearer"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "explanation": "The entities (ants), object/material (dirt), object/action clue (crumbles), and novel action (goeded) need to be linked to the perceived situation. The determiner \"the\" is not the only meaning-bearing item.",
+      "sourceHint": "Grounding & multimodal NLP"
+    },
+    {
+      "id": "nlp_229",
+      "topic": "Grounding & multimodal NLP",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Why is attention alone not sufficient as evidence for grounding?",
+      "options": {
+        "A": "Attention shows form/context relations but not direct connection to the world/perception.",
+        "B": "Attention only exists in vision models.",
+        "C": "Attention cannot show token relations.",
+        "D": "Attention is the same as a camera."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Grounding requires a relation to the extra-linguistic world, not just token patterns.",
+      "sourceHint": "Grounding & multimodal NLP"
+    },
+    {
+      "id": "nlp_230",
+      "topic": "Grounding & multimodal NLP",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "What benefits can multimodal models have?",
+      "options": {
+        "A": "Connecting language to perceptual signals",
+        "B": "Better object/category grounding",
+        "C": "Ability for image-text retrieval",
+        "D": "Automatically full human commonsense in all cases",
+        "E": "Zero-shot generalization via shared embeddings"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "explanation": "Multimodality helps grounding but does not solve all commonsense problems.",
+      "sourceHint": "Grounding & multimodal NLP"
+    },
+    {
+      "id": "nlp_231",
+      "topic": "Multilingual NLP & translation",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Why is 'gezellig' difficult to translate?",
+      "options": {
+        "A": "It carries culturally/pragmatically loaded meaning without an exact equivalent.",
+        "B": "It has no letters.",
+        "C": "It is always a verb.",
+        "D": "It means the exact same word in every language."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Some words combine semantic and cultural meaning that do not translate one-to-one.",
+      "sourceHint": "Multilingual NLP & translation"
+    },
+    {
+      "id": "nlp_232",
+      "topic": "Multilingual NLP & translation",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "What reasons make words like 'gezellig' or 'sisu' difficult?",
+      "options": {
+        "A": "No direct equivalent",
+        "B": "Cultural connotations",
+        "C": "Context-dependent usage",
+        "D": "Code-switching possible",
+        "E": "All speakers use them exactly the same"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "explanation": "Untranslatables often have cultural and contextual nuance.",
+      "sourceHint": "Multilingual NLP & translation"
+    },
+    {
+      "id": "nlp_233",
+      "topic": "Multilingual NLP & translation",
+      "type": "single",
+      "difficulty": 1,
+      "question": "What is code-switching?",
+      "options": {
+        "A": "Switching/using multiple languages or language varieties in one utterance/context.",
+        "B": "Converting text to Python code.",
+        "C": "Removing all foreign words.",
+        "D": "A type of attention head."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Code-switching is mixing languages/varieties.",
+      "sourceHint": "Multilingual NLP & translation"
+    },
+    {
+      "id": "nlp_234",
+      "topic": "Multilingual NLP & translation",
+      "type": "single",
+      "difficulty": 3,
+      "question": "In noisy-channel MT argmax_e P(f|e)P(e), what does P(e) do?",
+      "options": {
+        "A": "The language/source model evaluates the fluency of the candidate translation.",
+        "B": "It measures only faithfulness to input.",
+        "C": "It is always a parser.",
+        "D": "It removes all unknown words."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "P(e) rewards fluent target-language sentences; P(f|e) models translation likelihood.",
+      "sourceHint": "Multilingual NLP & translation"
+    },
+    {
+      "id": "nlp_235",
+      "topic": "Multilingual NLP & translation",
+      "type": "single",
+      "difficulty": 3,
+      "question": "What does P(f|e) do in noisy-channel MT?",
+      "options": {
+        "A": "The translation model assesses how likely the source sentence is given the candidate translation.",
+        "B": "It only determines POS tags.",
+        "C": "It measures the color of text.",
+        "D": "It is a stopword list."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "P(f|e) models adequacy/faithfulness in the noisy-channel formulation.",
+      "sourceHint": "Multilingual NLP & translation"
+    },
+    {
+      "id": "nlp_236",
+      "topic": "Multilingual NLP & translation",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Which problems arise in multilingual NLP?",
+      "options": {
+        "A": "English dominates datasets and research",
+        "B": "Low-resource languages have less data/tools",
+        "C": "Typological differences affect models",
+        "D": "All languages have identical morphosyntax",
+        "E": "Evaluation can be culturally/linguistically biased"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "explanation": "Multilingual NLP must handle resource gaps and language differences.",
+      "sourceHint": "Multilingual NLP & translation"
+    },
+    {
+      "id": "nlp_237",
+      "topic": "Multilingual NLP & translation",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Why can English NLP dominance be problematic?",
+      "options": {
+        "A": "Models and theories may generalize poorly to other languages and communities.",
+        "B": "English contains all language structures of every language.",
+        "C": "Other languages have no grammar.",
+        "D": "It makes evaluation automatically fair."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Overfocus on English limits generalizability and inclusiveness.",
+      "sourceHint": "Multilingual NLP & translation"
+    },
+    {
+      "id": "nlp_238",
+      "topic": "Multilingual NLP & translation",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Which language differences can influence NLP?",
+      "options": {
+        "A": "Word order",
+        "B": "Morphological richness",
+        "C": "Script/writing system",
+        "D": "Availability of data",
+        "E": "All languages use the exact same tokenization"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "explanation": "Typology, script, and resources influence NLP.",
+      "sourceHint": "Multilingual NLP & translation"
+    },
+    {
+      "id": "nlp_239",
+      "topic": "Multilingual NLP & translation",
+      "type": "single",
+      "difficulty": 1,
+      "question": "Why is machine translation more than dictionary lookup?",
+      "options": {
+        "A": "Translation requires context, syntax, semantics, pragmatics, and cultural nuance.",
+        "B": "Every word has exactly one equivalent.",
+        "C": "Word order always remains identical.",
+        "D": "Idioms do not exist."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "MT must convey meaning and usage across languages.",
+      "sourceHint": "Multilingual NLP & translation"
+    },
+    {
+      "id": "nlp_240",
+      "topic": "Multilingual NLP & translation",
+      "type": "multi",
+      "difficulty": 3,
+      "question": "What evaluation problems does MT have?",
+      "options": {
+        "A": "Multiple correct translations possible",
+        "B": "BLEU/overlap does not capture all semantic nuance",
+        "C": "Cultural adequacy can be hard to measure",
+        "D": "A single reference is always fully sufficient",
+        "E": "Fluency and adequacy can conflict"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "explanation": "MT evaluation is difficult due to variation in correct outputs and nuance.",
+      "sourceHint": "Multilingual NLP & translation"
+    },
+    {
+      "id": "nlp_241",
+      "topic": "Ethics, NLU & exam-style integration",
+      "type": "single",
+      "difficulty": 2,
+      "question": "What is Natural Language Understanding (NLU) in a broad sense?",
+      "options": {
+        "A": "Systems reasoning about meaning, intention, entailment, and context of language.",
+        "B": "Only converting text to lowercase.",
+        "C": "Only sorting word frequencies.",
+        "D": "Only processing images without language."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "NLU goes beyond form to meaning and usage.",
+      "sourceHint": "Ethics, NLU & exam-style integration"
+    },
+    {
+      "id": "nlp_242",
+      "topic": "Ethics, NLU & exam-style integration",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Which components of the NLP pipeline contribute to NLU?",
+      "options": {
+        "A": "Tokenization",
+        "B": "POS tagging",
+        "C": "Syntactic parsing",
+        "D": "Semantic analysis/SRL",
+        "E": "Pragmatics/coreference"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "explanation": "All layers can contribute to ultimate understanding.",
+      "sourceHint": "Ethics, NLU & exam-style integration"
+    },
+    {
+      "id": "nlp_243",
+      "topic": "Ethics, NLU & exam-style integration",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Why is the 'form vs meaning' distinction important in debates about LLM understanding?",
+      "options": {
+        "A": "LLMs can learn form patterns without necessarily having grounded meaning.",
+        "B": "Form and meaning are always exactly the same.",
+        "C": "Meaning does not exist in NLP.",
+        "D": "All form-only models are conscious."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Bender/Koller emphasize that training on form does not automatically yield meaning.",
+      "sourceHint": "Ethics, NLU & exam-style integration"
+    },
+    {
+      "id": "nlp_244",
+      "topic": "Ethics, NLU & exam-style integration",
+      "type": "multi",
+      "difficulty": 3,
+      "question": "Which criticisms correspond to the octopus-paper intuition?",
+      "options": {
+        "A": "A model can statistically manipulate language forms without situational grounding.",
+        "B": "Successful output is not automatically evidence of understanding.",
+        "C": "Grounded communicative intention is missing in pure text training.",
+        "D": "Transformers cannot learn any patterns at all.",
+        "E": "Definitions of understanding must be explicit."
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "explanation": "The criticism is not about lack of pattern learning but about what counts as meaning understanding.",
+      "sourceHint": "Ethics, NLU & exam-style integration"
+    },
+    {
+      "id": "nlp_245",
+      "topic": "Ethics, NLU & exam-style integration",
+      "type": "single",
+      "difficulty": 1,
+      "question": "What is hallucination in LLMs?",
+      "options": {
+        "A": "Generating plausible-sounding but factually incorrect or unfounded output.",
+        "B": "A model refusing to answer anything.",
+        "C": "A parser always choosing nsubj.",
+        "D": "An embedding having norm 1."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Hallucinations are fluent but unreliable outputs.",
+      "sourceHint": "Ethics, NLU & exam-style integration"
+    },
+    {
+      "id": "nlp_246",
+      "topic": "Ethics, NLU & exam-style integration",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Which ethical principles are relevant for NLP systems?",
+      "options": {
+        "A": "Fairness",
+        "B": "Accountability",
+        "C": "Transparency where possible",
+        "D": "Privacy",
+        "E": "Maximal performance without attention to harm"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "explanation": "Ethics is about responsibility, fairness, transparency, privacy, and impact.",
+      "sourceHint": "Ethics, NLU & exam-style integration"
+    },
+    {
+      "id": "nlp_247",
+      "topic": "Ethics, NLU & exam-style integration",
+      "type": "single",
+      "difficulty": 3,
+      "question": "Why is open access/training data transparency relevant?",
+      "options": {
+        "A": "It affects reproducibility, auditing, and scientific control.",
+        "B": "It is irrelevant for bias.",
+        "C": "It makes models always perfectly safe.",
+        "D": "It completely replaces evaluation."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Access to data and model details aids evaluation and accountability, but has privacy/IP trade-offs.",
+      "sourceHint": "Ethics, NLU & exam-style integration"
+    },
+    {
+      "id": "nlp_248",
+      "topic": "Ethics, NLU & exam-style integration",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Which questions should you ask when deploying an NLP model?",
+      "options": {
+        "A": "Who does it work well or poorly for?",
+        "B": "Which errors can cause harm?",
+        "C": "What data was used?",
+        "D": "How is output evaluated and monitored?",
+        "E": "Can I cherry-pick the highest demo score?"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "explanation": "Deployment requires risk thinking, monitoring, and fairness.",
+      "sourceHint": "Ethics, NLU & exam-style integration"
+    },
+    {
+      "id": "nlp_249",
+      "topic": "Ethics, NLU & exam-style integration",
+      "type": "single",
+      "difficulty": 2,
+      "question": "What is compositional generalization?",
+      "options": {
+        "A": "Understanding new combinations based on known parts and rules/structure.",
+        "B": "Only memorizing training examples.",
+        "C": "Replacing all words with one token.",
+        "D": "Randomly splitting a corpus."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Compositional generalization is crucial to language understanding.",
+      "sourceHint": "Ethics, NLU & exam-style integration"
+    },
+    {
+      "id": "nlp_250",
+      "topic": "Ethics, NLU & exam-style integration",
+      "type": "multi",
+      "difficulty": 1,
+      "question": "Which factors make an exam answer about NLP strong?",
+      "options": {
+        "A": "Precisely define core concepts",
+        "B": "Give a concrete example",
+        "C": "Explain trade-offs/limitations",
+        "D": "Connect multiple layers like syntax, semantics, grounding",
+        "E": "Name only buzzwords without explanations"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "explanation": "Strong answers are concrete, defined, and relate concepts.",
+      "sourceHint": "Ethics, NLU & exam-style integration"
+    }
+  ]
+}

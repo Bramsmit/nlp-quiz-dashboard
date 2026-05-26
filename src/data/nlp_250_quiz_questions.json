@@ -1,0 +1,4904 @@
+{
+  "metadata": {
+    "title": "NLP 2026 Interactive Quiz Bank",
+    "version": "1.0",
+    "language": "nl",
+    "questionCount": 250,
+    "format": "multiple_choice_and_multiple_response",
+    "generatedFor": "interactive dashboard / Codex implementation",
+    "schema": {
+      "id": "string",
+      "topic": "string",
+      "type": "single | multi",
+      "difficulty": "1 easy, 2 medium, 3 hard",
+      "question": "string",
+      "options": {
+        "A": "string",
+        "B": "string"
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "string",
+      "sourceHint": "string"
+    }
+  },
+  "questions": [
+    {
+      "id": "nlp_001",
+      "topic": "NLP basics & pipeline",
+      "type": "single",
+      "difficulty": 1,
+      "question": "Wat is Natural Language Processing (NLP) in algemene zin?",
+      "options": {
+        "A": "Een tak van AI/computer science die computers laat werken met menselijke taal.",
+        "B": "Een methode om alleen programmeertalen te compileren.",
+        "C": "Een database-techniek voor numerieke data.",
+        "D": "Een algoritme dat uitsluitend beeldclassificatie doet."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "NLP gaat over automatische verwerking, analyse, generatie en interpretatie van natuurlijke taal.",
+      "sourceHint": "NLP basics & pipeline"
+    },
+    {
+      "id": "nlp_002",
+      "topic": "NLP basics & pipeline",
+      "type": "multi",
+      "difficulty": 1,
+      "question": "Welke taken worden vaak gezien als klassieke NLP-taken?",
+      "options": {
+        "A": "POS tagging",
+        "B": "Syntactic parsing",
+        "C": "Named Entity Recognition",
+        "D": "Coreference resolution",
+        "E": "JPEG-compressie zonder tekst"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "explanation": "POS tagging, parsing, NER en coreference zijn allemaal kerntechnologieën in NLP.",
+      "sourceHint": "NLP basics & pipeline"
+    },
+    {
+      "id": "nlp_003",
+      "topic": "NLP basics & pipeline",
+      "type": "single",
+      "difficulty": 1,
+      "question": "Welke stap komt meestal vroeg in een traditionele NLP-pipeline?",
+      "options": {
+        "A": "Tokenization",
+        "B": "Semantic parsing",
+        "C": "Pragmatic inference",
+        "D": "Final structured output"
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Meestal moet ruwe tekst eerst worden gesplitst in tokens voordat verdere analyse mogelijk is.",
+      "sourceHint": "NLP basics & pipeline"
+    },
+    {
+      "id": "nlp_004",
+      "topic": "NLP basics & pipeline",
+      "type": "multi",
+      "difficulty": 1,
+      "question": "Welke niveaus van taalstructuur kunnen relevant zijn voor NLP?",
+      "options": {
+        "A": "Morphology",
+        "B": "Syntax",
+        "C": "Semantics",
+        "D": "Discourse/pragmatics",
+        "E": "Alleen pixelwaarden"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "explanation": "Taal heeft meerdere lagen: vorm, woorden, grammaticale structuur, betekenis en gebruik/context.",
+      "sourceHint": "NLP basics & pipeline"
+    },
+    {
+      "id": "nlp_005",
+      "topic": "NLP basics & pipeline",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Waarom is een pipeline met POS tagging, parsing en semantic analysis nuttig?",
+      "options": {
+        "A": "Omdat elk niveau extra informatie toevoegt voor interpretatie.",
+        "B": "Omdat tokenization alle semantiek al oplost.",
+        "C": "Omdat syntaxis en semantiek altijd irrelevant zijn.",
+        "D": "Omdat het model dan geen data meer nodig heeft."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Pipeline-stappen representeren verschillende lagen van taalstructuur en kunnen elkaar helpen.",
+      "sourceHint": "NLP basics & pipeline"
+    },
+    {
+      "id": "nlp_006",
+      "topic": "NLP basics & pipeline",
+      "type": "multi",
+      "difficulty": 1,
+      "question": "Welke toepassingen horen bij NLP?",
+      "options": {
+        "A": "Machine translation",
+        "B": "Question answering",
+        "C": "Summarization",
+        "D": "Sentiment analysis",
+        "E": "Thermodynamische simulatie zonder tekst"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "explanation": "Vertaling, QA, samenvatten en sentimentanalyse zijn typische NLP-applicaties.",
+      "sourceHint": "NLP basics & pipeline"
+    },
+    {
+      "id": "nlp_007",
+      "topic": "NLP basics & pipeline",
+      "type": "single",
+      "difficulty": 1,
+      "question": "Wat betekent het dat een NLP-systeem 'language as data' behandelt?",
+      "options": {
+        "A": "Taal wordt verwerkt als observeerbare data, bijvoorbeeld tokens, strings of corpora.",
+        "B": "Taal wordt nooit geanalyseerd met statistiek.",
+        "C": "Alle taal wordt vervangen door handgeschreven regels.",
+        "D": "Alleen gesproken taal telt als data."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Moderne NLP gebruikt taaldata zoals corpora om patronen te leren of te evalueren.",
+      "sourceHint": "NLP basics & pipeline"
+    },
+    {
+      "id": "nlp_008",
+      "topic": "NLP basics & pipeline",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Welke problemen maken NLP moeilijk op pipeline-niveau?",
+      "options": {
+        "A": "Fouten in vroege stappen kunnen latere stappen beïnvloeden.",
+        "B": "Eén woord kan meerdere analyses hebben.",
+        "C": "Context kan nodig zijn voor juiste interpretatie.",
+        "D": "Alle zinnen zijn altijd eenduidig.",
+        "E": "Data kan biased of niet representatief zijn."
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "explanation": "Ambiguity, context, data issues en error propagation zijn typische problemen.",
+      "sourceHint": "NLP basics & pipeline"
+    },
+    {
+      "id": "nlp_009",
+      "topic": "NLP basics & pipeline",
+      "type": "single",
+      "difficulty": 1,
+      "question": "Wat is een corpus?",
+      "options": {
+        "A": "Een verzameling teksten of taaluitingen die gebruikt kan worden voor analyse/training.",
+        "B": "Een enkel woord zonder context.",
+        "C": "Een loss-functie voor Transformers.",
+        "D": "Een type dependency relation."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Een corpus is een dataset van tekst of spraaktranscripten.",
+      "sourceHint": "NLP basics & pipeline"
+    },
+    {
+      "id": "nlp_010",
+      "topic": "NLP basics & pipeline",
+      "type": "single",
+      "difficulty": 1,
+      "question": "Waarom is annotatie belangrijk in supervised NLP?",
+      "options": {
+        "A": "Het levert labels waar modellen van kunnen leren.",
+        "B": "Het verwijdert alle ambiguity uit taal voorgoed.",
+        "C": "Het vervangt training door willekeurige guessing.",
+        "D": "Het maakt tokenization onmogelijk."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Supervised learning gebruikt voorbeelden met labels, bijvoorbeeld sentiment, POS tags of named entities.",
+      "sourceHint": "NLP basics & pipeline"
+    },
+    {
+      "id": "nlp_011",
+      "topic": "Natural language properties",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Welke eigenschap bedoelen we met compositionality?",
+      "options": {
+        "A": "De betekenis van een grotere uitdrukking hangt af van delen en hun combinatie.",
+        "B": "Woorden hebben altijd willekeurige lengte.",
+        "C": "Alle woorden komen even vaak voor.",
+        "D": "Taal kan alleen over het hier en nu gaan."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Compositionaliteit betekent dat betekenis wordt opgebouwd uit subdelen en structuur.",
+      "sourceHint": "Natural language properties"
+    },
+    {
+      "id": "nlp_012",
+      "topic": "Natural language properties",
+      "type": "single",
+      "difficulty": 1,
+      "question": "Welke eigenschap bedoelen we met arbitrariness?",
+      "options": {
+        "A": "De relatie tussen vorm en betekenis is meestal conventioneel/arbitrair.",
+        "B": "Elke taal heeft precies dezelfde woorden.",
+        "C": "Alle zinnen zijn willekeurig en oninterpreteerbaar.",
+        "D": "Een woord kan nooit een vaste betekenis hebben."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Bij arbitrariness is er meestal geen natuurlijke reden waarom een vorm precies die betekenis heeft.",
+      "sourceHint": "Natural language properties"
+    },
+    {
+      "id": "nlp_013",
+      "topic": "Natural language properties",
+      "type": "single",
+      "difficulty": 1,
+      "question": "Welke eigenschap bedoelen we met displacement?",
+      "options": {
+        "A": "Taal kan verwijzen naar dingen die niet direct aanwezig zijn.",
+        "B": "Taal heeft altijd drie woorden per zin.",
+        "C": "Taal gebruikt alleen gebaren.",
+        "D": "Taal kan geen verleden of toekomst beschrijven."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Displacement maakt praten over verleden, toekomst, hypothetische of afwezige dingen mogelijk.",
+      "sourceHint": "Natural language properties"
+    },
+    {
+      "id": "nlp_014",
+      "topic": "Natural language properties",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Welke voorbeelden tonen creativiteit/productiviteit van taal?",
+      "options": {
+        "A": "Een spreker kan een zin maken die nooit eerder exact is uitgesproken.",
+        "B": "Nieuwe woorden kunnen ontstaan.",
+        "C": "Recursie kan langere structuren mogelijk maken.",
+        "D": "Alle taal bestaat uit een vaste lijst zinnen.",
+        "E": "Kinderen kunnen novel forms zoals 'goeded' produceren."
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "explanation": "Menselijke taal is productief: nieuwe woorden en zinnen zijn mogelijk.",
+      "sourceHint": "Natural language properties"
+    },
+    {
+      "id": "nlp_015",
+      "topic": "Natural language properties",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Waarom zijn bijencommunicatie en menselijke taal niet hetzelfde, ondanks dat beide communicatie zijn?",
+      "options": {
+        "A": "Menselijke taal heeft veel meer open-ended productiviteit en structurele variatie.",
+        "B": "Bijen communiceren helemaal niet.",
+        "C": "Menselijke taal heeft geen symbolen.",
+        "D": "Bijen gebruiken altijd written text."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "De cursus benadrukt dat communicatie niet genoeg is; menselijke taal heeft enorme creatieve variatie.",
+      "sourceHint": "Natural language properties"
+    },
+    {
+      "id": "nlp_016",
+      "topic": "Natural language properties",
+      "type": "multi",
+      "difficulty": 1,
+      "question": "Welke eigenschappen werden in de les gekoppeld aan natural language?",
+      "options": {
+        "A": "Compositional",
+        "B": "Arbitrary",
+        "C": "Creative",
+        "D": "Displaced",
+        "E": "Altijd numeriek"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "explanation": "Deze vier eigenschappen helpen verklaren wat natuurlijke taal bijzonder maakt.",
+      "sourceHint": "Natural language properties"
+    },
+    {
+      "id": "nlp_017",
+      "topic": "Natural language properties",
+      "type": "single",
+      "difficulty": 1,
+      "question": "Waarom is 'yellow flower' een voorbeeld van compositionality?",
+      "options": {
+        "A": "De betekenis combineert de eigenschap yellow met het object flower.",
+        "B": "Het is een willekeurige reeks zonder interne structuur.",
+        "C": "Het betekent automatisch het tegenovergestelde van flower.",
+        "D": "Het is alleen een POS-tag."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "De uitdrukking combineert woordbetekenissen via grammaticale structuur.",
+      "sourceHint": "Natural language properties"
+    },
+    {
+      "id": "nlp_018",
+      "topic": "Natural language properties",
+      "type": "single",
+      "difficulty": 3,
+      "question": "Wat laat een privative adjective zoals 'fake gun' zien?",
+      "options": {
+        "A": "Compositie is soms complex: een fake gun is niet echt een gun in de gewone zin.",
+        "B": "Alle adjectives zijn puur intersectief.",
+        "C": "NLP hoeft geen semantics te modelleren.",
+        "D": "Woorden hebben geen relatie tot context."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Niet alle modifiers combineren simpel: 'fake' verandert de ontologische status van het noun.",
+      "sourceHint": "Natural language properties"
+    },
+    {
+      "id": "nlp_019",
+      "topic": "Natural language properties",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Welke factoren maken menselijke taal anders dan een simpele code?",
+      "options": {
+        "A": "Ambiguity",
+        "B": "Context dependence",
+        "C": "Creative generation",
+        "D": "Social/conventional meaning",
+        "E": "Exact één betekenis per string"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "explanation": "Taal is sociaal, contextueel, creatief en vaak ambigu.",
+      "sourceHint": "Natural language properties"
+    },
+    {
+      "id": "nlp_020",
+      "topic": "Natural language properties",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Waarom is 'a language is a dialect with an army and a navy' relevant voor NLP?",
+      "options": {
+        "A": "Het wijst op sociale/politieke factoren in wat als taal of dialect wordt behandeld.",
+        "B": "Het bewijst dat dialecten geen grammatica hebben.",
+        "C": "Het betekent dat NLP alleen militaire teksten analyseert.",
+        "D": "Het is een formule voor language modeling."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Taalvariëteiten worden sociaal en politiek gewaardeerd; dit kan bias in NLP beïnvloeden.",
+      "sourceHint": "Natural language properties"
+    },
+    {
+      "id": "nlp_021",
+      "topic": "Ambiguity & NLP challenges",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Welke soorten ambiguity kwamen terug als NLP-uitdagingen?",
+      "options": {
+        "A": "Word sense ambiguity",
+        "B": "POS ambiguity",
+        "C": "Syntactic attachment ambiguity",
+        "D": "Quantifier scope ambiguity",
+        "E": "Exacte numerieke determinisme zonder variatie"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "explanation": "Ambiguity komt voor op meerdere niveaus: woorden, POS, syntax en scope.",
+      "sourceHint": "Ambiguity & NLP challenges"
+    },
+    {
+      "id": "nlp_022",
+      "topic": "Ambiguity & NLP challenges",
+      "type": "single",
+      "difficulty": 2,
+      "question": "In 'I saw her duck', wat maakt de zin ambigu?",
+      "options": {
+        "A": "'duck' kan een noun of verb zijn, en 'her' kan verschillende rollen hebben.",
+        "B": "Er staat geen werkwoord in de zin.",
+        "C": "De zin is onmogelijk te parsen.",
+        "D": "Alle woorden zijn onbekend."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "De zin combineert POS- en structurele ambiguïteit.",
+      "sourceHint": "Ambiguity & NLP challenges"
+    },
+    {
+      "id": "nlp_023",
+      "topic": "Ambiguity & NLP challenges",
+      "type": "single",
+      "difficulty": 2,
+      "question": "In 'Every child loves some movie', welk type ambiguïteit speelt vooral?",
+      "options": {
+        "A": "Quantifier scope ambiguity",
+        "B": "Alleen spelling ambiguity",
+        "C": "Geen ambiguity",
+        "D": "Alleen phonetic ambiguity"
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "De scope van 'every' en 'some' kan verschillende interpretaties geven.",
+      "sourceHint": "Ambiguity & NLP challenges"
+    },
+    {
+      "id": "nlp_024",
+      "topic": "Ambiguity & NLP challenges",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Welke uitspraken over ambiguity zijn correct?",
+      "options": {
+        "A": "Niet-probabilistische methoden kunnen meerdere mogelijke analyses teruggeven.",
+        "B": "Probabilistische modellen proberen vaak de meest waarschijnlijke analyse te kiezen.",
+        "C": "De beste analyse hangt af van accurate probabilities.",
+        "D": "Ambiguity komt alleen in gesproken taal voor.",
+        "E": "Context kan helpen ambiguity op te lossen."
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "explanation": "Ambiguity wordt vaak opgelost met context en probabilistische voorkeuren.",
+      "sourceHint": "Ambiguity & NLP challenges"
+    },
+    {
+      "id": "nlp_025",
+      "topic": "Ambiguity & NLP challenges",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Waarom is 'Students Cook & Serve Grandparents' ambigu?",
+      "options": {
+        "A": "'serve' kan betekenen bedienen of serveren als voedsel; context is nodig.",
+        "B": "Omdat 'students' geen zelfstandig naamwoord is.",
+        "C": "Omdat de zin geen werkwoorden bevat.",
+        "D": "Omdat Engels geen headlines heeft."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Headlines laten vaak function words weg, waardoor syntactische/semantische ambiguity ontstaat.",
+      "sourceHint": "Ambiguity & NLP challenges"
+    },
+    {
+      "id": "nlp_026",
+      "topic": "Ambiguity & NLP challenges",
+      "type": "single",
+      "difficulty": 1,
+      "question": "Wat is context dependence?",
+      "options": {
+        "A": "De interpretatie van een uiting hangt af van omliggende tekst, situatie of wereldkennis.",
+        "B": "Elk woord heeft altijd dezelfde betekenis.",
+        "C": "Een model mag geen context gebruiken.",
+        "D": "Context is alleen lettertype-informatie."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Veel betekenissen zijn alleen duidelijk in context.",
+      "sourceHint": "Ambiguity & NLP challenges"
+    },
+    {
+      "id": "nlp_027",
+      "topic": "Ambiguity & NLP challenges",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Welke voorbeelden tonen context dependence?",
+      "options": {
+        "A": "'bank' in een financiële tekst versus bij een rivier.",
+        "B": "'it' dat naar verschillende eerdere entiteiten kan verwijzen.",
+        "C": "'cold' als temperatuur of sociale houding.",
+        "D": "Een unigram zonder omliggende woorden kan altijd volledig geïnterpreteerd worden.",
+        "E": "Ironie of sarcasme."
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "explanation": "Context bepaalt vaak welke betekenis of referent bedoeld is.",
+      "sourceHint": "Ambiguity & NLP challenges"
+    },
+    {
+      "id": "nlp_028",
+      "topic": "Ambiguity & NLP challenges",
+      "type": "single",
+      "difficulty": 1,
+      "question": "Waarom veroorzaakt variation problemen in NLP?",
+      "options": {
+        "A": "Mensen gebruiken verschillende dialecten, stijlen, spellingen en registers.",
+        "B": "Alle gebruikers schrijven identiek.",
+        "C": "Variatie maakt training data overbodig.",
+        "D": "Variatie komt alleen in programmeertalen voor."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "NLP-systemen moeten robuust zijn voor taalvariatie.",
+      "sourceHint": "Ambiguity & NLP challenges"
+    },
+    {
+      "id": "nlp_029",
+      "topic": "Ambiguity & NLP challenges",
+      "type": "multi",
+      "difficulty": 1,
+      "question": "Welke voorbeelden horen bij variation?",
+      "options": {
+        "A": "Dialect",
+        "B": "Accent",
+        "C": "Code-switching",
+        "D": "Typfouten en informele spelling",
+        "E": "Exact dezelfde standaardzin in elke context"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "explanation": "Variation omvat regionale, sociale en stilistische verschillen.",
+      "sourceHint": "Ambiguity & NLP challenges"
+    },
+    {
+      "id": "nlp_030",
+      "topic": "Ambiguity & NLP challenges",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Wat betekent unknown representation als NLP-uitdaging?",
+      "options": {
+        "A": "We weten niet altijd welke representatie het beste is voor betekenis/structuur.",
+        "B": "Alle representaties zijn verboden.",
+        "C": "Alle woorden hebben geen letters.",
+        "D": "NLP gebruikt nooit vectoren."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Een kernvraag is hoe taal het beste gerepresenteerd kan worden voor een taak.",
+      "sourceHint": "Ambiguity & NLP challenges"
+    },
+    {
+      "id": "nlp_031",
+      "topic": "Zipf's Law & sparse data",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Wat stelt Zipf’s Law grofweg?",
+      "options": {
+        "A": "Frequentie neemt af naarmate rang toeneemt; een paar woorden zijn heel frequent.",
+        "B": "Alle woorden zijn even frequent.",
+        "C": "Zeldzame woorden bestaan niet.",
+        "D": "Alle corpora hebben exact dezelfde woorden."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Zipf beschrijft een inverse relatie tussen rank en frequency.",
+      "sourceHint": "Zipf's Law & sparse data"
+    },
+    {
+      "id": "nlp_032",
+      "topic": "Zipf's Law & sparse data",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Wat zijn implicaties van Zipf’s Law voor NLP?",
+      "options": {
+        "A": "Veel types komen weinig of één keer voor.",
+        "B": "Statistische schattingen voor rare events zijn onzeker.",
+        "C": "Ongeziene n-grams zijn waarschijnlijk in testdata.",
+        "D": "Meer data elimineert alle sparsity volledig.",
+        "E": "Smoothing/backoff kan nodig zijn."
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "explanation": "Zelfs grote corpora bevatten veel zeldzame of ongeziene combinaties.",
+      "sourceHint": "Zipf's Law & sparse data"
+    },
+    {
+      "id": "nlp_033",
+      "topic": "Zipf's Law & sparse data",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Wat is een hapax legomenon?",
+      "options": {
+        "A": "Een woordtype dat maar één keer voorkomt in een corpus.",
+        "B": "Een woord dat in elke zin voorkomt.",
+        "C": "Een Transformer head.",
+        "D": "Een dependency label."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Hapaxen zijn types met frequentie 1.",
+      "sourceHint": "Zipf's Law & sparse data"
+    },
+    {
+      "id": "nlp_034",
+      "topic": "Zipf's Law & sparse data",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Waarom helpt log-schaal bij word frequency plots?",
+      "options": {
+        "A": "Omdat de frequenties zeer scheef verdeeld zijn en log-schaal patronen zichtbaar maakt.",
+        "B": "Omdat woorden dan alfabetisch worden gesorteerd.",
+        "C": "Omdat alle zeldzame woorden worden verwijderd.",
+        "D": "Omdat syntax dan verdwijnt."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Zipf-verdelingen zijn heavy-tailed; log-log plots maken de relatie duidelijker.",
+      "sourceHint": "Zipf's Law & sparse data"
+    },
+    {
+      "id": "nlp_035",
+      "topic": "Zipf's Law & sparse data",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Welke oplossingen kunnen sparse data bij n-grams verminderen?",
+      "options": {
+        "A": "Smoothing",
+        "B": "Backoff",
+        "C": "Interpolation",
+        "D": "Alle ongeziene zinnen onmogelijk verklaren",
+        "E": "Gebruik van subword/token generalisatie"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "explanation": "Deze technieken zorgen dat modellen beter omgaan met ongeziene combinaties.",
+      "sourceHint": "Zipf's Law & sparse data"
+    },
+    {
+      "id": "nlp_036",
+      "topic": "Zipf's Law & sparse data",
+      "type": "single",
+      "difficulty": 1,
+      "question": "Waarom kan een grammaticale zin nul probability krijgen in een n-gram model zonder smoothing?",
+      "options": {
+        "A": "Omdat de specifieke n-gram niet in training voorkwam.",
+        "B": "Omdat de zin grammaticaal is.",
+        "C": "Omdat de woorden te frequent zijn.",
+        "D": "Omdat smoothing te veel probability toevoegt."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Maximum-likelihood n-gram models geven ongeziene events kans 0.",
+      "sourceHint": "Zipf's Law & sparse data"
+    },
+    {
+      "id": "nlp_037",
+      "topic": "Zipf's Law & sparse data",
+      "type": "multi",
+      "difficulty": 1,
+      "question": "Welke uitspraken over tokens en types zijn correct?",
+      "options": {
+        "A": "Tokens zijn concrete voorkomens in de tekst.",
+        "B": "Types zijn unieke woordvormen.",
+        "C": "Een corpus kan veel tokens maar minder types hebben.",
+        "D": "Type en token betekenen altijd exact hetzelfde.",
+        "E": "Zipf gaat vaak over type frequency/rank."
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "explanation": "Tokens tellen voorkomens; types tellen unieke vormen.",
+      "sourceHint": "Zipf's Law & sparse data"
+    },
+    {
+      "id": "nlp_038",
+      "topic": "Zipf's Law & sparse data",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Waarom zijn high-frequency function words belangrijk voor NLP?",
+      "options": {
+        "A": "Ze komen vaak voor en geven vaak syntactische signalen.",
+        "B": "Ze hebben nooit grammaticale functies.",
+        "C": "Ze zijn altijd makkelijk te vertalen zonder context.",
+        "D": "Ze worden niet meegenomen in corpora."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Function words zoals determiners/prepositions dragen syntactische informatie.",
+      "sourceHint": "Zipf's Law & sparse data"
+    },
+    {
+      "id": "nlp_039",
+      "topic": "Zipf's Law & sparse data",
+      "type": "multi",
+      "difficulty": 1,
+      "question": "Welke woorden zijn waarschijnlijk hoogfrequent in Engelse corpora?",
+      "options": {
+        "A": "the",
+        "B": "of",
+        "C": "and",
+        "D": "to",
+        "E": "zyzqpr"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "explanation": "Functiewoorden domineren vaak de frequentielijsten.",
+      "sourceHint": "Zipf's Law & sparse data"
+    },
+    {
+      "id": "nlp_040",
+      "topic": "Zipf's Law & sparse data",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Waarom blijft sparse data een probleem ondanks miljoenen woorden training data?",
+      "options": {
+        "A": "Taal is productief en de long tail bevat veel zeldzame combinaties.",
+        "B": "Miljoenen woorden bevatten altijd alle mogelijke zinnen.",
+        "C": "Omdat Zipf alleen kleine datasets beïnvloedt.",
+        "D": "Omdat alle zeldzame woorden syntactisch ongeldig zijn."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Nieuwe combinaties blijven ontstaan; de long tail verdwijnt niet volledig.",
+      "sourceHint": "Zipf's Law & sparse data"
+    },
+    {
+      "id": "nlp_041",
+      "topic": "Data, corpora & bias",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Wat is sampling/selection bias?",
+      "options": {
+        "A": "Training data is niet representatief voor de populatie of use case.",
+        "B": "Labels zijn altijd perfect.",
+        "C": "Het model heeft te weinig lagen.",
+        "D": "Evaluatiemetrics zijn altijd gelijk."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Sampling bias ontstaat wanneer data bepaalde groepen of taalvarianten onderrepresenteert.",
+      "sourceHint": "Data, corpora & bias"
+    },
+    {
+      "id": "nlp_042",
+      "topic": "Data, corpora & bias",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Welke biasbronnen kunnen NLP beïnvloeden?",
+      "options": {
+        "A": "Sampling bias",
+        "B": "Label bias",
+        "C": "Algorithmic bias/overamplification",
+        "D": "Evaluation bias",
+        "E": "Research design bias"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "explanation": "Bias kan ontstaan in data, labels, modellen, metrics en onderzoekskeuzes.",
+      "sourceHint": "Data, corpora & bias"
+    },
+    {
+      "id": "nlp_043",
+      "topic": "Data, corpora & bias",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Wat is label bias?",
+      "options": {
+        "A": "Labels weerspiegelen subjectieve of systematische menselijke oordelen.",
+        "B": "Alle labels zijn numeriek.",
+        "C": "De testset heeft geen tokens.",
+        "D": "Een model gebruikt geen loss."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Menselijke annotaties kunnen sociale of subjectieve biases bevatten.",
+      "sourceHint": "Data, corpora & bias"
+    },
+    {
+      "id": "nlp_044",
+      "topic": "Data, corpora & bias",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Wat is evaluation bias?",
+      "options": {
+        "A": "De gekozen metric of testset maskeert slechte performance op subgroepen.",
+        "B": "De training data bevat te veel woorden.",
+        "C": "Het model is altijd te klein.",
+        "D": "Alle outputs zijn correct."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Een gemiddelde score kan lage performance op minderheidsgroepen verbergen.",
+      "sourceHint": "Data, corpora & bias"
+    },
+    {
+      "id": "nlp_045",
+      "topic": "Data, corpora & bias",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Waarom is datasamenstelling belangrijk in NLP?",
+      "options": {
+        "A": "Het bepaalt welke taalvarianten het model ziet.",
+        "B": "Het beïnvloedt generalisatie naar nieuwe domeinen.",
+        "C": "Het kan bias versterken.",
+        "D": "Het is irrelevant zodra het model groot genoeg is.",
+        "E": "Het bepaalt deels welke wereldkennis/statistische patronen worden geleerd."
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "explanation": "Data is bepalend voor coverage, bias en generalisatie.",
+      "sourceHint": "Data, corpora & bias"
+    },
+    {
+      "id": "nlp_046",
+      "topic": "Data, corpora & bias",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Waarom is training op alleen Wikipedia/news/books mogelijk problematisch voor kindertaal?",
+      "options": {
+        "A": "Het mist nonstandard, child-directed of creatieve taalvormen.",
+        "B": "Het bevat altijd alle mogelijke kindervormen.",
+        "C": "Het maakt syntax onmogelijk.",
+        "D": "Het voorkomt tokenization."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Domain mismatch kan robuustheid voor kinderlijke/creatieve uitingen verminderen.",
+      "sourceHint": "Data, corpora & bias"
+    },
+    {
+      "id": "nlp_047",
+      "topic": "Data, corpora & bias",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Welke evaluaties zijn nuttig om robuustheid te testen?",
+      "options": {
+        "A": "Testen op andere domeinen",
+        "B": "Testen op verschillende taalvariëteiten",
+        "C": "Alleen accuracy op dezelfde ontwikkelset rapporteren",
+        "D": "Subgroepanalyse",
+        "E": "Counterfactual of challenge sets"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "D",
+        "E"
+      ],
+      "explanation": "Robuuste evaluatie kijkt verder dan één gemiddelde score op één dataset.",
+      "sourceHint": "Data, corpora & bias"
+    },
+    {
+      "id": "nlp_048",
+      "topic": "Data, corpora & bias",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Waarom kan hoge test accuracy misleidend zijn?",
+      "options": {
+        "A": "Het model kan surface cues of dataset artifacts gebruiken.",
+        "B": "Accuracy betekent altijd causal understanding.",
+        "C": "Accuracy meet automatisch fairness.",
+        "D": "Accuracy is geen getal."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Goede scores kunnen voortkomen uit shortcuts in plaats van echte generalisatie.",
+      "sourceHint": "Data, corpora & bias"
+    },
+    {
+      "id": "nlp_049",
+      "topic": "Data, corpora & bias",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Welke data-keuzes kunnen low-resource languages benadelen?",
+      "options": {
+        "A": "Alleen focussen op Engels",
+        "B": "Alleen datasets gebruiken die makkelijk online beschikbaar zijn",
+        "C": "Geen evaluatie op minderheidstalen",
+        "D": "Cross-lingual transfer onderzoeken",
+        "E": "Onderzoeksgeld vooral richten op high-resource talen"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "explanation": "Resource availability stuurt onderzoek en kan taalkundige/culturele bias veroorzaken.",
+      "sourceHint": "Data, corpora & bias"
+    },
+    {
+      "id": "nlp_050",
+      "topic": "Data, corpora & bias",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Wat betekent semantic bias in embeddings?",
+      "options": {
+        "A": "Representaties kunnen sociale stereotypes uit training data overnemen.",
+        "B": "Embeddings hebben geen relaties.",
+        "C": "Elke vector is handmatig gecorrigeerd.",
+        "D": "Alle biases verdwijnen door cosine similarity."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Embeddings kunnen patronen zoals gender/racial stereotypes coderen.",
+      "sourceHint": "Data, corpora & bias"
+    },
+    {
+      "id": "nlp_051",
+      "topic": "Preprocessing, morphology & normalization",
+      "type": "single",
+      "difficulty": 1,
+      "question": "Wat doet tokenization?",
+      "options": {
+        "A": "Een inputstring opdelen in tokens zoals woorden, subwoorden of leestekens.",
+        "B": "Een parse tree evalueren.",
+        "C": "Een label bias meten.",
+        "D": "Een zin vertalen naar AMR."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Tokenization is de stap waarin tekst in analyseerbare eenheden wordt gesplitst.",
+      "sourceHint": "Preprocessing, morphology & normalization"
+    },
+    {
+      "id": "nlp_052",
+      "topic": "Preprocessing, morphology & normalization",
+      "type": "multi",
+      "difficulty": 1,
+      "question": "Welke keuzes kunnen tokenization beïnvloeden?",
+      "options": {
+        "A": "Hoe leestekens behandeld worden",
+        "B": "Of subwords gebruikt worden",
+        "C": "Hoe contractions worden opgesplitst",
+        "D": "Of emojis als tokens tellen",
+        "E": "De kleur van het scherm"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "explanation": "Tokenization is afhankelijk van conventies en modeldoelen.",
+      "sourceHint": "Preprocessing, morphology & normalization"
+    },
+    {
+      "id": "nlp_053",
+      "topic": "Preprocessing, morphology & normalization",
+      "type": "single",
+      "difficulty": 1,
+      "question": "Wat is lemmatization?",
+      "options": {
+        "A": "Het terugbrengen van een woordvorm naar zijn lemma/woordenboekvorm.",
+        "B": "Het willekeurig verwijderen van alle vowels.",
+        "C": "Het toekennen van dependency labels.",
+        "D": "Het berekenen van perplexity."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Lemmatization zoekt de basisvorm, vaak met POS/morfologische informatie.",
+      "sourceHint": "Preprocessing, morphology & normalization"
+    },
+    {
+      "id": "nlp_054",
+      "topic": "Preprocessing, morphology & normalization",
+      "type": "single",
+      "difficulty": 1,
+      "question": "Wat is stemming?",
+      "options": {
+        "A": "Een vaak ruwe procedure die affixen afsnijdt om een stam te krijgen.",
+        "B": "Een volledig semantisch model van de wereld.",
+        "C": "Een vorm van RLHF.",
+        "D": "Een graph-based parser."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Stemming kan vormen zoals 'running' reduceren, maar produceert soms niet-woorden.",
+      "sourceHint": "Preprocessing, morphology & normalization"
+    },
+    {
+      "id": "nlp_055",
+      "topic": "Preprocessing, morphology & normalization",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Waarom is lemmatization vaak beter betekenisbehoudend dan stemming?",
+      "options": {
+        "A": "Het gebruikt vaker lexicale/morfologische kennis.",
+        "B": "Het kan POS-informatie meenemen.",
+        "C": "Het probeert echte lemma’s te produceren.",
+        "D": "Het verwijdert altijd alle context.",
+        "E": "Het is altijd foutloos voor elke taal."
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "explanation": "Lemmatization is contextbewuster, maar niet perfect.",
+      "sourceHint": "Preprocessing, morphology & normalization"
+    },
+    {
+      "id": "nlp_056",
+      "topic": "Preprocessing, morphology & normalization",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Wat zou een stemmer waarschijnlijk doen met 'crumbles'?",
+      "options": {
+        "A": "Iets als 'crumbl' produceren.",
+        "B": "Automatisch de visuele betekenis vinden.",
+        "C": "Een dependency tree bouwen.",
+        "D": "De zin vertalen."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Stemmers kunnen suffixen verwijderen zonder echte lemma’s te garanderen.",
+      "sourceHint": "Preprocessing, morphology & normalization"
+    },
+    {
+      "id": "nlp_057",
+      "topic": "Preprocessing, morphology & normalization",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Waarom is 'goeded' lastig voor lemmatization?",
+      "options": {
+        "A": "Het is een nonstandard/novel vorm die niet makkelijk in lexica staat.",
+        "B": "Het bevat geen letters.",
+        "C": "Het is altijd een zelfstandig naamwoord.",
+        "D": "Het is een dependency label."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Novel child forms vereisen generalisatie via context/morfologie.",
+      "sourceHint": "Preprocessing, morphology & normalization"
+    },
+    {
+      "id": "nlp_058",
+      "topic": "Preprocessing, morphology & normalization",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Welke preprocessing kan nuttig zijn voor tekstclassificatie?",
+      "options": {
+        "A": "Tokenization",
+        "B": "Lowercasing, afhankelijk van taak",
+        "C": "Stopword removal, afhankelijk van taak",
+        "D": "Lemmatization/stemming, afhankelijk van taak",
+        "E": "Altijd alle zelfstandige naamwoorden verwijderen"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "explanation": "Preprocessing is taakafhankelijk; sommige stappen kunnen helpen of schaden.",
+      "sourceHint": "Preprocessing, morphology & normalization"
+    },
+    {
+      "id": "nlp_059",
+      "topic": "Preprocessing, morphology & normalization",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Waarom kan stopword removal schadelijk zijn?",
+      "options": {
+        "A": "Function words kunnen syntactische of semantische informatie dragen.",
+        "B": "Stopwords komen nooit voor in tekst.",
+        "C": "Het maakt vectors automatisch dense.",
+        "D": "Het lost grounding op."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Voor sommige taken zijn woorden zoals negation of prepositions cruciaal.",
+      "sourceHint": "Preprocessing, morphology & normalization"
+    },
+    {
+      "id": "nlp_060",
+      "topic": "Preprocessing, morphology & normalization",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Welke woorden/functies zijn closed class?",
+      "options": {
+        "A": "Determiners",
+        "B": "Prepositions",
+        "C": "Auxiliaries",
+        "D": "Nieuwe zelfstandige naamwoorden zoals productnamen",
+        "E": "Coordinating conjunctions"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "explanation": "Closed class woorden hebben relatief vaste leden en grammaticale functies.",
+      "sourceHint": "Preprocessing, morphology & normalization"
+    },
+    {
+      "id": "nlp_061",
+      "topic": "Vector representations",
+      "type": "single",
+      "difficulty": 1,
+      "question": "Wat is een one-hot vector?",
+      "options": {
+        "A": "Een vector met één 1 en verder 0'en voor een vocabulaire-item.",
+        "B": "Een dense contextuele Transformer representatie.",
+        "C": "Een dependency tree.",
+        "D": "Een probability distribution over parse trees."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "One-hot encodeert een woord als discrete index.",
+      "sourceHint": "Vector representations"
+    },
+    {
+      "id": "nlp_062",
+      "topic": "Vector representations",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Waarom zijn one-hot vectors localist representations?",
+      "options": {
+        "A": "Elke dimensie correspondeert met één woord/type.",
+        "B": "De betekenis zit in één lokale positie.",
+        "C": "Relaties tussen woorden zitten niet direct in gedeelde dimensies.",
+        "D": "Elke dimensie is learned uit context.",
+        "E": "Ze zijn meestal sparse."
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "explanation": "Localist betekent dat één unit één symbool representeert.",
+      "sourceHint": "Vector representations"
+    },
+    {
+      "id": "nlp_063",
+      "topic": "Vector representations",
+      "type": "single",
+      "difficulty": 1,
+      "question": "Wat is een distributed representation?",
+      "options": {
+        "A": "Een representatie waarin informatie verdeeld is over meerdere dimensies.",
+        "B": "Een vector met exact één actieve dimensie.",
+        "C": "Een handgeschreven grammatica.",
+        "D": "Een lijst stopwoorden."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Dense embeddings zijn distributed: betekenis zit in patronen over dimensies.",
+      "sourceHint": "Vector representations"
+    },
+    {
+      "id": "nlp_064",
+      "topic": "Vector representations",
+      "type": "single",
+      "difficulty": 1,
+      "question": "Waarom zijn dense embeddings nuttig voor similarity?",
+      "options": {
+        "A": "Woorden met vergelijkbare contexten kunnen dichtbij elkaar liggen in vectorruimte.",
+        "B": "Alle woorden krijgen dezelfde vector.",
+        "C": "Er is geen afstandsmaat nodig.",
+        "D": "Ze verwijderen alle syntax."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Vectorruimte maakt graduele overeenkomst mogelijk.",
+      "sourceHint": "Vector representations"
+    },
+    {
+      "id": "nlp_065",
+      "topic": "Vector representations",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Welke relaties kunnen embeddings soms coderen?",
+      "options": {
+        "A": "Semantische nabijheid",
+        "B": "Syntactische patronen",
+        "C": "Analogieën",
+        "D": "Sociale bias",
+        "E": "Exacte waarheid van alle zinnen"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "explanation": "Embeddings zijn krachtig maar niet hetzelfde als waarheids- of wereldmodel.",
+      "sourceHint": "Vector representations"
+    },
+    {
+      "id": "nlp_066",
+      "topic": "Vector representations",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Wat betekent orthogonaliteit bij one-hot vectors zoals hotel en motel?",
+      "options": {
+        "A": "Hun dot product is 0, dus er is geen ingebouwde similarity.",
+        "B": "Ze zijn synoniemen.",
+        "C": "Ze hebben identieke vectoren.",
+        "D": "Ze zijn onbekende woorden."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "One-hot vectors maken verschillende woorden onafhankelijk, zelfs als ze semantisch lijken.",
+      "sourceHint": "Vector representations"
+    },
+    {
+      "id": "nlp_067",
+      "topic": "Vector representations",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Waarom is dimensionality bij dense embeddings experimenteel?",
+      "options": {
+        "A": "Je kiest dimensiegrootte als hyperparameter op basis van taak/prestatie.",
+        "B": "Het moet altijd gelijk zijn aan 1.",
+        "C": "Het is exact het aantal zinnen in de corpus.",
+        "D": "Het wordt bepaald door grammaticale tijd."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Embeddingdimensie is een modelkeuze.",
+      "sourceHint": "Vector representations"
+    },
+    {
+      "id": "nlp_068",
+      "topic": "Vector representations",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Welke uitspraken over explicit count vectors zijn correct?",
+      "options": {
+        "A": "Dimensies kunnen overeenkomen met duidelijke contextwoorden.",
+        "B": "Ze kunnen sparse zijn.",
+        "C": "Ze kunnen co-occurrence tellen.",
+        "D": "Ze zijn altijd learned neural embeddings.",
+        "E": "Ze kunnen in matrices worden opgeslagen."
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "explanation": "Count-based vectors zijn vaak expliciet en sparse.",
+      "sourceHint": "Vector representations"
+    },
+    {
+      "id": "nlp_069",
+      "topic": "Vector representations",
+      "type": "single",
+      "difficulty": 1,
+      "question": "Wat meet cosine similarity?",
+      "options": {
+        "A": "De cosinus van de hoek tussen twee vectoren.",
+        "B": "Het aantal subwords in een token.",
+        "C": "De syntactische root van een zin.",
+        "D": "De entropy van een softmax."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Cosine vergelijkt vectorrichting en normaliseert deels voor lengte.",
+      "sourceHint": "Vector representations"
+    },
+    {
+      "id": "nlp_070",
+      "topic": "Vector representations",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Welke problemen kunnen embeddings hebben?",
+      "options": {
+        "A": "Polysemie wordt soms samengevoegd in één vector.",
+        "B": "Bias uit data kan worden gecodeerd.",
+        "C": "Dimensies zijn vaak moeilijk te interpreteren.",
+        "D": "Ze garanderen grounded understanding.",
+        "E": "Ze kunnen domain-specific zijn."
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "explanation": "Embeddings zijn nuttig, maar niet perfect of automatisch grounded.",
+      "sourceHint": "Vector representations"
+    },
+    {
+      "id": "nlp_071",
+      "topic": "Distributional semantics",
+      "type": "single",
+      "difficulty": 1,
+      "question": "Wat betekent 'You shall know a word by the company it keeps'?",
+      "options": {
+        "A": "Woordbetekenis kan worden afgeleid uit contexten waarin woorden voorkomen.",
+        "B": "Woorden hebben betekenis zonder gebruik.",
+        "C": "Alle woorden naast elkaar zijn synoniemen.",
+        "D": "Context mag nooit gebruikt worden."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Dit is de intuïtie achter distributional semantics.",
+      "sourceHint": "Distributional semantics"
+    },
+    {
+      "id": "nlp_072",
+      "topic": "Distributional semantics",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Welke contexten kunnen helpen de betekenis van 'banking' te representeren?",
+      "options": {
+        "A": "crisis",
+        "B": "regulation",
+        "C": "system",
+        "D": "river, als het om river bank gaat",
+        "E": "Willekeurige pixels zonder tekst"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "explanation": "Contextwoorden geven aanwijzingen; verschillende senses kunnen verschillende contexten hebben.",
+      "sourceHint": "Distributional semantics"
+    },
+    {
+      "id": "nlp_073",
+      "topic": "Distributional semantics",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Wat is het verschil tussen lexicographic en distributional approaches?",
+      "options": {
+        "A": "Lexicographic gebruikt woordenboekachtige kennis; distributional leert uit gebruik/context.",
+        "B": "Distributional gebruikt alleen handgeschreven definities.",
+        "C": "Lexicographic gebruikt nooit menselijke kennis.",
+        "D": "Er is geen verschil."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Lexicografisch is meer woordenboek/geannoteerd; distributioneel is data/context gebaseerd.",
+      "sourceHint": "Distributional semantics"
+    },
+    {
+      "id": "nlp_074",
+      "topic": "Distributional semantics",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Wat zijn voordelen van distributional semantics?",
+      "options": {
+        "A": "Kan automatisch uit grote corpora leren.",
+        "B": "Kan graduele similarity modelleren.",
+        "C": "Kan nieuwe domeinpatronen oppikken.",
+        "D": "Heeft nooit bias.",
+        "E": "Kan nuttig zijn voor retrieval."
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "explanation": "Distributionele methoden zijn schaalbaar en similarity-gebaseerd, maar data bias blijft.",
+      "sourceHint": "Distributional semantics"
+    },
+    {
+      "id": "nlp_075",
+      "topic": "Distributional semantics",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Wat zijn nadelen van puur distributionele betekenis?",
+      "options": {
+        "A": "Het kan grounded world meaning missen.",
+        "B": "Het kan correlaties met begrip verwarren.",
+        "C": "Het kan biases leren.",
+        "D": "Het lost alle pragmatiek op.",
+        "E": "Het kan moeite hebben met zeldzame woorden."
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "explanation": "Distributionele patronen zijn niet automatisch echte grounded semantics.",
+      "sourceHint": "Distributional semantics"
+    },
+    {
+      "id": "nlp_076",
+      "topic": "Distributional semantics",
+      "type": "single",
+      "difficulty": 1,
+      "question": "Waarom zijn 'spinach' en 'kale' distributioneel mogelijk vergelijkbaar?",
+      "options": {
+        "A": "Ze komen in soortgelijke contexten en delen wereldkennis/categorieën.",
+        "B": "Ze hebben dezelfde spelling.",
+        "C": "Ze zijn altijd antoniemen.",
+        "D": "Ze zijn beide stopwords."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Similar contexts kunnen semantische/category similarity opleveren.",
+      "sourceHint": "Distributional semantics"
+    },
+    {
+      "id": "nlp_077",
+      "topic": "Distributional semantics",
+      "type": "single",
+      "difficulty": 1,
+      "question": "Wat is co-occurrence?",
+      "options": {
+        "A": "Het samen voorkomen van woorden binnen een context/window.",
+        "B": "Het verwijderen van alle context.",
+        "C": "Het labelen van root arcs.",
+        "D": "Een RLHF reward."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Co-occurrence counts zijn basis voor count-based vector semantics.",
+      "sourceHint": "Distributional semantics"
+    },
+    {
+      "id": "nlp_078",
+      "topic": "Distributional semantics",
+      "type": "multi",
+      "difficulty": 3,
+      "question": "Welke beweringen passen bij context windows?",
+      "options": {
+        "A": "Ze bepalen welke nabije woorden meetellen als context.",
+        "B": "Kleine windows kunnen syntactische relaties benadrukken.",
+        "C": "Grote windows kunnen topical similarity benadrukken.",
+        "D": "Window size heeft nooit effect.",
+        "E": "Ze worden gebruikt in distributional methods."
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "explanation": "Window size beïnvloedt welk type relatie wordt geleerd.",
+      "sourceHint": "Distributional semantics"
+    },
+    {
+      "id": "nlp_079",
+      "topic": "Distributional semantics",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Waarom kan 'money' en 'bank' vergelijkbaar lijken zonder synoniemen te zijn?",
+      "options": {
+        "A": "Ze passen in hetzelfde schema/context en komen vaak samen voor.",
+        "B": "Ze betekenen exact hetzelfde.",
+        "C": "Ze zijn allebei werkwoorden.",
+        "D": "Ze zijn altijd antoniemen."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Distributionele similarity is breder dan synonymy.",
+      "sourceHint": "Distributional semantics"
+    },
+    {
+      "id": "nlp_080",
+      "topic": "Distributional semantics",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Welke vormen van semantic similarity werden genoemd?",
+      "options": {
+        "A": "Meaning similarity",
+        "B": "World knowledge similarity",
+        "C": "Psychological/schema-based association",
+        "D": "Alleen spelling overlap",
+        "E": "Contextual relatedness"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "explanation": "Similarity kan ontstaan uit betekenis, wereldkennis, schema's en context.",
+      "sourceHint": "Distributional semantics"
+    },
+    {
+      "id": "nlp_081",
+      "topic": "Word2Vec & neural embeddings",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Wat is de kernintuïtie van skip-gram Word2Vec?",
+      "options": {
+        "A": "Gebruik een center word om context words te voorspellen.",
+        "B": "Gebruik een parse tree om alle tokens te verwijderen.",
+        "C": "Vertaal woorden naar logische predicaten.",
+        "D": "Bereken alleen word length."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Skip-gram leert door contextwoorden rondom een center word te voorspellen.",
+      "sourceHint": "Word2Vec & neural embeddings"
+    },
+    {
+      "id": "nlp_082",
+      "topic": "Word2Vec & neural embeddings",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Wat is de kernintuïtie van CBOW?",
+      "options": {
+        "A": "Gebruik context words om het center word te voorspellen.",
+        "B": "Gebruik alleen de laatste letter van elk woord.",
+        "C": "Voorspel dependency labels zonder woorden.",
+        "D": "Gebruik een handgeschreven lexicon zonder data."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "CBOW is ongeveer de omgekeerde richting van skip-gram.",
+      "sourceHint": "Word2Vec & neural embeddings"
+    },
+    {
+      "id": "nlp_083",
+      "topic": "Word2Vec & neural embeddings",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Welke elementen horen bij Word2Vec-training?",
+      "options": {
+        "A": "Een groot corpus",
+        "B": "Een fixed vocabulary",
+        "C": "Vectorrepresentaties voor woorden",
+        "D": "Een objective die contextvoorspelling beloont",
+        "E": "Menselijke labels voor elke zin als verplichting"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "explanation": "Word2Vec is self-supervised/distributional en gebruikt context prediction.",
+      "sourceHint": "Word2Vec & neural embeddings"
+    },
+    {
+      "id": "nlp_084",
+      "topic": "Word2Vec & neural embeddings",
+      "type": "single",
+      "difficulty": 1,
+      "question": "Waarom worden Word2Vec embeddings dense genoemd?",
+      "options": {
+        "A": "Veel dimensies kunnen niet-nul waarden dragen.",
+        "B": "Ze hebben exact één 1 en verder nullen.",
+        "C": "Ze zijn altijd interpreteerbaar per dimensie.",
+        "D": "Ze bestaan uit dependency arcs."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Dense vectors spreiden informatie over veel dimensies.",
+      "sourceHint": "Word2Vec & neural embeddings"
+    },
+    {
+      "id": "nlp_085",
+      "topic": "Word2Vec & neural embeddings",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Welke analogieën zijn typisch bedoeld als embedding arithmetic?",
+      "options": {
+        "A": "king - man + woman ≈ queen",
+        "B": "walked - walk + fly ≈ flew",
+        "C": "Paris - France + Japan ≈ Tokyo",
+        "D": "dog + punctuation = dependency root altijd",
+        "E": "uncle - man + woman ≈ aunt"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "explanation": "Embedding arithmetic kan sommige relationele patronen benaderen.",
+      "sourceHint": "Word2Vec & neural embeddings"
+    },
+    {
+      "id": "nlp_086",
+      "topic": "Word2Vec & neural embeddings",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Waarom zijn individuele embeddingdimensies meestal niet makkelijk te interpreteren?",
+      "options": {
+        "A": "De ruimte is learned en abstract; betekenis zit in relaties/patronen.",
+        "B": "Omdat alle dimensies leeg zijn.",
+        "C": "Omdat ze handmatig gelabeld zijn met definities.",
+        "D": "Omdat embeddings geen getallen bevatten."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Het zijn latent dimensions, geen expliciete contextlabels.",
+      "sourceHint": "Word2Vec & neural embeddings"
+    },
+    {
+      "id": "nlp_087",
+      "topic": "Word2Vec & neural embeddings",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Welke beperkingen heeft Word2Vec?",
+      "options": {
+        "A": "Eén vector per woordtype kan polysemie slecht scheiden.",
+        "B": "OOV/rare words zijn lastig.",
+        "C": "Bias uit corpus kan worden geleerd.",
+        "D": "Het begrijpt automatisch grounded meaning.",
+        "E": "Contextual nuance is beperkt vergeleken met contextual embeddings."
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "explanation": "Static embeddings missen vaak contextuele sense-disambiguation.",
+      "sourceHint": "Word2Vec & neural embeddings"
+    },
+    {
+      "id": "nlp_088",
+      "topic": "Word2Vec & neural embeddings",
+      "type": "single",
+      "difficulty": 1,
+      "question": "Wat betekent OOV?",
+      "options": {
+        "A": "Out-of-vocabulary: een woord/token dat niet in de vocabulaire zit.",
+        "B": "One output vector.",
+        "C": "Observed order variance.",
+        "D": "Object-oriented verb."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "OOV-items zijn lastig voor modellen met vaste vocabularies.",
+      "sourceHint": "Word2Vec & neural embeddings"
+    },
+    {
+      "id": "nlp_089",
+      "topic": "Word2Vec & neural embeddings",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Waarom helpt subword tokenization bij OOV-problemen?",
+      "options": {
+        "A": "Onbekende woorden kunnen uit bekende subword units worden opgebouwd.",
+        "B": "Het verwijdert alle woorden langer dan 3 letters.",
+        "C": "Het maakt elke zin one-hot.",
+        "D": "Het voorkomt dat modellen embeddings gebruiken."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Subwords geven betere dekking voor zeldzame of nieuwe vormen.",
+      "sourceHint": "Word2Vec & neural embeddings"
+    },
+    {
+      "id": "nlp_090",
+      "topic": "Word2Vec & neural embeddings",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Welke evaluaties kun je gebruiken voor embeddings?",
+      "options": {
+        "A": "Similarity benchmarks",
+        "B": "Analogy tasks",
+        "C": "Downstream task performance",
+        "D": "Bias probes",
+        "E": "Alleen kijken of vectoren mooie kleuren hebben"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "explanation": "Embeddings kun je intrinsiek en extrinsiek evalueren.",
+      "sourceHint": "Word2Vec & neural embeddings"
+    },
+    {
+      "id": "nlp_091",
+      "topic": "Language modeling & n-grams",
+      "type": "single",
+      "difficulty": 1,
+      "question": "Wat is een language model in narrow sense?",
+      "options": {
+        "A": "Een probabilistisch model dat probability aan woordsequenties toekent.",
+        "B": "Een model dat alleen POS tags produceert.",
+        "C": "Een database voor afbeeldingen.",
+        "D": "Een parser die nooit probabilities gebruikt."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Een LM modelleert P(w1,...,wn).",
+      "sourceHint": "Language modeling & n-grams"
+    },
+    {
+      "id": "nlp_092",
+      "topic": "Language modeling & n-grams",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Welke aanname maakt een bigram model?",
+      "options": {
+        "A": "Het huidige woord hangt alleen af van het vorige woord.",
+        "B": "Het huidige woord hangt af van alle toekomstige woorden.",
+        "C": "Er is geen context.",
+        "D": "Alle woorden zijn onafhankelijk van training data."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Bigram benadert P(w_i | w_1...w_{i-1}) als P(w_i | w_{i-1}).",
+      "sourceHint": "Language modeling & n-grams"
+    },
+    {
+      "id": "nlp_093",
+      "topic": "Language modeling & n-grams",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Welke aanname maakt een trigram model?",
+      "options": {
+        "A": "Het huidige woord hangt af van de vorige twee woorden.",
+        "B": "Het huidige woord hangt af van exact vijf vorige woorden.",
+        "C": "Alle woorden zijn one-hot zonder probability.",
+        "D": "Het gebruikt alleen semantische rollen."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Trigram gebruikt context van twee vorige tokens.",
+      "sourceHint": "Language modeling & n-grams"
+    },
+    {
+      "id": "nlp_094",
+      "topic": "Language modeling & n-grams",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Welke uitspraken over n-gram LMs zijn correct?",
+      "options": {
+        "A": "Ze gebruiken lokale context.",
+        "B": "Ze kunnen last hebben van sparsity.",
+        "C": "Ze kunnen probability aan zinnen geven.",
+        "D": "Ze begrijpen automatisch alle lange-afstandsafhankelijkheden.",
+        "E": "Smoothing kan nodig zijn."
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "explanation": "N-grams zijn eenvoudige probabilistische LMs met beperkte context.",
+      "sourceHint": "Language modeling & n-grams"
+    },
+    {
+      "id": "nlp_095",
+      "topic": "Language modeling & n-grams",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Wat is de chain rule voor language modeling conceptueel?",
+      "options": {
+        "A": "Een zinprobability ontbinden in conditionele probabilities per woord.",
+        "B": "Alle woorden alfabetisch sorteren.",
+        "C": "Alle probabilities gelijk maken.",
+        "D": "Een dependency tree omdraaien."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "P(w1...wn)=Π P(w_i | voorgaande woorden).",
+      "sourceHint": "Language modeling & n-grams"
+    },
+    {
+      "id": "nlp_096",
+      "topic": "Language modeling & n-grams",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Waarom gebruiken we approximaties in language modeling?",
+      "options": {
+        "A": "De echte probability van elke mogelijke woordsequentie is niet direct kenbaar.",
+        "B": "Omdat probabilities verboden zijn.",
+        "C": "Omdat corpora geen tekst bevatten.",
+        "D": "Omdat alle modellen perfect zijn."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "LMs zijn modellen/benaderingen, geen toegang tot de ware taaldistributie.",
+      "sourceHint": "Language modeling & n-grams"
+    },
+    {
+      "id": "nlp_097",
+      "topic": "Language modeling & n-grams",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Welke taken gebruiken language models?",
+      "options": {
+        "A": "Text generation",
+        "B": "Speech recognition/MT rescoring",
+        "C": "Spelling correction",
+        "D": "Perplexity evaluation",
+        "E": "Alleen image segmentation zonder tekst"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "explanation": "LMs kunnen genereren en alternatieven scoren.",
+      "sourceHint": "Language modeling & n-grams"
+    },
+    {
+      "id": "nlp_098",
+      "topic": "Language modeling & n-grams",
+      "type": "single",
+      "difficulty": 3,
+      "question": "Wat is het verschil tussen language model en source model in noisy-channel MT-context?",
+      "options": {
+        "A": "Het language/source model beoordeelt fluency van de doeltaalzin.",
+        "B": "Het source model labelt altijd dependency arcs.",
+        "C": "Het language model meet alleen BLEU.",
+        "D": "Het source model is een stopword list."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "In noisy channel helpt P(e) om vloeiende doeltaalzinnen te kiezen.",
+      "sourceHint": "Language modeling & n-grams"
+    },
+    {
+      "id": "nlp_099",
+      "topic": "Language modeling & n-grams",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Waarom kan een n-gram model grammaticale zinnen laag inschatten?",
+      "options": {
+        "A": "Als de lokale n-grams zeldzaam of ongezien waren in training.",
+        "B": "Omdat grammatica altijd probability 0 krijgt.",
+        "C": "Omdat smoothing alle correcte zinnen verwijdert.",
+        "D": "Omdat n-grams geen tokens gebruiken."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "N-gram probabilities hangen af van geobserveerde lokale frequenties.",
+      "sourceHint": "Language modeling & n-grams"
+    },
+    {
+      "id": "nlp_100",
+      "topic": "Language modeling & n-grams",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Welke problemen ontstaan bij langere n in n-gram modellen?",
+      "options": {
+        "A": "Meer context maar meer sparsity",
+        "B": "Meer parameters/combinaties",
+        "C": "Meer ongeziene n-grams",
+        "D": "Altijd minder data nodig",
+        "E": "Mogelijk betere lokale specificiteit"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "explanation": "Grotere n biedt meer context maar verslechtert sparsity.",
+      "sourceHint": "Language modeling & n-grams"
+    },
+    {
+      "id": "nlp_101",
+      "topic": "Smoothing, evaluation & perplexity",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Wat doet smoothing?",
+      "options": {
+        "A": "Probability mass herverdelen zodat ongeziene events niet per se kans 0 krijgen.",
+        "B": "Alle zeldzame woorden volledig verwijderen.",
+        "C": "Training data grammaticaal corrigeren.",
+        "D": "Alle probabilities gelijk aan 1 maken."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Smoothing reserveert kansmassa voor ongeziene events.",
+      "sourceHint": "Smoothing, evaluation & perplexity"
+    },
+    {
+      "id": "nlp_102",
+      "topic": "Smoothing, evaluation & perplexity",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Wat is add-one smoothing?",
+      "options": {
+        "A": "Aan elke count 1 toevoegen voordat probabilities worden berekend.",
+        "B": "Eén woord uit elke zin verwijderen.",
+        "C": "Alleen de eerste n-gram gebruiken.",
+        "D": "Een Transformer-head uitschakelen."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Add-one is een simpele smoothingmethode.",
+      "sourceHint": "Smoothing, evaluation & perplexity"
+    },
+    {
+      "id": "nlp_103",
+      "topic": "Smoothing, evaluation & perplexity",
+      "type": "multi",
+      "difficulty": 3,
+      "question": "Welke uitspraken over perplexity zijn correct?",
+      "options": {
+        "A": "Lagere perplexity betekent betere voorspelling van testdata, binnen dezelfde setting.",
+        "B": "Perplexity is gerelateerd aan cross-entropy.",
+        "C": "Perplexity meet niet direct grounded semantic understanding.",
+        "D": "Hogere perplexity is altijd beter.",
+        "E": "Vergelijken moet voorzichtig met dezelfde tokenization/data."
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "explanation": "Perplexity meet voorspellingskwaliteit, geen compleet begrip.",
+      "sourceHint": "Smoothing, evaluation & perplexity"
+    },
+    {
+      "id": "nlp_104",
+      "topic": "Smoothing, evaluation & perplexity",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Waarom is perplexity niet genoeg om LLM reasoning te evalueren?",
+      "options": {
+        "A": "Het meet next-token prediction, niet direct robuuste redenering of grounding.",
+        "B": "Het meet exact causal understanding.",
+        "C": "Het vervangt alle downstream evaluaties.",
+        "D": "Het is alleen een POS-tag."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Een model kan lage perplexity hebben maar nog hallucineren of falen op reasoning.",
+      "sourceHint": "Smoothing, evaluation & perplexity"
+    },
+    {
+      "id": "nlp_105",
+      "topic": "Smoothing, evaluation & perplexity",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Welke evaluatieproblemen kunnen bij LLMs spelen?",
+      "options": {
+        "A": "Data contamination",
+        "B": "Shortcut learning",
+        "C": "Overfitting to benchmark style",
+        "D": "Hallucinations ondanks vloeiende output",
+        "E": "Scores die alle subgroepen perfect representeren"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "explanation": "LLM-evaluatie vraagt robuuste, diverse en eerlijke tests.",
+      "sourceHint": "Smoothing, evaluation & perplexity"
+    },
+    {
+      "id": "nlp_106",
+      "topic": "Smoothing, evaluation & perplexity",
+      "type": "single",
+      "difficulty": 1,
+      "question": "Wat is held-out test data?",
+      "options": {
+        "A": "Data die niet voor training is gebruikt en dient voor evaluatie.",
+        "B": "Data die exact tijdens training gedupliceerd wordt.",
+        "C": "Alleen stopwoorden.",
+        "D": "Een lijst hyperparameters."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Held-out data test generalisatie.",
+      "sourceHint": "Smoothing, evaluation & perplexity"
+    },
+    {
+      "id": "nlp_107",
+      "topic": "Smoothing, evaluation & perplexity",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Waarom moet je train/test leakage vermijden?",
+      "options": {
+        "A": "Anders kan performance overschat worden door memorisatie of overlap.",
+        "B": "Omdat modellen anders geen tokens zien.",
+        "C": "Omdat leakage altijd fairness verhoogt.",
+        "D": "Omdat het de corpusgrootte nul maakt."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Leakage maakt evaluatie onbetrouwbaar.",
+      "sourceHint": "Smoothing, evaluation & perplexity"
+    },
+    {
+      "id": "nlp_108",
+      "topic": "Smoothing, evaluation & perplexity",
+      "type": "multi",
+      "difficulty": 1,
+      "question": "Welke metrics kunnen voor classification relevant zijn?",
+      "options": {
+        "A": "Accuracy",
+        "B": "Precision",
+        "C": "Recall",
+        "D": "F1",
+        "E": "UAS voor sentimentlabels als standaard"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "explanation": "Classification wordt vaak geëvalueerd met accuracy/precision/recall/F1.",
+      "sourceHint": "Smoothing, evaluation & perplexity"
+    },
+    {
+      "id": "nlp_109",
+      "topic": "Smoothing, evaluation & perplexity",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Wat is precision?",
+      "options": {
+        "A": "Het aandeel voorspelde positieve gevallen dat correct positief is.",
+        "B": "Het aandeel werkelijke positieve gevallen dat gevonden is.",
+        "C": "De gemiddelde lengte van woorden.",
+        "D": "De probability van een trigram."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Precision = TP/(TP+FP).",
+      "sourceHint": "Smoothing, evaluation & perplexity"
+    },
+    {
+      "id": "nlp_110",
+      "topic": "Smoothing, evaluation & perplexity",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Wat is recall?",
+      "options": {
+        "A": "Het aandeel werkelijke positieve gevallen dat correct gevonden is.",
+        "B": "Het aandeel voorspelde positives dat correct is.",
+        "C": "Het aantal tokens in vocabulaire.",
+        "D": "De cosine tussen labels."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Recall = TP/(TP+FN).",
+      "sourceHint": "Smoothing, evaluation & perplexity"
+    },
+    {
+      "id": "nlp_111",
+      "topic": "Text classification & Naive Bayes",
+      "type": "single",
+      "difficulty": 1,
+      "question": "Wat is sentiment analysis?",
+      "options": {
+        "A": "Classificeren van tekst naar sentiment zoals positief/negatief/neutraal.",
+        "B": "Het bouwen van constituency trees.",
+        "C": "Het berekenen van dependency UAS.",
+        "D": "Het verwijderen van alle adjectives."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Sentimentanalyse is een tekstclassificatietaak.",
+      "sourceHint": "Text classification & Naive Bayes"
+    },
+    {
+      "id": "nlp_112",
+      "topic": "Text classification & Naive Bayes",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Wat is bag-of-words?",
+      "options": {
+        "A": "Een representatie die woordfrequenties/aanwezigheid gebruikt en volgorde grotendeels negeert.",
+        "B": "Een representatie die volledige syntactische bomen vereist.",
+        "C": "Een model dat alleen beelden leest.",
+        "D": "Een attention heatmap."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "BoW is simpel en sterk, maar verliest volgorde.",
+      "sourceHint": "Text classification & Naive Bayes"
+    },
+    {
+      "id": "nlp_113",
+      "topic": "Text classification & Naive Bayes",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Welke beperkingen heeft bag-of-words?",
+      "options": {
+        "A": "Verliest woordvolgorde",
+        "B": "Kan negatie moeilijk vinden",
+        "C": "Kan sparse zijn",
+        "D": "Kan geen tekst representeren",
+        "E": "Negeert vaak syntactische structuur"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "explanation": "BoW is bruikbaar, maar mist volgorde en structuur.",
+      "sourceHint": "Text classification & Naive Bayes"
+    },
+    {
+      "id": "nlp_114",
+      "topic": "Text classification & Naive Bayes",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Wat is de naïeve aanname in Naive Bayes?",
+      "options": {
+        "A": "Features zijn conditioneel onafhankelijk gegeven de klasse.",
+        "B": "Alle woorden zijn synoniemen.",
+        "C": "Training data bevat geen labels.",
+        "D": "Er is geen probability."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Naive Bayes neemt feature independence aan gegeven label.",
+      "sourceHint": "Text classification & Naive Bayes"
+    },
+    {
+      "id": "nlp_115",
+      "topic": "Text classification & Naive Bayes",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Waarom werkt Naive Bayes soms redelijk voor tekst ondanks de naïeve aanname?",
+      "options": {
+        "A": "Veel woorden geven sterke class-signalen.",
+        "B": "Het is robuust en simpel.",
+        "C": "Independence is exact waar voor alle taal.",
+        "D": "Het kan met frequenties/probabilities werken.",
+        "E": "Het gebruikt automatisch grounded vision."
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "D"
+      ],
+      "explanation": "De aanname is onrealistisch, maar het model kan praktisch sterk zijn.",
+      "sourceHint": "Text classification & Naive Bayes"
+    },
+    {
+      "id": "nlp_116",
+      "topic": "Text classification & Naive Bayes",
+      "type": "single",
+      "difficulty": 1,
+      "question": "Welke feature zou nuttig kunnen zijn voor spamdetectie?",
+      "options": {
+        "A": "Aanwezigheid/frequentie van woorden zoals 'free' of 'win'.",
+        "B": "De kleur van de laptop.",
+        "C": "De fysieke afstand tot de server.",
+        "D": "Het aantal pixels in een foto zonder tekst."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Woorden kunnen indicatief zijn voor labels.",
+      "sourceHint": "Text classification & Naive Bayes"
+    },
+    {
+      "id": "nlp_117",
+      "topic": "Text classification & Naive Bayes",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Waarom is negatie lastig voor simpele BoW sentiment?",
+      "options": {
+        "A": "'not good' bevat het positieve woord 'good' maar drukt negatief sentiment uit.",
+        "B": "Negatie komt nooit voor.",
+        "C": "BoW kan geen woorden tellen.",
+        "D": "Negatie is altijd een named entity."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Woordvolgorde en compositie zijn nodig voor negatie.",
+      "sourceHint": "Text classification & Naive Bayes"
+    },
+    {
+      "id": "nlp_118",
+      "topic": "Text classification & Naive Bayes",
+      "type": "multi",
+      "difficulty": 1,
+      "question": "Welke stappen horen bij supervised text classification?",
+      "options": {
+        "A": "Gelabelde data verzamelen",
+        "B": "Features/representaties maken",
+        "C": "Model trainen",
+        "D": "Evalueren op held-out data",
+        "E": "Labels na training willekeurig veranderen"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "explanation": "Supervised classification gebruikt labeled examples en evaluatie.",
+      "sourceHint": "Text classification & Naive Bayes"
+    },
+    {
+      "id": "nlp_119",
+      "topic": "Text classification & Naive Bayes",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Wat is domain shift?",
+      "options": {
+        "A": "Training en test/use data komen uit verschillende domeinen met andere patronen.",
+        "B": "Alle data is identiek.",
+        "C": "Een woord krijgt exact één POS.",
+        "D": "Een Transformer krijgt geen input."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Domain shift kan performance verminderen.",
+      "sourceHint": "Text classification & Naive Bayes"
+    },
+    {
+      "id": "nlp_120",
+      "topic": "Text classification & Naive Bayes",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Welke signalen kunnen op overfitting wijzen?",
+      "options": {
+        "A": "Hoge training performance maar lage test performance",
+        "B": "Sterke afhankelijkheid van dataset artifacts",
+        "C": "Slechte generalisatie naar nieuwe domeinen",
+        "D": "Perfecte robuustheid op alle varianten",
+        "E": "Memorisatie van training examples"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "explanation": "Overfitting betekent leren van specifieke trainingpatronen in plaats van generaliseerbare patronen.",
+      "sourceHint": "Text classification & Naive Bayes"
+    },
+    {
+      "id": "nlp_121",
+      "topic": "POS tagging",
+      "type": "single",
+      "difficulty": 1,
+      "question": "Waarom is POS tagging sequence labeling?",
+      "options": {
+        "A": "Voor elk token in een sequentie wordt een label voorspeld.",
+        "B": "Omdat het altijd één label voor de hele zin geeft.",
+        "C": "Omdat het geen input nodig heeft.",
+        "D": "Omdat het alleen images classificeert."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Input is een tokensequentie; output is een labelsequentie.",
+      "sourceHint": "POS tagging"
+    },
+    {
+      "id": "nlp_122",
+      "topic": "POS tagging",
+      "type": "multi",
+      "difficulty": 1,
+      "question": "Welke POS-tags horen bij Universal Dependencies?",
+      "options": {
+        "A": "NOUN",
+        "B": "VERB",
+        "C": "ADJ",
+        "D": "DET",
+        "E": "PIXEL"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "explanation": "UD bevat categorieën zoals NOUN, VERB, ADJ, DET, AUX, etc.",
+      "sourceHint": "POS tagging"
+    },
+    {
+      "id": "nlp_123",
+      "topic": "POS tagging",
+      "type": "single",
+      "difficulty": 1,
+      "question": "Waarom is 'can' POS-ambigu?",
+      "options": {
+        "A": "Het kan NOUN zijn in 'a can' en AUX in 'can swim'.",
+        "B": "Het kan alleen punctuation zijn.",
+        "C": "Het is nooit een token.",
+        "D": "Het is altijd ADJ."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "'can' illustreert dat POS afhangt van context.",
+      "sourceHint": "POS tagging"
+    },
+    {
+      "id": "nlp_124",
+      "topic": "POS tagging",
+      "type": "single",
+      "difficulty": 1,
+      "question": "Waarom is 'fish' POS-ambigu?",
+      "options": {
+        "A": "Het kan NOUN of VERB zijn.",
+        "B": "Het is altijd DET.",
+        "C": "Het heeft geen letters.",
+        "D": "Het komt nooit in corpora voor."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "'Fish migrate' vs 'we fish' geeft noun/verb ambiguity.",
+      "sourceHint": "POS tagging"
+    },
+    {
+      "id": "nlp_125",
+      "topic": "POS tagging",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Waarop is POS primair gebaseerd?",
+      "options": {
+        "A": "Grammaticale relatie met naburige woorden",
+        "B": "Morfologische eigenschappen/affixes",
+        "C": "Alleen wereldkennis over objecten",
+        "D": "Syntactische distributie",
+        "E": "De kleur van het woord"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "D"
+      ],
+      "explanation": "POS is vooral grammaticaal/distributioneel, niet alleen semantisch.",
+      "sourceHint": "POS tagging"
+    },
+    {
+      "id": "nlp_126",
+      "topic": "POS tagging",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Wat is unigram POS tagging?",
+      "options": {
+        "A": "Elk woord krijgt zijn meest frequente POS-label uit training.",
+        "B": "Een model gebruikt alleen dependency arcs.",
+        "C": "Een Transformer genereert tekst.",
+        "D": "Een parser maakt AMR."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Unigram tagging is een lexical baseline.",
+      "sourceHint": "POS tagging"
+    },
+    {
+      "id": "nlp_127",
+      "topic": "POS tagging",
+      "type": "multi",
+      "difficulty": 1,
+      "question": "Welke methoden kunnen POS tagging doen?",
+      "options": {
+        "A": "Lexical baseline",
+        "B": "Rule-based tagging",
+        "C": "HMMs",
+        "D": "BiLSTM/CRF of BERT",
+        "E": "Alleen handmatig tekenen van plaatjes"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "explanation": "POS tagging kan rule-based, probabilistisch of neural gebeuren.",
+      "sourceHint": "POS tagging"
+    },
+    {
+      "id": "nlp_128",
+      "topic": "POS tagging",
+      "type": "single",
+      "difficulty": 3,
+      "question": "Waarom kan maar 10% type-ambiguity toch lastig zijn?",
+      "options": {
+        "A": "Veel hoogfrequente tokens zijn ambigu, dus token-ambiguity kan veel hoger zijn.",
+        "B": "Omdat types nooit voorkomen.",
+        "C": "Omdat ambiguity alleen in zeldzame woorden zit.",
+        "D": "Omdat POS tags geen labels zijn."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Ambigue woorden zoals function words zijn vaak zeer frequent.",
+      "sourceHint": "POS tagging"
+    },
+    {
+      "id": "nlp_129",
+      "topic": "POS tagging",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Welke woorden zijn open class?",
+      "options": {
+        "A": "Nouns",
+        "B": "Verbs",
+        "C": "Adjectives",
+        "D": "Prepositions",
+        "E": "New product names as nouns"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "explanation": "Open classes kunnen nieuwe leden krijgen; prepositions zijn typisch closed class.",
+      "sourceHint": "POS tagging"
+    },
+    {
+      "id": "nlp_130",
+      "topic": "POS tagging",
+      "type": "single",
+      "difficulty": 1,
+      "question": "Waarom helpt context bij POS tagging?",
+      "options": {
+        "A": "Naburige woorden geven grammaticale aanwijzingen over de rol van het token.",
+        "B": "Context is altijd irrelevant voor POS.",
+        "C": "POS wordt alleen door woordlengte bepaald.",
+        "D": "Een woord kan nooit meerdere POS-tags hebben."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Bijvoorbeeld determiners wijzen vaak op nouns in de buurt.",
+      "sourceHint": "POS tagging"
+    },
+    {
+      "id": "nlp_131",
+      "topic": "HMMs, Viterbi & sequence models",
+      "type": "single",
+      "difficulty": 3,
+      "question": "Wat modelleert een HMM bij POS tagging grofweg?",
+      "options": {
+        "A": "Een verborgen sequentie van POS-tags die woorden emitteert.",
+        "B": "Alleen een losse sentimentklasse.",
+        "C": "Een image caption zonder tokens.",
+        "D": "Een AMR graph zonder woorden."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "HMMs modelleren hidden states (tags) en observations (words).",
+      "sourceHint": "HMMs, Viterbi & sequence models"
+    },
+    {
+      "id": "nlp_132",
+      "topic": "HMMs, Viterbi & sequence models",
+      "type": "single",
+      "difficulty": 3,
+      "question": "Wat is een transition probability in HMM POS tagging?",
+      "options": {
+        "A": "De kans op een POS-tag gegeven de vorige POS-tag.",
+        "B": "De kans op een woord gegeven zijn letters.",
+        "C": "De kleur van een node.",
+        "D": "De probability van een hele corpus."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Transitions modelleren tagvolgordes.",
+      "sourceHint": "HMMs, Viterbi & sequence models"
+    },
+    {
+      "id": "nlp_133",
+      "topic": "HMMs, Viterbi & sequence models",
+      "type": "single",
+      "difficulty": 3,
+      "question": "Wat is een emission probability?",
+      "options": {
+        "A": "De kans op een woord gegeven een POS-tag.",
+        "B": "De kans op een tag gegeven de volgende zin alleen.",
+        "C": "Een dependency label zonder word.",
+        "D": "Een BLEU-score."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Emissions koppelen hidden tags aan geobserveerde woorden.",
+      "sourceHint": "HMMs, Viterbi & sequence models"
+    },
+    {
+      "id": "nlp_134",
+      "topic": "HMMs, Viterbi & sequence models",
+      "type": "multi",
+      "difficulty": 3,
+      "question": "Welke onderdelen zijn nodig om met een HMM POS-tags te voorspellen?",
+      "options": {
+        "A": "Transition probabilities",
+        "B": "Emission probabilities",
+        "C": "Start probabilities",
+        "D": "Een decoding algoritme zoals Viterbi",
+        "E": "Alleen een lijst afbeeldingen"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "explanation": "HMM-tagging combineert transitions, emissions en decoding.",
+      "sourceHint": "HMMs, Viterbi & sequence models"
+    },
+    {
+      "id": "nlp_135",
+      "topic": "HMMs, Viterbi & sequence models",
+      "type": "single",
+      "difficulty": 3,
+      "question": "Wat doet Viterbi?",
+      "options": {
+        "A": "Vindt de meest waarschijnlijke hidden-state sequentie efficiënt.",
+        "B": "Verwijdert alle stopwoorden.",
+        "C": "Bouwt een semantic parser uit AMR.",
+        "D": "Meet cosine similarity tussen images."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Viterbi is dynamic programming voor beste state sequence.",
+      "sourceHint": "HMMs, Viterbi & sequence models"
+    },
+    {
+      "id": "nlp_136",
+      "topic": "HMMs, Viterbi & sequence models",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Waarom zijn sequence models nuttig voor POS tagging?",
+      "options": {
+        "A": "Labels hangen af van vorige/volgende labels of woorden.",
+        "B": "Ze kunnen context meenemen.",
+        "C": "Ze behandelen elk token altijd volledig onafhankelijk.",
+        "D": "Ze modelleren structuur in de outputsequentie.",
+        "E": "Ze zijn nooit probabilistisch."
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "D"
+      ],
+      "explanation": "Sequence models gebruiken afhankelijkheden in de sequentie.",
+      "sourceHint": "HMMs, Viterbi & sequence models"
+    },
+    {
+      "id": "nlp_137",
+      "topic": "HMMs, Viterbi & sequence models",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Wat betekent dependent classification bij sequence labeling?",
+      "options": {
+        "A": "Het label van een element kan afhangen van andere elementen/labels.",
+        "B": "Elk element wordt geïsoleerd behandeld.",
+        "C": "Er is geen outputsequence.",
+        "D": "Labels worden willekeurig gekozen."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Dependent sequence labeling gebruikt context/relaties tussen labels.",
+      "sourceHint": "HMMs, Viterbi & sequence models"
+    },
+    {
+      "id": "nlp_138",
+      "topic": "HMMs, Viterbi & sequence models",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Waarom is independent token classification een zwakkere baseline?",
+      "options": {
+        "A": "Het negeert afhankelijkheden tussen naburige labels/tokens.",
+        "B": "Het gebruikt te veel syntaxis.",
+        "C": "Het kan geen labels produceren.",
+        "D": "Het gebruikt altijd gold labels."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "POS-tags volgen grammaticale patronen; onafhankelijkheid mist die informatie.",
+      "sourceHint": "HMMs, Viterbi & sequence models"
+    },
+    {
+      "id": "nlp_139",
+      "topic": "HMMs, Viterbi & sequence models",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Welke modellen kunnen sequence labeling doen?",
+      "options": {
+        "A": "HMM",
+        "B": "CRF",
+        "C": "BiLSTM-CRF",
+        "D": "BERT fine-tuned for token classification",
+        "E": "Een pure image classifier zonder tekstinput"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "explanation": "Dit zijn typische sequence labeling modellen.",
+      "sourceHint": "HMMs, Viterbi & sequence models"
+    },
+    {
+      "id": "nlp_140",
+      "topic": "HMMs, Viterbi & sequence models",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Waarom kan BERT goed zijn voor POS tagging?",
+      "options": {
+        "A": "Het maakt contextuele representaties van tokens.",
+        "B": "Het gebruikt geen input context.",
+        "C": "Het ziet alleen één letter per zin.",
+        "D": "Het kan geen token labels voorspellen."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Contextual embeddings helpen POS-disambiguation.",
+      "sourceHint": "HMMs, Viterbi & sequence models"
+    },
+    {
+      "id": "nlp_141",
+      "topic": "Transformers & LLM architecture",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Wat is de basis-output van een autoregressief GPT-achtig model?",
+      "options": {
+        "A": "Een probability distribution over het volgende token.",
+        "B": "Altijd een dependency tree.",
+        "C": "Een handgeschreven woordenboekdefinitie.",
+        "D": "Een vaste POS-tag voor de hele zin."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "GPT-style LMs voorspellen next-token distributions.",
+      "sourceHint": "Transformers & LLM architecture"
+    },
+    {
+      "id": "nlp_142",
+      "topic": "Transformers & LLM architecture",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Welke stappen horen bij de Transformer pipeline?",
+      "options": {
+        "A": "Tokens/token IDs",
+        "B": "Embeddings",
+        "C": "Transformer blocks",
+        "D": "Unembedding + softmax/logits naar probabilities",
+        "E": "Altijd handmatige syntactische regels"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "explanation": "Tokens worden embeddings, verwerkt door blocks, en terug gemapt naar logits/probabilities.",
+      "sourceHint": "Transformers & LLM architecture"
+    },
+    {
+      "id": "nlp_143",
+      "topic": "Transformers & LLM architecture",
+      "type": "single",
+      "difficulty": 3,
+      "question": "Wat is d_model?",
+      "options": {
+        "A": "De dimensionaliteit van de interne tokenrepresentaties/residual stream.",
+        "B": "Het aantal woorden in de testset.",
+        "C": "De score van BLEU.",
+        "D": "Het aantal dependency labels."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "d_model is de vectorbreedte van representaties in het model.",
+      "sourceHint": "Transformers & LLM architecture"
+    },
+    {
+      "id": "nlp_144",
+      "topic": "Transformers & LLM architecture",
+      "type": "single",
+      "difficulty": 3,
+      "question": "Wat is d_vocab?",
+      "options": {
+        "A": "De grootte van de vocabulaire/outputruimte voor tokens.",
+        "B": "De lengte van één zin.",
+        "C": "Het aantal parse trees.",
+        "D": "Het aantal annotatoren."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "d_vocab bepaalt hoeveel tokenclasses de softmax kan voorspellen.",
+      "sourceHint": "Transformers & LLM architecture"
+    },
+    {
+      "id": "nlp_145",
+      "topic": "Transformers & LLM architecture",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Welke componenten zitten typisch in een Transformer block?",
+      "options": {
+        "A": "Self-attention",
+        "B": "MLP/feed-forward network",
+        "C": "Residual connections",
+        "D": "LayerNorm",
+        "E": "Handgeschreven CFG als verplicht onderdeel"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "explanation": "Een block combineert attention, MLP, residual stream en normalization.",
+      "sourceHint": "Transformers & LLM architecture"
+    },
+    {
+      "id": "nlp_146",
+      "topic": "Transformers & LLM architecture",
+      "type": "single",
+      "difficulty": 3,
+      "question": "Wat is de residual stream?",
+      "options": {
+        "A": "Een doorlopende representatieruimte waarin blocks informatie lezen/schrijven.",
+        "B": "Een lijst stopwoorden.",
+        "C": "Een gold-standard parse tree.",
+        "D": "Een corpus met alleen errors."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "De residual stream draagt tokenrepresentaties door lagen heen.",
+      "sourceHint": "Transformers & LLM architecture"
+    },
+    {
+      "id": "nlp_147",
+      "topic": "Transformers & LLM architecture",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Wat doet softmax in de output?",
+      "options": {
+        "A": "Zet logits om naar een probability distribution.",
+        "B": "Maakt een parse tree binair.",
+        "C": "Verwijdert alle punctuation.",
+        "D": "Berekent UAS."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Softmax normaliseert scores naar probabilities.",
+      "sourceHint": "Transformers & LLM architecture"
+    },
+    {
+      "id": "nlp_148",
+      "topic": "Transformers & LLM architecture",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Waarom is next-token prediction krachtig?",
+      "options": {
+        "A": "Om goed te voorspellen moet het model veel taalstructuur leren.",
+        "B": "Het kan grammaticale patronen oppikken.",
+        "C": "Het kan feiten/wereldpatronen uit data oppikken.",
+        "D": "Het garandeert bewustzijn.",
+        "E": "Het kan multi-step patronen deels leren."
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "explanation": "Next-token prediction kan veel structurele/statistische kennis afdwingen, maar geen bewustzijn garanderen.",
+      "sourceHint": "Transformers & LLM architecture"
+    },
+    {
+      "id": "nlp_149",
+      "topic": "Transformers & LLM architecture",
+      "type": "single",
+      "difficulty": 3,
+      "question": "Wat betekent language modeling is compression in deze context?",
+      "options": {
+        "A": "Een model moet structuur leren om veel tekst compact in weights te representeren.",
+        "B": "Het model zip-comprimeert alleen bestanden.",
+        "C": "Alle tokens worden verwijderd.",
+        "D": "Compression betekent dat semantics onmogelijk is."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Goede voorspelling vereist compacte generalisaties over taaldata.",
+      "sourceHint": "Transformers & LLM architecture"
+    },
+    {
+      "id": "nlp_150",
+      "topic": "Transformers & LLM architecture",
+      "type": "multi",
+      "difficulty": 3,
+      "question": "Welke uitspraken over weights en activations zijn correct?",
+      "options": {
+        "A": "Weights zijn geleerde parameters.",
+        "B": "Activations zijn input-afhankelijke waarden tijdens een forward pass.",
+        "C": "Weights veranderen normaal tijdens inference niet.",
+        "D": "Activations zijn altijd handmatig geannoteerde labels.",
+        "E": "Beide zijn relevant voor interpretability."
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "explanation": "Weights zijn modelparameters; activations ontstaan bij verwerking van specifieke input.",
+      "sourceHint": "Transformers & LLM architecture"
+    },
+    {
+      "id": "nlp_151",
+      "topic": "Attention & interpretability",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Wat doet self-attention?",
+      "options": {
+        "A": "Laat tokens informatie wegen/combineren uit andere tokens in dezelfde sequentie.",
+        "B": "Verwijdert alle context uit de input.",
+        "C": "Zet labels om naar one-hot zonder training.",
+        "D": "Berekent alleen word frequency rank."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Self-attention berekent token-token relaties binnen de sequentie.",
+      "sourceHint": "Attention & interpretability"
+    },
+    {
+      "id": "nlp_152",
+      "topic": "Attention & interpretability",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Wat is de rol van Query in attention?",
+      "options": {
+        "A": "Representeren waar een token naar zoekt.",
+        "B": "Representeren het antwoordlabel van de hele zin.",
+        "C": "Een lijst met stopwords.",
+        "D": "Een dependency relation."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Query is de 'zoekvraag' van een token in attention.",
+      "sourceHint": "Attention & interpretability"
+    },
+    {
+      "id": "nlp_153",
+      "topic": "Attention & interpretability",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Wat is de rol van Key in attention?",
+      "options": {
+        "A": "Representeren welke informatie een token aanbiedt om op gematcht te worden.",
+        "B": "Altijd de volgende token prediction.",
+        "C": "Een synoniem voor loss.",
+        "D": "Een label in SRL."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Keys worden met queries vergeleken om relevantie te bepalen.",
+      "sourceHint": "Attention & interpretability"
+    },
+    {
+      "id": "nlp_154",
+      "topic": "Attention & interpretability",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Wat is de rol van Value in attention?",
+      "options": {
+        "A": "De informatie die wordt doorgegeven/gewogen in de attention output.",
+        "B": "Alleen de gold answer.",
+        "C": "De naam van de corpus.",
+        "D": "Het aantal layers."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Values worden gecombineerd volgens attention weights.",
+      "sourceHint": "Attention & interpretability"
+    },
+    {
+      "id": "nlp_155",
+      "topic": "Attention & interpretability",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Welke uitspraken over attention heatmaps zijn correct?",
+      "options": {
+        "A": "Ze tonen attention weights tussen tokens.",
+        "B": "Ze kunnen helpen patronen te interpreteren.",
+        "C": "Ze bewijzen automatisch grounded semantic understanding.",
+        "D": "Verschillende heads kunnen verschillende patronen leren.",
+        "E": "Ze kunnen local of long-range aandacht tonen."
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "D",
+        "E"
+      ],
+      "explanation": "Heatmaps zijn interpretatiehulpmiddelen, geen bewijs van volledige meaning.",
+      "sourceHint": "Attention & interpretability"
+    },
+    {
+      "id": "nlp_156",
+      "topic": "Attention & interpretability",
+      "type": "single",
+      "difficulty": 3,
+      "question": "Waarom is 'attention is not explanation' een waarschuwing?",
+      "options": {
+        "A": "Hoge attention betekent niet automatisch causale verantwoordelijkheid voor output.",
+        "B": "Attention weights bestaan niet.",
+        "C": "Attention kan nooit nuttige patronen tonen.",
+        "D": "Heatmaps zijn altijd gold labels."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Attention kan correleren met invloed, maar causaliteit moet apart getest worden.",
+      "sourceHint": "Attention & interpretability"
+    },
+    {
+      "id": "nlp_157",
+      "topic": "Attention & interpretability",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Welke NLP-uitdagingen kunnen attention heads deels helpen behandelen?",
+      "options": {
+        "A": "Long-range dependencies",
+        "B": "Coreference/pronoun links",
+        "C": "Syntactic relations",
+        "D": "Alle ambiguity permanent oplossen",
+        "E": "Contextual word meaning"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "explanation": "Attention kan contextrelaties leren, maar lost niet alles automatisch op.",
+      "sourceHint": "Attention & interpretability"
+    },
+    {
+      "id": "nlp_158",
+      "topic": "Attention & interpretability",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Wat is multi-head attention?",
+      "options": {
+        "A": "Meerdere attention mechanisms parallel die verschillende relationele patronen kunnen leren.",
+        "B": "Een model met meerdere outputtalen zonder parameters.",
+        "C": "Een lijst met multiple choice antwoorden.",
+        "D": "Een smoothingmethode."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Heads kunnen verschillende aspecten van inputrelaties vastleggen.",
+      "sourceHint": "Attention & interpretability"
+    },
+    {
+      "id": "nlp_159",
+      "topic": "Attention & interpretability",
+      "type": "single",
+      "difficulty": 3,
+      "question": "Waarom is positional information nodig in Transformers?",
+      "options": {
+        "A": "Self-attention zelf is grotendeels order-insensitive zonder positie-informatie.",
+        "B": "Omdat tokens geen letters hebben.",
+        "C": "Omdat softmax anders geen probabilities maakt.",
+        "D": "Omdat embeddings anders altijd one-hot blijven."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Positional encodings/informatie geven volgorde door.",
+      "sourceHint": "Attention & interpretability"
+    },
+    {
+      "id": "nlp_160",
+      "topic": "Attention & interpretability",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Welke conclusies over een pronoun zoals 'it' zijn redelijk bij attention analyse?",
+      "options": {
+        "A": "Sommige heads kunnen naar mogelijke antecedenten attend'en.",
+        "B": "Attention kan aanwijzingen geven voor coreference-achtige patronen.",
+        "C": "Dit bewijst dat het model een menselijk situatiemodel heeft.",
+        "D": "Verschillende layers kunnen andere informatie gebruiken.",
+        "E": "De heatmap moet voorzichtig geïnterpreteerd worden."
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "D",
+        "E"
+      ],
+      "explanation": "Pronoun attention is interessant, maar niet voldoende voor grounded understanding.",
+      "sourceHint": "Attention & interpretability"
+    },
+    {
+      "id": "nlp_161",
+      "topic": "LLMs, BERT/GPT & training",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Wat is pretraining bij LLMs?",
+      "options": {
+        "A": "Training op grote hoeveelheden data met een algemene self-supervised objective.",
+        "B": "Handmatig elk outputantwoord schrijven.",
+        "C": "Alleen het evalueren op testdata.",
+        "D": "Het verwijderen van embeddings."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Pretraining leert algemene representaties/capabilities uit grote corpora.",
+      "sourceHint": "LLMs, BERT/GPT & training"
+    },
+    {
+      "id": "nlp_162",
+      "topic": "LLMs, BERT/GPT & training",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Welke uitspraken over GPT-style models zijn correct?",
+      "options": {
+        "A": "Decoder-only/autoregressive",
+        "B": "Voorspellen tokens op basis van voorafgaande tokens",
+        "C": "Geschikt voor generatie",
+        "D": "Altijd bidirectioneel masked LM als training objective",
+        "E": "Gebruiken Transformer blocks"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "explanation": "GPT is autoregressief decoder-only en genereert token voor token.",
+      "sourceHint": "LLMs, BERT/GPT & training"
+    },
+    {
+      "id": "nlp_163",
+      "topic": "LLMs, BERT/GPT & training",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Welke uitspraken over BERT-style models zijn correct?",
+      "options": {
+        "A": "Encoder-only",
+        "B": "Bidirectionele/contextuele representaties",
+        "C": "Masked language modeling",
+        "D": "Typisch sterk voor token/sentence classification",
+        "E": "Autoregressieve generatie is de primaire trainingstaak"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "explanation": "BERT is encoder-only en getraind met masked LM.",
+      "sourceHint": "LLMs, BERT/GPT & training"
+    },
+    {
+      "id": "nlp_164",
+      "topic": "LLMs, BERT/GPT & training",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Wat is masked language modeling?",
+      "options": {
+        "A": "Een model voorspelt gemaskeerde tokens op basis van context.",
+        "B": "Een model voorspelt alleen de eerste letter.",
+        "C": "Een parser verwijdert alle nouns.",
+        "D": "Een chatbot weigert alle input."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "MLM is BERT's self-supervised objective.",
+      "sourceHint": "LLMs, BERT/GPT & training"
+    },
+    {
+      "id": "nlp_165",
+      "topic": "LLMs, BERT/GPT & training",
+      "type": "single",
+      "difficulty": 3,
+      "question": "Wat is in-context learning?",
+      "options": {
+        "A": "Een model past gedrag aan op basis van voorbeelden in de prompt zonder expliciete parameterupdate.",
+        "B": "Een model wordt opnieuw getraind met backprop voor elke vraag.",
+        "C": "Een word2vec matrix wordt gesorteerd.",
+        "D": "Een dependency parser krijgt geen input."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Few-shot examples in de prompt kunnen taakgedrag sturen.",
+      "sourceHint": "LLMs, BERT/GPT & training"
+    },
+    {
+      "id": "nlp_166",
+      "topic": "LLMs, BERT/GPT & training",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Welke beperkingen kunnen LLMs hebben?",
+      "options": {
+        "A": "Hallucinations",
+        "B": "Bias uit training data",
+        "C": "Gevoeligheid voor prompts",
+        "D": "Moeite met counterfactual/robuste generalisatie",
+        "E": "Perfecte transparantie van training data en reasoning"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "explanation": "LLMs zijn krachtig maar niet foutloos of volledig transparant.",
+      "sourceHint": "LLMs, BERT/GPT & training"
+    },
+    {
+      "id": "nlp_167",
+      "topic": "LLMs, BERT/GPT & training",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Wat is instruction tuning?",
+      "options": {
+        "A": "Fine-tuning op instructie-antwoorddata om beter instructies te volgen.",
+        "B": "Alle weights willekeurig maken.",
+        "C": "Alleen vocabulary shrinken.",
+        "D": "Een n-gram smoothingmethode."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Instruction tuning leert modellen gebruikersinstructies volgen.",
+      "sourceHint": "LLMs, BERT/GPT & training"
+    },
+    {
+      "id": "nlp_168",
+      "topic": "LLMs, BERT/GPT & training",
+      "type": "single",
+      "difficulty": 1,
+      "question": "Wat is het verschil tussen pretraining en fine-tuning?",
+      "options": {
+        "A": "Pretraining leert algemeen uit brede data; fine-tuning past aan op specifieke taken/instructies.",
+        "B": "Fine-tuning gebeurt altijd voor pretraining.",
+        "C": "Pretraining gebruikt nooit tekst.",
+        "D": "Er is geen verschil."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Fine-tuning specialiseert een pretrained model.",
+      "sourceHint": "LLMs, BERT/GPT & training"
+    },
+    {
+      "id": "nlp_169",
+      "topic": "LLMs, BERT/GPT & training",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Welke uitspraken over foundation models zijn redelijk?",
+      "options": {
+        "A": "Ze kunnen voor meerdere downstream taken aangepast/gebruikt worden.",
+        "B": "Ze zijn vaak groot en breed pretrained.",
+        "C": "Ze zijn altijd volledig open en zonder bias.",
+        "D": "Ze kunnen via prompting of fine-tuning ingezet worden.",
+        "E": "Ze zijn nooit gebaseerd op Transformers."
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "D"
+      ],
+      "explanation": "Foundation models zijn breed inzetbare pretrained modellen, maar niet bias-vrij of altijd open.",
+      "sourceHint": "LLMs, BERT/GPT & training"
+    },
+    {
+      "id": "nlp_170",
+      "topic": "LLMs, BERT/GPT & training",
+      "type": "single",
+      "difficulty": 3,
+      "question": "Waarom is counterfactual evaluation nuttig voor LMs?",
+      "options": {
+        "A": "Het test of modellen abstracte vaardigheden generaliseren buiten standaardpatronen.",
+        "B": "Het maakt alle testdata makkelijker.",
+        "C": "Het verwijdert alle prompts.",
+        "D": "Het meet alleen tokenization speed."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Counterfactual tasks kunnen reciting/shortcut learning onderscheiden van generalisatie.",
+      "sourceHint": "LLMs, BERT/GPT & training"
+    },
+    {
+      "id": "nlp_171",
+      "topic": "Alignment, RLHF & AI safety",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Wat is AI Safety in de cursuscontext?",
+      "options": {
+        "A": "Zorgen dat AI-systemen betrouwbaar doen wat we willen, ook als ze capabeler worden.",
+        "B": "Alleen antivirussoftware installeren.",
+        "C": "Zorgen dat modellen nooit tekst genereren.",
+        "D": "Een POS-tagging benchmark."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "AI safety gaat over betrouwbaar, veilig en wenselijk gedrag van AI-systemen.",
+      "sourceHint": "Alignment, RLHF & AI safety"
+    },
+    {
+      "id": "nlp_172",
+      "topic": "Alignment, RLHF & AI safety",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Wat is misalignment?",
+      "options": {
+        "A": "Het AI-systeem optimaliseert niet wat mensen eigenlijk willen.",
+        "B": "Een typo in een corpus.",
+        "C": "Een parse tree zonder root.",
+        "D": "Een lage vocabulairegrootte."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Misalignment gaat over doelen/gedrag van het systeem versus menselijke intenties.",
+      "sourceHint": "Alignment, RLHF & AI safety"
+    },
+    {
+      "id": "nlp_173",
+      "topic": "Alignment, RLHF & AI safety",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Wat is misuse?",
+      "options": {
+        "A": "Mensen gebruiken AI om schade te veroorzaken.",
+        "B": "Een model gebruikt te veel LayerNorm.",
+        "C": "Een token is out-of-vocabulary.",
+        "D": "Een parser kiest een verkeerde dependency label."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Misuse is schadelijk gebruik door mensen, los van interne doelen van het model.",
+      "sourceHint": "Alignment, RLHF & AI safety"
+    },
+    {
+      "id": "nlp_174",
+      "topic": "Alignment, RLHF & AI safety",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Welke stappen horen vaak bij ChatGPT-achtige training?",
+      "options": {
+        "A": "Pretraining op next-token prediction",
+        "B": "Supervised fine-tuning op instructiedata",
+        "C": "RLHF/preference optimization",
+        "D": "Altijd alleen rule-based grammars",
+        "E": "Safety/alignment training"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "explanation": "Chatmodellen combineren pretraining, instructiefinetuning en alignmentmethoden.",
+      "sourceHint": "Alignment, RLHF & AI safety"
+    },
+    {
+      "id": "nlp_175",
+      "topic": "Alignment, RLHF & AI safety",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Wat is RLHF globaal?",
+      "options": {
+        "A": "Reinforcement learning/fine-tuning met menselijke voorkeurssignalen.",
+        "B": "Een spellingcorrector.",
+        "C": "Een dependency parser zonder labels.",
+        "D": "Een n-gram backoff formule."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "RLHF gebruikt human feedback/preferences om modelgedrag te sturen.",
+      "sourceHint": "Alignment, RLHF & AI safety"
+    },
+    {
+      "id": "nlp_176",
+      "topic": "Alignment, RLHF & AI safety",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Welke risico’s horen bij LLM deployment?",
+      "options": {
+        "A": "Hallucinated information",
+        "B": "Bias/discrimination",
+        "C": "Privacy/training data issues",
+        "D": "Overreliance by users",
+        "E": "Geen enkel risico zodra perplexity laag is"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "explanation": "Deployment vereist aandacht voor fouten, bias, privacy en menselijk gebruik.",
+      "sourceHint": "Alignment, RLHF & AI safety"
+    },
+    {
+      "id": "nlp_177",
+      "topic": "Alignment, RLHF & AI safety",
+      "type": "single",
+      "difficulty": 3,
+      "question": "Waarom is 'capability generality' safety-relevant?",
+      "options": {
+        "A": "Breder inzetbare systemen kunnen fouten/risico's over meer domeinen veroorzaken.",
+        "B": "Algemene modellen kunnen nooit schade doen.",
+        "C": "Narrow AI en AGI zijn exact hetzelfde.",
+        "D": "Generality betekent dat training data kleiner is."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Hoe algemener het systeem, hoe groter potentieel bereik van impact.",
+      "sourceHint": "Alignment, RLHF & AI safety"
+    },
+    {
+      "id": "nlp_178",
+      "topic": "Alignment, RLHF & AI safety",
+      "type": "single",
+      "difficulty": 3,
+      "question": "Wat is reward hacking?",
+      "options": {
+        "A": "Het optimaliseren van de beloningsproxy op een ongewenste manier.",
+        "B": "Het verlagen van alle probabilities naar 0.",
+        "C": "Het handmatig taggen van nouns.",
+        "D": "Het maken van stopwords."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Een systeem kan de beloning maximaliseren zonder de echte intentie te volgen.",
+      "sourceHint": "Alignment, RLHF & AI safety"
+    },
+    {
+      "id": "nlp_179",
+      "topic": "Alignment, RLHF & AI safety",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Welke evaluaties kunnen alignment/safety ondersteunen?",
+      "options": {
+        "A": "Red-teaming",
+        "B": "Bias audits",
+        "C": "Robustness tests",
+        "D": "Monitoring after deployment",
+        "E": "Alleen één cherry-picked demo"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "explanation": "Safety vraagt brede evaluatie en monitoring.",
+      "sourceHint": "Alignment, RLHF & AI safety"
+    },
+    {
+      "id": "nlp_180",
+      "topic": "Alignment, RLHF & AI safety",
+      "type": "single",
+      "difficulty": 3,
+      "question": "Waarom lost RLHF niet automatisch alle safety-problemen op?",
+      "options": {
+        "A": "Human preferences zijn beperkt, biased of onvolledig en modellen kunnen generaliseren op ongewenste manieren.",
+        "B": "RLHF maakt modellen niet tekstueel.",
+        "C": "RLHF verwijdert alle parameters.",
+        "D": "RLHF is hetzelfde als spellingcontrole."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "RLHF is nuttig, maar geen volledige garantie.",
+      "sourceHint": "Alignment, RLHF & AI safety"
+    },
+    {
+      "id": "nlp_181",
+      "topic": "Constituency & dependency parsing",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Wat is constituency parsing?",
+      "options": {
+        "A": "Woorden groeperen in nested phrases/constituents.",
+        "B": "Alleen semantic roles voorspellen.",
+        "C": "Een token naar zijn lemma brengen.",
+        "D": "Een word embedding trainen."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Constituency parsing bouwt phrase structure trees.",
+      "sourceHint": "Constituency & dependency parsing"
+    },
+    {
+      "id": "nlp_182",
+      "topic": "Constituency & dependency parsing",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Wat is dependency parsing?",
+      "options": {
+        "A": "Relaties tussen woorden vastleggen, bijvoorbeeld head-dependent arcs.",
+        "B": "Alleen zinnen classificeren als positief/negatief.",
+        "C": "Alle words verwijderen behalve verbs.",
+        "D": "Een corpus alfabetisch sorteren."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Dependency parsing analyseert welke woorden van welke heads afhangen.",
+      "sourceHint": "Constituency & dependency parsing"
+    },
+    {
+      "id": "nlp_183",
+      "topic": "Constituency & dependency parsing",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Welke uitspraken over dependency trees zijn correct?",
+      "options": {
+        "A": "Ze hebben meestal een root.",
+        "B": "Woorden zijn nodes.",
+        "C": "Arcs tonen syntactische relaties.",
+        "D": "Ze groeperen altijd alleen phrases zonder woordrelaties.",
+        "E": "Labels zoals nsubj/obj kunnen voorkomen."
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "explanation": "Dependency trees bestaan uit woordnodes en gelabelde afhankelijkheden.",
+      "sourceHint": "Constituency & dependency parsing"
+    },
+    {
+      "id": "nlp_184",
+      "topic": "Constituency & dependency parsing",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Wat is PP attachment ambiguity?",
+      "options": {
+        "A": "Een prepositional phrase kan aan verschillende heads attachen.",
+        "B": "Een woord heeft geen letters.",
+        "C": "Alle verbs worden nouns.",
+        "D": "Een zin heeft geen probability."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Bij 'with a telescope' kan de PP bij saw of girl/man horen.",
+      "sourceHint": "Constituency & dependency parsing"
+    },
+    {
+      "id": "nlp_185",
+      "topic": "Constituency & dependency parsing",
+      "type": "single",
+      "difficulty": 3,
+      "question": "Waarom is 'The horse raced past the barn fell' een garden-path sentence?",
+      "options": {
+        "A": "De lezer kiest eerst een analyse die later moet worden herzien.",
+        "B": "Het bevat geen werkwoorden.",
+        "C": "Het is volledig ongrammaticaal in elke lezing.",
+        "D": "Het is een machine translation metric."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Raced lijkt eerst hoofdwerkwoord, maar werkt als reduced relative: horse [raced past barn] fell.",
+      "sourceHint": "Constituency & dependency parsing"
+    },
+    {
+      "id": "nlp_186",
+      "topic": "Constituency & dependency parsing",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Waarom hebben we sentence structure nodig?",
+      "options": {
+        "A": "Om te weten wat wat modificeert",
+        "B": "Voor compositional meaning",
+        "C": "Voor generalization to novel sentences",
+        "D": "Omdat woordvolgorde en relaties betekenis beïnvloeden",
+        "E": "Omdat alle zinnen losse bags of words zijn"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "explanation": "Structuur bepaalt interpretatie en generalisatie.",
+      "sourceHint": "Constituency & dependency parsing"
+    },
+    {
+      "id": "nlp_187",
+      "topic": "Constituency & dependency parsing",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Wat is de head in een dependency relation?",
+      "options": {
+        "A": "Het woord waarvan een ander woord syntactisch afhankelijk is.",
+        "B": "Altijd het eerste woord van de zin.",
+        "C": "Een label voor sentiment.",
+        "D": "Een token zonder functie."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Dependents attachen aan heads.",
+      "sourceHint": "Constituency & dependency parsing"
+    },
+    {
+      "id": "nlp_188",
+      "topic": "Constituency & dependency parsing",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Welke dependency relations zijn typisch?",
+      "options": {
+        "A": "nsubj",
+        "B": "obj",
+        "C": "det",
+        "D": "amod",
+        "E": "BLEU"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "explanation": "nsubj, obj, det en amod zijn dependency labels.",
+      "sourceHint": "Constituency & dependency parsing"
+    },
+    {
+      "id": "nlp_189",
+      "topic": "Constituency & dependency parsing",
+      "type": "single",
+      "difficulty": 3,
+      "question": "Wat is een voordeel van dependency parsing voor vrije woordvolgordetalen?",
+      "options": {
+        "A": "Het kan syntactische relaties losser van lineaire positie representeren.",
+        "B": "Het vereist altijd Engelse woordvolgorde.",
+        "C": "Het kan geen labels bevatten.",
+        "D": "Het gebruikt alleen word counts."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Dependency relations kunnen cross-linguistisch handig zijn, al blijven taalverschillen belangrijk.",
+      "sourceHint": "Constituency & dependency parsing"
+    },
+    {
+      "id": "nlp_190",
+      "topic": "Constituency & dependency parsing",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Welke voorbeelden tonen syntactische ambiguity?",
+      "options": {
+        "A": "I saw a girl with a telescope",
+        "B": "San Jose cops kill man with knife",
+        "C": "Flying planes can be dangerous",
+        "D": "bank als river/finance zonder syntactische ambiguity",
+        "E": "I saw an elephant in my pajamas"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "explanation": "Deze voorbeelden hebben attachment/POS/structurele ambiguity.",
+      "sourceHint": "Constituency & dependency parsing"
+    },
+    {
+      "id": "nlp_191",
+      "topic": "Parsing algorithms & evaluation",
+      "type": "single",
+      "difficulty": 3,
+      "question": "Wat meet UAS?",
+      "options": {
+        "A": "Percentage woorden met correcte head, ongeacht dependency label.",
+        "B": "Percentage woorden met correct head én label.",
+        "C": "Aantal unieke woordtypes.",
+        "D": "Perplexity van een language model."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Unlabeled Attachment Score kijkt naar head accuracy zonder labels.",
+      "sourceHint": "Parsing algorithms & evaluation"
+    },
+    {
+      "id": "nlp_192",
+      "topic": "Parsing algorithms & evaluation",
+      "type": "single",
+      "difficulty": 3,
+      "question": "Wat meet LAS?",
+      "options": {
+        "A": "Percentage woorden met correcte head én correct dependency label.",
+        "B": "Alleen de cosine tussen embeddings.",
+        "C": "Alleen de lengte van de zin.",
+        "D": "De fluency van vertaling."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Labeled Attachment Score is strenger dan UAS.",
+      "sourceHint": "Parsing algorithms & evaluation"
+    },
+    {
+      "id": "nlp_193",
+      "topic": "Parsing algorithms & evaluation",
+      "type": "multi",
+      "difficulty": 3,
+      "question": "Welke uitspraken over dependency parsing metrics zijn correct?",
+      "options": {
+        "A": "UAS negeert labels.",
+        "B": "LAS vereist correcte head en label.",
+        "C": "Precision kijkt naar correct voorspelde dependencies uit alle voorspelde dependencies.",
+        "D": "Recall kijkt naar correct voorspelde dependencies uit alle gold dependencies.",
+        "E": "F1 is altijd de harmonic mean van UAS en LAS."
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "explanation": "F1 is harmonic mean van precision/recall, niet standaard van UAS/LAS.",
+      "sourceHint": "Parsing algorithms & evaluation"
+    },
+    {
+      "id": "nlp_194",
+      "topic": "Parsing algorithms & evaluation",
+      "type": "single",
+      "difficulty": 3,
+      "question": "Wat is transition-based dependency parsing?",
+      "options": {
+        "A": "Een parser bouwt stap voor stap een parse via acties/configuraties.",
+        "B": "Een model kiest altijd alle mogelijke graphs tegelijk zonder acties.",
+        "C": "Een model telt alleen unigrams.",
+        "D": "Een semantic role labeler zonder syntax."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Transition-based parsing gebruikt acties zoals shift/reduce-achtige stappen.",
+      "sourceHint": "Parsing algorithms & evaluation"
+    },
+    {
+      "id": "nlp_195",
+      "topic": "Parsing algorithms & evaluation",
+      "type": "single",
+      "difficulty": 3,
+      "question": "Wanneer stopt een transition-based parser?",
+      "options": {
+        "A": "Wanneer een terminal configuration bereikt is.",
+        "B": "Wanneer elk woord exact drie letters heeft.",
+        "C": "Wanneer perplexity nul is.",
+        "D": "Na één willekeurige actie."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "De parser stopt bij een eindconfiguratie.",
+      "sourceHint": "Parsing algorithms & evaluation"
+    },
+    {
+      "id": "nlp_196",
+      "topic": "Parsing algorithms & evaluation",
+      "type": "single",
+      "difficulty": 3,
+      "question": "Wat is graph-based dependency parsing?",
+      "options": {
+        "A": "Meerdere candidate graphs scoren en een hoogste-score parse kiezen.",
+        "B": "Een parser die geen kandidaten bouwt.",
+        "C": "Een method om stopwords te verwijderen.",
+        "D": "Een visualisatie van images zonder tekst."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Graph-based parsing zoekt vaak naar de best scoring dependency graph.",
+      "sourceHint": "Parsing algorithms & evaluation"
+    },
+    {
+      "id": "nlp_197",
+      "topic": "Parsing algorithms & evaluation",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Welke zijn data-driven parsing approaches?",
+      "options": {
+        "A": "Transition-based parsing",
+        "B": "Graph-based parsing",
+        "C": "Een volledig willekeurige parser zonder training",
+        "D": "Neural parsing",
+        "E": "Handmatig per zin tekenen zonder model"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "D"
+      ],
+      "explanation": "Data-driven parsers leren uit geannoteerde data.",
+      "sourceHint": "Parsing algorithms & evaluation"
+    },
+    {
+      "id": "nlp_198",
+      "topic": "Parsing algorithms & evaluation",
+      "type": "single",
+      "difficulty": 3,
+      "question": "Waarom zijn graphs soms expressiever dan trees?",
+      "options": {
+        "A": "Graphs kunnen richer semantic relations en reentrancies representeren.",
+        "B": "Trees kunnen nooit woorden bevatten.",
+        "C": "Graphs hebben geen nodes.",
+        "D": "Graphs zijn altijd minder informatief."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Graphs kunnen relaties representeren die niet netjes in één boom passen.",
+      "sourceHint": "Parsing algorithms & evaluation"
+    },
+    {
+      "id": "nlp_199",
+      "topic": "Parsing algorithms & evaluation",
+      "type": "multi",
+      "difficulty": 3,
+      "question": "Waarom is parsing-evaluatie lastig?",
+      "options": {
+        "A": "Syntactische analyses kunnen verschillen in scheme",
+        "B": "Label sets verschillen",
+        "C": "Ambiguity kan meerdere plausibele analyses geven",
+        "D": "Alle parses zijn altijd identiek",
+        "E": "Downstream usefulness kan afwijken van UAS/LAS"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "explanation": "Parsing metrics zijn nuttig maar niet de enige maat voor kwaliteit.",
+      "sourceHint": "Parsing algorithms & evaluation"
+    },
+    {
+      "id": "nlp_200",
+      "topic": "Parsing algorithms & evaluation",
+      "type": "single",
+      "difficulty": 1,
+      "question": "Wat is gold standard in parsing?",
+      "options": {
+        "A": "Een referentie-annotatie waarmee parseroutput wordt vergeleken.",
+        "B": "Een model zonder training.",
+        "C": "Een token dat altijd root is.",
+        "D": "Een smoothingparameter."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Gold annotations dienen als evaluatiereferentie.",
+      "sourceHint": "Parsing algorithms & evaluation"
+    },
+    {
+      "id": "nlp_201",
+      "topic": "Semantic Role Labeling",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Wat is Semantic Role Labeling?",
+      "options": {
+        "A": "Bepalen welke deelnemers welke rollen spelen bij een predicate/event.",
+        "B": "Alleen woordfrequenties tellen.",
+        "C": "Een zin in losse pixels splitsen.",
+        "D": "Alle nouns verwijderen."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "SRL geeft rollen zoals Agent, Theme, Instrument, Recipient aan argumenten.",
+      "sourceHint": "Semantic Role Labeling"
+    },
+    {
+      "id": "nlp_202",
+      "topic": "Semantic Role Labeling",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Wat is ARG0 vaak bij PropBank-achtige SRL?",
+      "options": {
+        "A": "Vaak de proto-Agent/doener van de actie.",
+        "B": "Altijd de locatie.",
+        "C": "Altijd punctuation.",
+        "D": "Altijd het lijdend voorwerp."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "ARG0 is vaak agent-achtig, afhankelijk van predicate.",
+      "sourceHint": "Semantic Role Labeling"
+    },
+    {
+      "id": "nlp_203",
+      "topic": "Semantic Role Labeling",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Wat is ARG1 vaak?",
+      "options": {
+        "A": "Vaak Theme/Patient of datgene waarop de actie betrekking heeft.",
+        "B": "Altijd de schrijver van het corpus.",
+        "C": "Altijd tense.",
+        "D": "Altijd determiner."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "ARG1 is vaak het centrale object/theme.",
+      "sourceHint": "Semantic Role Labeling"
+    },
+    {
+      "id": "nlp_204",
+      "topic": "Semantic Role Labeling",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Welke rollen kunnen bij 'The chef cut the bread with a knife' horen?",
+      "options": {
+        "A": "chef = Agent",
+        "B": "bread = Theme/Patient",
+        "C": "knife = Instrument",
+        "D": "cut = predicate",
+        "E": "bread = always Agent"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "explanation": "SRL abstraheert over wie wat doet waarmee.",
+      "sourceHint": "Semantic Role Labeling"
+    },
+    {
+      "id": "nlp_205",
+      "topic": "Semantic Role Labeling",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Waarom is SRL nuttig bij actieve/passieve alternaties?",
+      "options": {
+        "A": "Het kan dezelfde event roles herkennen ondanks verschillende syntax.",
+        "B": "Het werkt alleen in actieve zinnen.",
+        "C": "Het negeert meaning volledig.",
+        "D": "Het verandert alle passives in nouns."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "SRL maakt syntactische variatie semantisch vergelijkbaar.",
+      "sourceHint": "Semantic Role Labeling"
+    },
+    {
+      "id": "nlp_206",
+      "topic": "Semantic Role Labeling",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Welke zinnen kunnen dezelfde semantic roles hebben ondanks syntaxverschil?",
+      "options": {
+        "A": "The customer gave the waiter a tip.",
+        "B": "The customer gave a tip to the waiter.",
+        "C": "A tip was given to the waiter by the customer.",
+        "D": "The waiter customer tip gave nonsensically zonder parse",
+        "E": "The chef sliced the bread with a knife / A knife was used..."
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "explanation": "Ditransitive/prepositional/passive alternaties kunnen core roles delen.",
+      "sourceHint": "Semantic Role Labeling"
+    },
+    {
+      "id": "nlp_207",
+      "topic": "Semantic Role Labeling",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Wat is predicate identification?",
+      "options": {
+        "A": "Bepalen welk woord/event de centrale predicate is voor SRL.",
+        "B": "Alle stopwoorden verwijderen.",
+        "C": "Een POS tag willekeurig kiezen.",
+        "D": "Alle tokens naar hoofdletters zetten."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Voor SRL moet je weten bij welk predicate de argumenten horen.",
+      "sourceHint": "Semantic Role Labeling"
+    },
+    {
+      "id": "nlp_208",
+      "topic": "Semantic Role Labeling",
+      "type": "multi",
+      "difficulty": 3,
+      "question": "Waarom is SRL moeilijk?",
+      "options": {
+        "A": "Syntax en semantics mappen niet altijd één-op-één.",
+        "B": "Implicit arguments kunnen ontbreken.",
+        "C": "Passives/alternations veranderen surface form.",
+        "D": "Alle predicates hebben exact dezelfde rollen.",
+        "E": "Context kan nodig zijn."
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "explanation": "SRL vereist abstractie over syntactische variatie en context.",
+      "sourceHint": "Semantic Role Labeling"
+    },
+    {
+      "id": "nlp_209",
+      "topic": "Semantic Role Labeling",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Wat is het verschil tussen syntactic subject en semantic Agent?",
+      "options": {
+        "A": "Subject is grammaticale positie; Agent is semantische rol en kan in passives by-phrase zijn.",
+        "B": "Ze zijn altijd exact hetzelfde.",
+        "C": "Agent is een POS-tag.",
+        "D": "Subject bestaat niet in dependency parsing."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "In passives is het subject vaak Theme/Patient, niet Agent.",
+      "sourceHint": "Semantic Role Labeling"
+    },
+    {
+      "id": "nlp_210",
+      "topic": "Semantic Role Labeling",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Welke taken kunnen profiteren van SRL?",
+      "options": {
+        "A": "Question answering",
+        "B": "Information extraction",
+        "C": "Summarization",
+        "D": "Semantic parsing/NLU",
+        "E": "Image compression zonder taal"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "explanation": "SRL geeft event structure die downstream nuttig kan zijn.",
+      "sourceHint": "Semantic Role Labeling"
+    },
+    {
+      "id": "nlp_211",
+      "topic": "Semantics & semantic parsing",
+      "type": "single",
+      "difficulty": 1,
+      "question": "Wat is lexical semantics?",
+      "options": {
+        "A": "De studie/representatie van woordbetekenissen en relaties tussen woorden.",
+        "B": "Alleen dependency arcs tellen.",
+        "C": "Een model dat alleen images leest.",
+        "D": "Een smoothingmethode."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Lexical semantics gaat over woordbetekenis, senses en relaties.",
+      "sourceHint": "Semantics & semantic parsing"
+    },
+    {
+      "id": "nlp_212",
+      "topic": "Semantics & semantic parsing",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Wat is logical semantics?",
+      "options": {
+        "A": "Betekenis van zinnen representeren met logische/formeel interpreteerbare structuren.",
+        "B": "Alle woorden alfabetisch sorteren.",
+        "C": "Een model met alleen one-hot input.",
+        "D": "Een POS baseline."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Logical semantics gebruikt meaning representations voor zinsbetekenis.",
+      "sourceHint": "Semantics & semantic parsing"
+    },
+    {
+      "id": "nlp_213",
+      "topic": "Semantics & semantic parsing",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Welke dingen willen we vaak in meaning representations representeren?",
+      "options": {
+        "A": "Objects/entities",
+        "B": "Properties",
+        "C": "Relations/events",
+        "D": "Quantification/negation",
+        "E": "Alleen lettertype"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "explanation": "Meaning representations modelleren entiteiten, eigenschappen, relaties en operatoren.",
+      "sourceHint": "Semantics & semantic parsing"
+    },
+    {
+      "id": "nlp_214",
+      "topic": "Semantics & semantic parsing",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Wat is semantic parsing?",
+      "options": {
+        "A": "Natural language omzetten naar een abstracte meaning representation.",
+        "B": "Alleen tokens naar lowercase brengen.",
+        "C": "Een corpus verdelen in train/test.",
+        "D": "Een embeddingdimensie kiezen."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Semantic parsing mappt tekst naar logische vormen, queries, AMR, etc.",
+      "sourceHint": "Semantics & semantic parsing"
+    },
+    {
+      "id": "nlp_215",
+      "topic": "Semantics & semantic parsing",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Welke methoden voor semantic parsing werden genoemd?",
+      "options": {
+        "A": "Hand-written grammars",
+        "B": "Statistical grammar learning",
+        "C": "Neural mapping",
+        "D": "Alleen spellingcorrectie",
+        "E": "Compositional parsing"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "explanation": "Semantic parsers kunnen rule-based, statistical, neural of compositional zijn.",
+      "sourceHint": "Semantics & semantic parsing"
+    },
+    {
+      "id": "nlp_216",
+      "topic": "Semantics & semantic parsing",
+      "type": "single",
+      "difficulty": 3,
+      "question": "Waarom kan First-Order Logic lastig zijn als meaning representation?",
+      "options": {
+        "A": "Het sluit niet vanzelf netjes aan op syntactische compositionaliteit van natuurlijke taal.",
+        "B": "Het kan geen relaties representeren.",
+        "C": "Het kan geen universal quantification representeren.",
+        "D": "Het bevat geen variabelen."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "FOL is expressief, maar mapping vanuit natuurlijke taal is complex.",
+      "sourceHint": "Semantics & semantic parsing"
+    },
+    {
+      "id": "nlp_217",
+      "topic": "Semantics & semantic parsing",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Wat is entailment in NLU?",
+      "options": {
+        "A": "Bepalen of een zin/hypothese logisch volgt uit een andere uiting/context.",
+        "B": "Een woord naar hoofdletters omzetten.",
+        "C": "Een dependency root labelen.",
+        "D": "Een image embedden."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Entailment test betekenisrelaties tussen zinnen.",
+      "sourceHint": "Semantics & semantic parsing"
+    },
+    {
+      "id": "nlp_218",
+      "topic": "Semantics & semantic parsing",
+      "type": "multi",
+      "difficulty": 3,
+      "question": "Welke zinnen illustreren dat world/model knowledge nodig kan zijn voor entailment?",
+      "options": {
+        "A": "A man, a woman, and two girls are walking on the beach -> A group of people is on a beach.",
+        "B": "I reached into that pocket high up on my dress -> Something is high up on my dress.",
+        "C": "The Commissioner doesn't regret... -> factive/negation reasoning nodig.",
+        "D": "Alle zinnen entailen automatisch alle hypotheses.",
+        "E": "Coreference kan nodig zijn."
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "explanation": "Entailment vereist lexical semantics, world knowledge, negation/factivity en coreference.",
+      "sourceHint": "Semantics & semantic parsing"
+    },
+    {
+      "id": "nlp_219",
+      "topic": "Semantics & semantic parsing",
+      "type": "single",
+      "difficulty": 3,
+      "question": "Wat is AMR grofweg?",
+      "options": {
+        "A": "Een graph-based meaning representation voor zinsbetekenis.",
+        "B": "Een stemmingalgoritme.",
+        "C": "Een type softmax.",
+        "D": "Een POS tag."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "AMR representeert betekenis als graph met concepten en relaties.",
+      "sourceHint": "Semantics & semantic parsing"
+    },
+    {
+      "id": "nlp_220",
+      "topic": "Semantics & semantic parsing",
+      "type": "multi",
+      "difficulty": 3,
+      "question": "Waarom is compositionality belangrijk voor semantic parsing?",
+      "options": {
+        "A": "Parser kan betekenissen van delen combineren.",
+        "B": "Helpt generaliseren naar nieuwe combinaties.",
+        "C": "Kan argumentstructuur afdwingen.",
+        "D": "Maakt syntaxis volledig irrelevant.",
+        "E": "Kan complexe betekenissen opbouwen."
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "explanation": "Compositional parsing gebruikt structuur om meaning te bouwen.",
+      "sourceHint": "Semantics & semantic parsing"
+    },
+    {
+      "id": "nlp_221",
+      "topic": "Grounding & multimodal NLP",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Wat is het symbol grounding problem?",
+      "options": {
+        "A": "Hoe symbolen/woorden hun betekenis krijgen door verbinding met wereld/perceptie.",
+        "B": "Hoe je alle tokens lowercase maakt.",
+        "C": "Hoe dependency labels worden gesorteerd.",
+        "D": "Hoe perplexity wordt berekend."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Grounding vraagt hoe woorden niet alleen naar andere woorden verwijzen, maar naar wereld/ervaring.",
+      "sourceHint": "Grounding & multimodal NLP"
+    },
+    {
+      "id": "nlp_222",
+      "topic": "Grounding & multimodal NLP",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Waarom is tekst niet hetzelfde als taal?",
+      "options": {
+        "A": "Tekst is een manier om taal te coderen; taal kan ook gesproken/gebarend/multimodaal zijn.",
+        "B": "Taal bestaat alleen uit tekst.",
+        "C": "Tekst bevat nooit symbolen.",
+        "D": "Gebarentaal is geen taal."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Natural language is niet ‘naturally’ alleen text.",
+      "sourceHint": "Grounding & multimodal NLP"
+    },
+    {
+      "id": "nlp_223",
+      "topic": "Grounding & multimodal NLP",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Welke taken horen bij vision-language NLP?",
+      "options": {
+        "A": "Image captioning",
+        "B": "Text-to-image retrieval",
+        "C": "Visual question answering",
+        "D": "Image classification met semantische label embeddings",
+        "E": "Alleen pure audio compression zonder taal"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "explanation": "Vision-language combineert visuele input en taal.",
+      "sourceHint": "Grounding & multimodal NLP"
+    },
+    {
+      "id": "nlp_224",
+      "topic": "Grounding & multimodal NLP",
+      "type": "single",
+      "difficulty": 3,
+      "question": "Waarom kan image classification als vision-language task worden gezien?",
+      "options": {
+        "A": "Labels kunnen als taal/semantische embeddings in een gedeelde ruimte worden gebruikt.",
+        "B": "Omdat images altijd zinnen zijn.",
+        "C": "Omdat classes geen betekenis hebben.",
+        "D": "Omdat classificatie nooit labels gebruikt."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Labels zijn talige categorieën; gedeelde embeddingruimtes maken zero-shot mogelijk.",
+      "sourceHint": "Grounding & multimodal NLP"
+    },
+    {
+      "id": "nlp_225",
+      "topic": "Grounding & multimodal NLP",
+      "type": "single",
+      "difficulty": 3,
+      "question": "Wat is zero-shot classification in vision-language context?",
+      "options": {
+        "A": "Een model kan nieuwe labels/classes herkennen via semantische labelrepresentaties zonder taak-specifieke voorbeelden.",
+        "B": "Een model gebruikt nul input.",
+        "C": "Een classifier zonder labels tijdens output.",
+        "D": "Een parser die altijd root kiest."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Shared latent spaces maken generalisatie naar nieuwe tekstlabels mogelijk.",
+      "sourceHint": "Grounding & multimodal NLP"
+    },
+    {
+      "id": "nlp_226",
+      "topic": "Grounding & multimodal NLP",
+      "type": "multi",
+      "difficulty": 3,
+      "question": "Welke problemen spelen bij multimodal embeddings?",
+      "options": {
+        "A": "Modality gap",
+        "B": "Alignment tussen beeld- en tekstrepresentaties",
+        "C": "Bias in image/text data",
+        "D": "Grounding blijft deels lastig",
+        "E": "Alle modalities zijn automatisch identiek"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "explanation": "Multimodal learning moet modalities op elkaar afstemmen.",
+      "sourceHint": "Grounding & multimodal NLP"
+    },
+    {
+      "id": "nlp_227",
+      "topic": "Grounding & multimodal NLP",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Waarom kan multimodal input helpen bij ‘The ants goeded into the dirt with their crumbles’?",
+      "options": {
+        "A": "Visuele context kan laten zien welke objecten/acties bedoeld zijn.",
+        "B": "Omdat syntax dan overbodig is in alle gevallen.",
+        "C": "Omdat 'goeded' dan in elk woordenboek staat.",
+        "D": "Omdat grounding irrelevant wordt."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Een situatiemodel/vision kan novel language helpen interpreteren.",
+      "sourceHint": "Grounding & multimodal NLP"
+    },
+    {
+      "id": "nlp_228",
+      "topic": "Grounding & multimodal NLP",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Welke woorden in de ants-zin vragen grounding?",
+      "options": {
+        "A": "ants",
+        "B": "dirt",
+        "C": "crumbles",
+        "D": "goeded als actie in situatie",
+        "E": "the als enige betekenisdrager"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "explanation": "Entiteiten, objecten en novel actions moeten aan de situatie worden gekoppeld.",
+      "sourceHint": "Grounding & multimodal NLP"
+    },
+    {
+      "id": "nlp_229",
+      "topic": "Grounding & multimodal NLP",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Waarom is attention alleen niet genoeg als bewijs van grounding?",
+      "options": {
+        "A": "Attention toont form/context relations, maar niet directe verbinding met wereld/perceptie.",
+        "B": "Attention bestaat alleen in vision models.",
+        "C": "Attention kan geen tokenrelaties tonen.",
+        "D": "Attention is hetzelfde als een camera."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Grounding vereist relatie met buiten-talige wereld, niet alleen tokenpatronen.",
+      "sourceHint": "Grounding & multimodal NLP"
+    },
+    {
+      "id": "nlp_230",
+      "topic": "Grounding & multimodal NLP",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Welke voordelen kunnen multimodal models hebben?",
+      "options": {
+        "A": "Verbinden taal met perceptuele signalen",
+        "B": "Betere object/category grounding",
+        "C": "Mogelijkheid tot image-text retrieval",
+        "D": "Automatisch volledige menselijke commonsense in alle gevallen",
+        "E": "Zero-shot generalisatie via shared embeddings"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "explanation": "Multimodaliteit helpt grounding, maar lost niet alle commonsense op.",
+      "sourceHint": "Grounding & multimodal NLP"
+    },
+    {
+      "id": "nlp_231",
+      "topic": "Multilingual NLP & translation",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Waarom is 'gezellig' moeilijk te vertalen?",
+      "options": {
+        "A": "Het draagt cultureel/pragmatisch geladen betekenis zonder exact equivalent.",
+        "B": "Het heeft geen letters.",
+        "C": "Het is altijd een werkwoord.",
+        "D": "Het betekent in elke taal exact hetzelfde woord."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Sommige woorden combineren semantische en culturele betekenis die niet één-op-één vertaalt.",
+      "sourceHint": "Multilingual NLP & translation"
+    },
+    {
+      "id": "nlp_232",
+      "topic": "Multilingual NLP & translation",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Welke redenen maken woorden zoals 'gezellig' of 'sisu' lastig?",
+      "options": {
+        "A": "Geen direct equivalent",
+        "B": "Culturele connotaties",
+        "C": "Contextafhankelijke gebruikswijzen",
+        "D": "Code-switching mogelijk",
+        "E": "Alle sprekers gebruiken ze exact identiek"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "explanation": "Untranslatables hebben vaak culturele en contextuele nuance.",
+      "sourceHint": "Multilingual NLP & translation"
+    },
+    {
+      "id": "nlp_233",
+      "topic": "Multilingual NLP & translation",
+      "type": "single",
+      "difficulty": 1,
+      "question": "Wat is code-switching?",
+      "options": {
+        "A": "Het wisselen/gebruiken van meerdere talen of taalvariëteiten in één uiting/context.",
+        "B": "Het omzetten van tekst naar Python-code.",
+        "C": "Het verwijderen van alle foreign words.",
+        "D": "Een type attention head."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Code-switching is mixen van talen/variëteiten.",
+      "sourceHint": "Multilingual NLP & translation"
+    },
+    {
+      "id": "nlp_234",
+      "topic": "Multilingual NLP & translation",
+      "type": "single",
+      "difficulty": 3,
+      "question": "In noisy-channel MT argmax_e P(f|e)P(e), wat doet P(e)?",
+      "options": {
+        "A": "Het language model/source model beoordeelt fluency van de kandidaatvertaling.",
+        "B": "Het meet uitsluitend faithfulness aan input.",
+        "C": "Het is altijd een parser.",
+        "D": "Het verwijdert alle onbekende woorden."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "P(e) beloont vloeiende doeltaalzinnen; P(f|e) modelleert translation likelihood.",
+      "sourceHint": "Multilingual NLP & translation"
+    },
+    {
+      "id": "nlp_235",
+      "topic": "Multilingual NLP & translation",
+      "type": "single",
+      "difficulty": 3,
+      "question": "Wat doet P(f|e) in noisy-channel MT?",
+      "options": {
+        "A": "Het translation model beoordeelt hoe waarschijnlijk de brontaalzin is gegeven de kandidaatvertaling.",
+        "B": "Het bepaalt alleen POS tags.",
+        "C": "Het meet de kleur van tekst.",
+        "D": "Het is een stopwordlijst."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "P(f|e) modelleert adequacy/faithfulness in noisy-channel formulation.",
+      "sourceHint": "Multilingual NLP & translation"
+    },
+    {
+      "id": "nlp_236",
+      "topic": "Multilingual NLP & translation",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Welke problemen spelen in multilingual NLP?",
+      "options": {
+        "A": "Engels domineert datasets en onderzoek",
+        "B": "Low-resource languages hebben minder data/tools",
+        "C": "Typologische verschillen beïnvloeden modellen",
+        "D": "Alle talen hebben identieke morfosyntax",
+        "E": "Evaluation kan cultureel/linguïstisch biased zijn"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "explanation": "Multilingual NLP moet omgaan met resource gaps en taalverschillen.",
+      "sourceHint": "Multilingual NLP & translation"
+    },
+    {
+      "id": "nlp_237",
+      "topic": "Multilingual NLP & translation",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Waarom kan Engelse NLP-overdominantie problematisch zijn?",
+      "options": {
+        "A": "Modellen en theorieën generaliseren mogelijk slecht naar andere talen en communities.",
+        "B": "Engels bevat alle taalstructuren van elke taal.",
+        "C": "Andere talen hebben geen grammatica.",
+        "D": "Het maakt evaluatie automatisch fair."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Overfocus op Engels beperkt generaliseerbaarheid en inclusiviteit.",
+      "sourceHint": "Multilingual NLP & translation"
+    },
+    {
+      "id": "nlp_238",
+      "topic": "Multilingual NLP & translation",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Welke taalverschillen kunnen NLP beïnvloeden?",
+      "options": {
+        "A": "Word order",
+        "B": "Morphology richness",
+        "C": "Script/writing system",
+        "D": "Availability of data",
+        "E": "Alle talen gebruiken dezelfde tokenization exact"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "explanation": "Typologie, schrift en resources beïnvloeden NLP.",
+      "sourceHint": "Multilingual NLP & translation"
+    },
+    {
+      "id": "nlp_239",
+      "topic": "Multilingual NLP & translation",
+      "type": "single",
+      "difficulty": 1,
+      "question": "Waarom is machine translation meer dan woordenboeklookup?",
+      "options": {
+        "A": "Vertaling vereist context, syntax, semantics, pragmatics en culturele nuance.",
+        "B": "Elk woord heeft exact één equivalent.",
+        "C": "Woordvolgorde blijft altijd identiek.",
+        "D": "Idiomen bestaan niet."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "MT moet betekenis en gebruik over talen heen overbrengen.",
+      "sourceHint": "Multilingual NLP & translation"
+    },
+    {
+      "id": "nlp_240",
+      "topic": "Multilingual NLP & translation",
+      "type": "multi",
+      "difficulty": 3,
+      "question": "Welke evaluatieproblemen kent MT?",
+      "options": {
+        "A": "Meerdere goede vertalingen mogelijk",
+        "B": "BLEU/overlap meet niet alle betekenisnuance",
+        "C": "Culturele adequacy kan moeilijk te meten zijn",
+        "D": "Een enkele reference is altijd volledig genoeg",
+        "E": "Fluency en adequacy kunnen botsen"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "explanation": "MT-evaluatie is lastig door variatie in correcte output en nuance.",
+      "sourceHint": "Multilingual NLP & translation"
+    },
+    {
+      "id": "nlp_241",
+      "topic": "Ethics, NLU & exam-style integration",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Wat is Natural Language Understanding (NLU) in brede zin?",
+      "options": {
+        "A": "Systemen laten redeneren over betekenis, intentie, entailment en context van taal.",
+        "B": "Alleen tekst naar lowercase brengen.",
+        "C": "Alleen woordfrequenties sorteren.",
+        "D": "Alleen images zonder taal verwerken."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "NLU gaat verder dan vorm naar betekenis en gebruik.",
+      "sourceHint": "Ethics, NLU & exam-style integration"
+    },
+    {
+      "id": "nlp_242",
+      "topic": "Ethics, NLU & exam-style integration",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Welke onderdelen van de NLP-pipeline dragen bij aan NLU?",
+      "options": {
+        "A": "Tokenization",
+        "B": "POS tagging",
+        "C": "Syntactic parsing",
+        "D": "Semantic analysis/SRL",
+        "E": "Pragmatics/coreference"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "explanation": "Alle lagen kunnen bijdragen aan uiteindelijk begrip.",
+      "sourceHint": "Ethics, NLU & exam-style integration"
+    },
+    {
+      "id": "nlp_243",
+      "topic": "Ethics, NLU & exam-style integration",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Waarom is 'form vs meaning' belangrijk in debatten over LLM understanding?",
+      "options": {
+        "A": "LLMs kunnen vormpatronen leren zonder noodzakelijk grounded meaning te hebben.",
+        "B": "Vorm en betekenis zijn altijd exact hetzelfde.",
+        "C": "Betekenis bestaat niet in NLP.",
+        "D": "Alle form-only modellen zijn bewust."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Bender/Koller benadrukken dat training op form niet automatisch meaning geeft.",
+      "sourceHint": "Ethics, NLU & exam-style integration"
+    },
+    {
+      "id": "nlp_244",
+      "topic": "Ethics, NLU & exam-style integration",
+      "type": "multi",
+      "difficulty": 3,
+      "question": "Welke kritiek past bij de octopus-paper intuïtie?",
+      "options": {
+        "A": "Een model kan taalvormen statistisch manipuleren zonder situational grounding.",
+        "B": "Succesvolle output is niet automatisch bewijs van understanding.",
+        "C": "Grounded communicatieve intentie ontbreekt bij puur teksttraining.",
+        "D": "Transformers kunnen helemaal geen patronen leren.",
+        "E": "Definities van understanding moeten expliciet zijn."
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "explanation": "De kritiek gaat niet over geen patronen, maar over wat telt als betekenisbegrip.",
+      "sourceHint": "Ethics, NLU & exam-style integration"
+    },
+    {
+      "id": "nlp_245",
+      "topic": "Ethics, NLU & exam-style integration",
+      "type": "single",
+      "difficulty": 1,
+      "question": "Wat is hallucination bij LLMs?",
+      "options": {
+        "A": "Plausibel klinkende maar feitelijk onjuiste of ongegronde output genereren.",
+        "B": "Een model weigert elk antwoord.",
+        "C": "Een parser kiest altijd nsubj.",
+        "D": "Een embedding heeft norm 1."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Hallucinations zijn vloeiende maar onbetrouwbare outputs.",
+      "sourceHint": "Ethics, NLU & exam-style integration"
+    },
+    {
+      "id": "nlp_246",
+      "topic": "Ethics, NLU & exam-style integration",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Welke ethische principes zijn relevant voor NLP-systemen?",
+      "options": {
+        "A": "Fairness",
+        "B": "Accountability",
+        "C": "Transparency waar mogelijk",
+        "D": "Privacy",
+        "E": "Maximale performance zonder aandacht voor schade"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "explanation": "Ethiek draait om verantwoordelijkheid, eerlijkheid, transparantie, privacy en impact.",
+      "sourceHint": "Ethics, NLU & exam-style integration"
+    },
+    {
+      "id": "nlp_247",
+      "topic": "Ethics, NLU & exam-style integration",
+      "type": "single",
+      "difficulty": 3,
+      "question": "Waarom is open access/training data transparency relevant?",
+      "options": {
+        "A": "Het beïnvloedt reproduceerbaarheid, auditing en wetenschappelijke controle.",
+        "B": "Het is irrelevant voor bias.",
+        "C": "Het maakt modellen altijd perfect veilig.",
+        "D": "Het vervangt evaluatie volledig."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Toegang tot data/modeldetails helpt evaluatie en accountability, maar heeft ook privacy/IP trade-offs.",
+      "sourceHint": "Ethics, NLU & exam-style integration"
+    },
+    {
+      "id": "nlp_248",
+      "topic": "Ethics, NLU & exam-style integration",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Welke vragen moet je stellen bij deployment van een NLP-model?",
+      "options": {
+        "A": "Voor wie werkt het goed/slecht?",
+        "B": "Welke fouten kunnen schade veroorzaken?",
+        "C": "Welke data is gebruikt?",
+        "D": "Hoe wordt output geëvalueerd en gemonitord?",
+        "E": "Kan ik de hoogste demo-score cherry-picken?"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "explanation": "Deployment vereist risicodenken, monitoring en fairness.",
+      "sourceHint": "Ethics, NLU & exam-style integration"
+    },
+    {
+      "id": "nlp_249",
+      "topic": "Ethics, NLU & exam-style integration",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Wat is compositional generalization?",
+      "options": {
+        "A": "Nieuwe combinaties begrijpen op basis van bekende onderdelen en regels/structuur.",
+        "B": "Alleen training examples memoriseren.",
+        "C": "Alle woorden vervangen door één token.",
+        "D": "Een corpus willekeurig splitsen."
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "explanation": "Compositional generalization is cruciaal voor taalbegrip.",
+      "sourceHint": "Ethics, NLU & exam-style integration"
+    },
+    {
+      "id": "nlp_250",
+      "topic": "Ethics, NLU & exam-style integration",
+      "type": "multi",
+      "difficulty": 1,
+      "question": "Welke factoren maken een examenantwoord over NLP sterk?",
+      "options": {
+        "A": "Definieer kernbegrippen precies",
+        "B": "Geef een concreet voorbeeld",
+        "C": "Leg trade-offs/limitations uit",
+        "D": "Verbind meerdere lagen zoals syntax, semantics, grounding",
+        "E": "Noem alleen buzzwords zonder uitleg"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "explanation": "Sterke antwoorden zijn concreet, gedefinieerd en leggen relaties tussen concepten.",
+      "sourceHint": "Ethics, NLU & exam-style integration"
+    }
+  ]
+}
